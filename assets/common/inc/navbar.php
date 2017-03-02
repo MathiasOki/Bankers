@@ -17,7 +17,7 @@
 				<ul class="dropdown-menu">
 					<li><a href="#">Kontoinnstillinger</a></li>
 					<li role="separator" class="divider"></li>
-					<li><a href="#">Logg ut</a></li>
+					<li><a href="logout.php">Logg ut</a></li>
 				</ul>
 			</li>
 		</ul>
