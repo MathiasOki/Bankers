@@ -72,16 +72,23 @@
 						</ul>
                     </div>
 					<div class="panel-body">
+
+
+
 						<form>
-							<div class="form-group">
+							<row>
+							<div class="form-group col-md-6">
 							  <label for="tlf">Fra konto</label>
 							  <input type="number" class="form-control" id="tlf" placeholder="Eks.: 543 45 321" required="">
 							</div>
 
-							<div class="form-group">
+							<div class="form-group col-md-6">
 							  <label for="sum">Til konto</label>
 							  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
 							</div>
+
+						</row>
+
 
 							<div class="form-group">
 							  <label for="sum">Beløp</label>
