@@ -66,9 +66,9 @@
             <div class="col-md-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-						<ul class="nav nav-pills">
-						  <li role="presentation" class="active"><a href="#">Betale</a></li>
-						  <li role="presentation"><a href="#">Overføre</a></li>
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#" data-toggle="tab">Betale</a></li>
+							<li><a href="#" data-toggle="tab">Overføre</a></li>
 						</ul>
                     </div>
 					<form>
