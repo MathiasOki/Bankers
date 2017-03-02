@@ -56,6 +56,19 @@ p {
     margin: 0 0 10px;
 }
 
+h1.border:after,
+h2.border:after,
+h3.border:after,
+h4.border:after,
+h5.border:after,
+h6.border:after {
+	border-top: 1px solid #dae1e9;
+    display: block;
+    content: "";
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
 .logotype {
 	font-family: "Gabriela", Times, serif;
 }
