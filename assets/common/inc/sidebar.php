@@ -8,7 +8,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="../../../cardTransactions.php">
 					<i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> Kontobevegelser
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
