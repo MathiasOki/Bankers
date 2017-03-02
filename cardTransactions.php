@@ -28,7 +28,7 @@
 
 	<div class="right-side container-fluid content">
         <div class="row margin-invert">
-			<div class="col-md-8">
+			<div class="col-md-12">
 				<div class="panel panel-default panel-white">
 					<div class="panel-heading">
 						<ul class="nav nav-tabs">
@@ -245,7 +245,8 @@
 														<tr>
 															<th>Dato</th>
 															<th>Tidspunkt</th>
-															<th>Kjøpested</th>
+															<th>Mottaker/Avsender</th>
+															<th>Melding</th>
 															<th>Beløp inn</th>
 															<th>Beløp ut</th>
 														</tr>
@@ -254,9 +255,178 @@
 														<tr>
 															<td>02.03.17</td>
 															<td>14:57</td>
-															<td>Fjerdingen kantine</td>
-															<td>67,-</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
 															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
 														</tr>
 													</tbody>
 												</table>
