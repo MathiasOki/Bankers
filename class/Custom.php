@@ -81,7 +81,15 @@ class Custom extends Satan{
 		else {
 			return number_format($kr, 2,'.', ' ') . ',-';
 		}
+	}
 
+	public function makeAccountNumber($number) {
+		if(!empty($number)){
+		$str1 = substr($number, 0, 4);
+		$str2 = substr($number, 4, 2);
+		$str3 = substr($number, 6, 5);
 
+		return $str1 .".". $str2 .".". $str3;
+		}
 	}
 }

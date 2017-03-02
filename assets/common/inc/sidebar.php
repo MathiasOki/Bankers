@@ -45,15 +45,19 @@
 				</div>
 			</div>
 			<ul>
+				<?php
+					$result = $satan->getAccounts($logged['customerID']);
+					foreach($result as $row) {
+				?>
 				<li>
 					<a href="#">
 						<div class="row valign">
 							<div class="col-xs-5">
-								<b>Brukskonto</b> <i class="fa fa-credit-card card" aria-hidden="true"></i><br>
-								<small class="text-muted">1234.23.12324</small>
+								<b><?=$row['accountType']?></b> <!--<i class="fa fa-credit-card card" aria-hidden="true"></i>--><br>
+								<small class="text-muted"><?=$customClass->makeAccountNumber($row['accountNumber'])?></small>
 							</div>
 							<div class="col-xs-5 text-right">
-								<span><?=$customClass->makeCurrency(183.65, NULL)?></span>
+								<span><?=$customClass->makeCurrency($row['kroner'], $row['oere'])?></span>
 							</div>
 							<div class="col-xs-2">
 								<i class="fa fa-angle-right pull-right"></i>
@@ -61,8 +65,11 @@
 						</div>
 					</a>
 				</li>
+				<?php
+					}
+				?>
 
-				<li>
+				<!--<li>
 					<a href="#">
 						<div class="row valign">
 							<div class="col-xs-5">
@@ -77,7 +84,7 @@
 							</div>
 						</div>
 					</a>
-				</li>
+				</li>-->
 			</ul>
 		</div>
 	</div>
