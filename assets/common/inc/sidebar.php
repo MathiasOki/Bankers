@@ -15,14 +15,14 @@
 			</li>
 			<li>
 				<a href="#">
-					<i class="fa fa-exchange fa-fw" aria-hidden="true"></i> Flytter penger
+					<i class="fa fa-exchange fa-fw" aria-hidden="true"></i> Flytte penger
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
 
 			<li>
 				<a href="#">
-					<i class="fa fa-bar-chart fa-fw" aria-hidden="true"></i> Planlegging
+					<i class="fa fa-bar-chart fa-fw" aria-hidden="true"></i> Planlegge
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
