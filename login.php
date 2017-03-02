@@ -40,7 +40,7 @@
 			function validateIdentification($data, $array) {
 				foreach ($array as $key => $val) {
 					if ($val['birthdayNumber'] === $data) {
-						return $val['birthdayNumber'];
+						return $val['customerID'];
 					}
 				}
 				return null;
@@ -48,7 +48,7 @@
 
 			$result = validateIdentification($user, $userCheck);
 
-			$userPass = $satan->getPassword($result);
+			$userPass = $satan->getPassword($user);
 			$password = hash('md5', $pass);
 
 			if(!empty($result)){
@@ -67,14 +67,11 @@
 	}
 
 	require_once("assets/common/inc/head.php");
-	require_once("assets/common/inc/header.php");
-	require_once("assets/common/inc/navbar.php");
 ?>
-<div class="jumbotron bg-vipps">
-	<div class="container">
+	<div class="container" style="height:100vh;">
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-4">
-				<h2 class="text-center text-white">Logg inn i nettbanken</h2>
+				<h2 class="text-center">Logg inn i nettbanken</h2>
 				<form method="post" action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>">
 
 					<?php
@@ -90,27 +87,24 @@
 					?>
 
 					<div class="form-group">
-						<label for="user" class="text-white">Personnummer</label>
+						<label for="user">Personnummer</label>
 						<input type="text" class="form-control" id="user" name="user" placeholder="Skriv inn personnummer, 11 tall." value="<?=$user?>">
 					</div>
 					<div class="form-group">
-						<label for="password" class="text-white">Passord</label>
+						<label for="password">Passord</label>
 						<input type="password" class="form-control" id="password" name="password" placeholder="Skriv inn passord.">
 					</div>
 					<div class="form-group">
-						<button class="btn btn-default" type="submit" name="btn-login">Logg inn</button>
+						<button class="btn btn-default btn-block" type="submit" name="btn-login">Logg inn</button>
 					</div>
 				</form><!-- /form -->
 			</div>
 		</div><!-- /row -->
 	</div><!-- /container -->
-</div><!-- /jumbotron -->
 
-<div class="container">
-	<?php
-		include_once("assets/common/inc/footer.php");
-	?>
-</div>
+<?php
+	include_once("assets/common/inc/footer.php");
+?>
 
 <!-- Import JavaScript -->
 <?php

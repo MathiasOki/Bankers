@@ -2,7 +2,7 @@
 class Satan{
 
     private static $instance;
-	private static $server = "http://localhost:8080/";
+	private static $server = "http://188.166.97.195:8080/";
 
     public static function init(){
         if(self::$instance == NULL){
