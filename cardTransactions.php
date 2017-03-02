@@ -37,6 +37,12 @@
 							<li><a href="#allebevegelser" data-toggle="tab">Alle bevegelser</a></li>
 						</ul>
 					</div>
+					<div class="panel-heading">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#brukskonto" data-toggle="tab">Brukskonto</a></li>
+							<li><a href="#regningskonto" data-toggle="tab">Regningskonto</a></li>
+						</ul>
+					</div>
 					<form rel="form">
 						<div class="tab-content">
 							<div class="tab-pane panel-form active" id="kortbeveglser">
@@ -114,124 +120,11 @@
 															<td>KIWI Byporten</td>
 															<td>125,-</td>
 														</tr>
-														<tr>
-															<td>31.02.17</td>
-															<td>12:37</td>
-															<td>Fjerdingen kantine</td>
-															<td>25,-</td>
-														</tr>
-														<tr>
-															<td>30.02.17</td>
-															<td>15:43</td>
-															<td>KIWI Byporten</td>
-															<td>125,-</td>
-														</tr>
-														<tr>
-															<td>31.02.17</td>
-															<td>12:37</td>
-															<td>Fjerdingen kantine</td>
-															<td>25,-</td>
-														</tr>
-														<tr>
-															<td>30.02.17</td>
-															<td>15:43</td>
-															<td>KIWI Byporten</td>
-															<td>125,-</td>
-														</tr>
-														<tr>
-															<td>31.02.17</td>
-															<td>12:37</td>
-															<td>Fjerdingen kantine</td>
-															<td>25,-</td>
-														</tr>
-														<tr>
-															<td>30.02.17</td>
-															<td>15:43</td>
-															<td>KIWI Byporten</td>
-															<td>125,-</td>
-														</tr>
-														<tr>
-															<td>31.02.17</td>
-															<td>12:37</td>
-															<td>Fjerdingen kantine</td>
-															<td>25,-</td>
-														</tr>
-														<tr>
-															<td>30.02.17</td>
-															<td>15:43</td>
-															<td>KIWI Byporten</td>
-															<td>125,-</td>
-														</tr>
-														<tr>
-															<td>31.02.17</td>
-															<td>12:37</td>
-															<td>Fjerdingen kantine</td>
-															<td>25,-</td>
-														</tr>
-														<tr>
-															<td>30.02.17</td>
-															<td>15:43</td>
-															<td>KIWI Byporten</td>
-															<td>125,-</td>
-														</tr>
-														<tr>
-															<td>31.02.17</td>
-															<td>12:37</td>
-															<td>Fjerdingen kantine</td>
-															<td>25,-</td>
-														</tr>
-														<tr>
-															<td>30.02.17</td>
-															<td>15:43</td>
-															<td>KIWI Byporten</td>
-															<td>125,-</td>
-														</tr>
-														<tr>
-															<td>31.02.17</td>
-															<td>12:37</td>
-															<td>Fjerdingen kantine</td>
-															<td>25,-</td>
-														</tr>
-														<tr>
-															<td>30.02.17</td>
-															<td>15:43</td>
-															<td>KIWI Byporten</td>
-															<td>125,-</td>
-														</tr>
-														<tr>
-															<td>31.02.17</td>
-															<td>12:37</td>
-															<td>Fjerdingen kantine</td>
-															<td>25,-</td>
-														</tr>
-
 													</tbody>
 												</table>
 											</div>
 										</div>
 									</div>
-
-									<!--<div class="row valign margin-none">
-										<div class="col-md-4 text-right border-right">
-											Tilgangsrettigheter
-										</div>
-										<div class="col-md-8 padding-all">
-											<div class="radio">
-												<label>
-													<input type="radio" name="tilgangsrettigheter" value="1" checked>
-													Ja
-												</label>
-											</div>
-
-											<div class="radio">
-												<label>
-													<input type="radio" name="tilgangsrettigheter" value="0">
-													Nei
-												</label>
-											</div>
-										</div>
-									</div>-->
-
 								</div>
 							</div>
 
@@ -268,166 +161,6 @@
 															<td></td>
 															<td>10,-</td>
 														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>14:57</td>
-															<td>Malin Glosli Haugan</td>
-															<td>For pizza</td>
-															<td>98,-</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>11:12</td>
-															<td>Eva Maria Dahlø</td>
-															<td>For Pepsi Max</td>
-															<td></td>
-															<td>10,-</td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>14:57</td>
-															<td>Malin Glosli Haugan</td>
-															<td>For pizza</td>
-															<td>98,-</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>11:12</td>
-															<td>Eva Maria Dahlø</td>
-															<td>For Pepsi Max</td>
-															<td></td>
-															<td>10,-</td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>14:57</td>
-															<td>Malin Glosli Haugan</td>
-															<td>For pizza</td>
-															<td>98,-</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>11:12</td>
-															<td>Eva Maria Dahlø</td>
-															<td>For Pepsi Max</td>
-															<td></td>
-															<td>10,-</td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>14:57</td>
-															<td>Malin Glosli Haugan</td>
-															<td>For pizza</td>
-															<td>98,-</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>11:12</td>
-															<td>Eva Maria Dahlø</td>
-															<td>For Pepsi Max</td>
-															<td></td>
-															<td>10,-</td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>14:57</td>
-															<td>Malin Glosli Haugan</td>
-															<td>For pizza</td>
-															<td>98,-</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>11:12</td>
-															<td>Eva Maria Dahlø</td>
-															<td>For Pepsi Max</td>
-															<td></td>
-															<td>10,-</td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>14:57</td>
-															<td>Malin Glosli Haugan</td>
-															<td>For pizza</td>
-															<td>98,-</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>11:12</td>
-															<td>Eva Maria Dahlø</td>
-															<td>For Pepsi Max</td>
-															<td></td>
-															<td>10,-</td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>14:57</td>
-															<td>Malin Glosli Haugan</td>
-															<td>For pizza</td>
-															<td>98,-</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>11:12</td>
-															<td>Eva Maria Dahlø</td>
-															<td>For Pepsi Max</td>
-															<td></td>
-															<td>10,-</td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>14:57</td>
-															<td>Malin Glosli Haugan</td>
-															<td>For pizza</td>
-															<td>98,-</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>11:12</td>
-															<td>Eva Maria Dahlø</td>
-															<td>For Pepsi Max</td>
-															<td></td>
-															<td>10,-</td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>14:57</td>
-															<td>Malin Glosli Haugan</td>
-															<td>For pizza</td>
-															<td>98,-</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>11:12</td>
-															<td>Eva Maria Dahlø</td>
-															<td>For Pepsi Max</td>
-															<td></td>
-															<td>10,-</td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>14:57</td>
-															<td>Malin Glosli Haugan</td>
-															<td>For pizza</td>
-															<td>98,-</td>
-															<td></td>
-														</tr>
-														<tr>
-															<td>02.03.17</td>
-															<td>11:12</td>
-															<td>Eva Maria Dahlø</td>
-															<td>For Pepsi Max</td>
-															<td></td>
-															<td>10,-</td>
-														</tr>
 													</tbody>
 												</table>
 											</div>
@@ -438,7 +171,135 @@
 
 							<div class="tab-pane panel-form" id="allebevegelser">
 								<div class="tab-pane" id="betalingsbevegelser">
-									Alle bevegelser
+									<div class="row border-bottom">
+										<div class="col-md-12">
+											<div class="panel panel-default">
+												<table class="table table-striped">
+													<thead>
+														<tr>
+															<th>Dato</th>
+															<th>Tidspunkt</th>
+															<th>Kjøpested</th>
+															<th>Mottaker/Avsender</th>
+															<th>Melding</th>
+															<th>Beløp inn</th>
+															<th>Beløp ut</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td></td>
+															<td>Malin Glosli Haugan</td>
+															<td>For pizza</td>
+															<td>98,-</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Fjerdingen kantine</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>67,-</td>
+														</tr>
+														<tr>
+															<td>02.03.17</td>
+															<td>11:12</td>
+															<td></td>
+															<td>Eva Maria Dahlø</td>
+															<td>For Pepsi Max</td>
+															<td></td>
+															<td>10,-</td>
+														</tr>
+														<tr>
+															<td>01.03.17</td>
+															<td>13:45</td>
+															<td>Fjerdingen kantine</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>105,-</td>
+														</tr>
+														<tr>
+															<td>31.02.17</td>
+															<td>21:15</td>
+															<td>Skjenkestua</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>104,-</td>
+														</tr>
+														<tr>
+															<td>31.02.17</td>
+															<td>20:45</td>
+															<td>Skjenkestua</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>55,-</td>
+														</tr>
+														<tr>
+															<td>31.02.17</td>
+															<td>20:00</td>
+															<td>Skjenkestua</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>110,-</td>
+														</tr>
+														<tr>
+															<td>31.02.17</td>
+															<td>19:35</td>
+															<td>Skjenkestua</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>55,-</td>
+														</tr>
+														<tr>
+															<td>31.02.17</td>
+															<td>19:15</td>
+															<td>Skjenkestua</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>55,-</td>
+														</tr>
+														<tr>
+															<td>31.02.17</td>
+															<td>18:37</td>
+															<td>Skjenkestua</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>55,-</td>
+														</tr>
+														<tr>
+															<td>31.02.17</td>
+															<td>12:37</td>
+															<td>Fjerdingen kantine</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>25,-</td>
+														</tr>
+														<tr>
+															<td>30.02.17</td>
+															<td>15:43</td>
+															<td>KIWI Byporten</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>125,-</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
