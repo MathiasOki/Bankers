@@ -9,7 +9,7 @@
 			</li>
 		</ul>
 
-		<a href="#" class="navbar-brand">Bænkers</a>
+		<a href="index.php" class="navbar-brand">Bænkers</a>
 
 		<ul class="nav navbar-nav navbar-right">
 			<li>

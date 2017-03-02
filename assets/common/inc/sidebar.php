@@ -8,7 +8,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="cardTransactions.php">
+				<a href="transactions.php">
 					<i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> Kontobevegelser
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
@@ -41,7 +41,7 @@
 					<h1>Dine kontoer</h1>
 				</div>
 				<div class="col-xs-2">
-					<a href="#"><i class="fa fa-plus-circle pull-right"></i></a>
+					<a href="addAccount.php"><i class="fa fa-plus-circle pull-right"></i></a>
 				</div>
 			</div>
 			<ul>
