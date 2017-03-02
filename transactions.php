@@ -36,16 +36,18 @@
 							<li><a href="#allebevegelser" data-toggle="tab">Alle bevegelser</a></li>
 						</ul>
 					</div>
-					<div class="panel-heading">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#brukskonto" data-toggle="tab">Brukskonto</a></li>
-							<li><a href="#regningskonto" data-toggle="tab">Regningskonto</a></li>
-						</ul>
-					</div>
 					<form rel="form">
 						<div class="tab-content">
 							<div class="tab-pane panel-form active" id="kortbeveglser">
 								<div class="panel-body padding-none">
+									<div class="row">
+										<div class="col-md-12 padding-all">
+											<ul class="nav nav-pills">
+												<li class="active"><a href="#brukskonto" data-toggle="tab">Brukskonto</a></li>
+												<li><a href="#regningskonto" data-toggle="tab">Regningskonto</a></li>
+											</ul>
+										</div>
+									</div>
 									<div class="row border-bottom">
 										<div class="col-md-12">
 											<div class="panel panel-default">
