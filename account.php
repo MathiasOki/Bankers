@@ -2,12 +2,12 @@
     require_once("global/config.php");
 
 	// if session is not set this will redirect to login page
-	/*if( !isset($_SESSION['user']) ) {
+	if( !isset($_SESSION['user']) ) {
 		header("Location: login.php");
 		exit;
-	}*/
+	}
 
-	//$logged = $satan->getUser($_SESSION['user']);
+	$logged = $satan->getUser($_SESSION['user']);
 
 	require_once("assets/common/inc/head.php");
 	//require_once("assets/common/inc/header.php");
