@@ -78,6 +78,19 @@
 						</div>
 					</a>
 				</li>
+
+				<li>
+					<a href="#">
+						<div class="row valign">
+							<div class="col-xs-10">
+								<b>Se alle kontoer</b>
+							</div>
+							<div class="col-xs-2">
+								<i class="fa fa-angle-right pull-right"></i>
+							</div>
+						</div>
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>

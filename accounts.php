@@ -26,80 +26,10 @@
 		require_once("assets/common/inc/sidebar.php");
 	?>
 
-	<div class="right-side container-fluid content-padding">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Saldo på brukskonto
-                    </div>
-                    <div class="panel-body text-center">
-                        <h1><?=$customClass->makeCurrency(18342.5, NULL)?></h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Saldo på brukskonto
-                    </div>
-                    <div class="panel-body text-center">
-                        <h1><?=$customClass->makeCurrency(153498, NULL)?></h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Saldo på brukskonto
-                    </div>
-                    <div class="panel-body text-center">
-                        <h1><?=$customClass->makeCurrency(1542, 12)?></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Mål
-                    </div>
-                    <div class="panel-body">
-						<h1>Velkommen, Mathias!</h1>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                        <p><canvas id="myChart" width="400" height="400"></canvas></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-					<div class="panel-heading">
-                        Vipps
-                    </div>
-                    <div class="panel-body">
-                        <form>
-                            <div class="form-group">
-                              <label for="tlf">Telefonnummer</label>
-                              <input type="number" class="form-control" id="tlf" placeholder="Eks.: 543 45 321" required="">
-                            </div>
-
-                            <div class="form-group">
-                              <label for="sum">Beløp</label>
-                              <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-                            </div>
-
-                            <button type="submit" name="button" class="btn btn-default">Vipps!</button>
-                        </form>
-                    </div>
-                </div>
-
-				<div class="panel panel-default">
+	<div class="right-side container-fluid content">
+        <div class="row margin-invert">
+			<div class="col-md-6">
+				<div class="panel panel-default panel-white">
 					<div class="panel-heading">
 						<ul class="nav nav-tabs">
 							<li class="active"><a href="#tid" data-toggle="tab">tID</a></li>
@@ -111,11 +41,17 @@
 						<div class="tab-content">
 							<div class="tab-pane panel-form active" id="tid">
 								<div class="panel-body padding-none">
-									<div class="row valign margin-none border-bottom">
-										<div class="col-md-4 text-right border-right padding-all">
+									<div class="row border-bottom">
+										<div class="col-md-12">
+											<h3>Velkommen</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
+									</div>
+									<div class="row valign padding-all border-bottom">
+										<div class="col-md-4 text-right border-right">
 											Brukerpanel
 										</div>
-										<div class="col-md-8 padding-all">
+										<div class="col-md-8">
 											<div class="radio">
 												<label>
 													<input type="radio" name="transasksjonspanel" value="1" checked>
@@ -133,7 +69,7 @@
 									</div>
 
 									<div class="row valign margin-none">
-										<div class="col-md-4 text-right border-right padding-all">
+										<div class="col-md-4 text-right border-right">
 											Tilgangsrettigheter
 										</div>
 										<div class="col-md-8 padding-all">
@@ -178,7 +114,7 @@
 						</div>
 					</form>
 				</div>
-            </div>
+			</div>
         </div>
 
         <?php
