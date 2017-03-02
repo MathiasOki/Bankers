@@ -638,7 +638,6 @@ a.list-group-item:focus {
 }
 
 .flex-container>* {
-    padding: 15px;
     flex: 1 1 auto;
 }
 
@@ -649,7 +648,7 @@ a.list-group-item:focus {
 	border-right: 1px solid #dae1e9;
 	margin-top: -15px;
 	padding: 0;
-	padding-top: 15px;
+	/*padding-top: 15px;*/
 }
 
 @media all and (max-width: 768px) {
