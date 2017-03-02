@@ -25,15 +25,20 @@
 		require_once("assets/common/inc/sidebar.php");
 	?>
 
-	<div class="right-side container-fluid content">
-        <div class="row margin-invert">
-			<div class="col-md-12">
-				<div class="panel panel-default panel-white">
-					<div class="panel-heading">
+	<div class="right-side container-fluid content-padding">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<form>
+							<row>
+
+							</row>
+						</form>
 					</div>
 				</div>
 			</div>
-        </div>
+		</div><!-- /row -->
 
         <?php
 			include_once("assets/common/inc/footer.php");
