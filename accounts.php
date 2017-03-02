@@ -103,15 +103,6 @@
 								</div>
 							</div>
 						</div>
-
-						<div class="panel-footer">
-							<div class="row">
-								<div class="col-md-10 col-md-offset-0">
-									<button type="submit" class="btn btn-primary">Lagre rettigheter</button>
-									<button type="reset" class="btn btn-link">Avbryt</button>
-								</div>
-							</div>
-						</div>
 					</form>
 				</div>
 			</div>
@@ -165,6 +156,11 @@
                 }
             }
         });
+
+		$(document).ready(function () {
+    /* ----------  equal height columns   -------- */
+    $('.inner').matchHeight();
+}); // end document ready
 
     </script>
 </body>
