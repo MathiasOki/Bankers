@@ -71,36 +71,48 @@
 							<li><a href="#" data-toggle="tab">VIPPS</a></li>
 						</ul>
                     </div>
+
 					<div class="panel-body">
-
-
-
 						<form>
 							<row>
-							<div class="form-group col-md-6">
-							  <label for="tlf">Fra konto</label>
-							  <input type="number" class="form-control" id="tlf" placeholder="Eks.: 543 45 321" required="">
-							</div>
+								<div class="form-group col-md-6">
+								  <label for="tlf">Fra konto</label>
+								  <input type="number" class="form-control" id="tlf" placeholder="Skriv eller søk..." required="">
+								</div>
 
-							<div class="form-group col-md-6">
-							  <label for="sum">Til konto</label>
-							  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-							</div>
+								<div class="form-group col-md-6">
+								  <label for="sum">Til konto</label>
+								  <input type="number" class="form-control" id="sum" placeholder="Skriv eller søk...." required="">
+								</div>
+							</row>
 
-						</row>
 
+							<row>
+								<div class="form-group col-md-8">
+								  <label for="sum">KID/melding</label>
+								  <input type="number" class="form-control" id="sum" placeholder="skriv her..." required="">
+								</div>
 
-							<div class="form-group">
-							  <label for="sum">Beløp</label>
-							  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-							</div>
+								<div class="form-group col-md-4">
+								  <label for="sum">Beløp</label>
+								  <input type="number" class="form-control" placeholder="00.00" required="">
+								</div>
+							</row>
 
-							<div class="form-group">
-							  <label for="sum">KID/melding</label>
-							  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-							</div>
-						</form>
+							<row>
+								<div class="form-group col-md-8">
+								  <label for="sum">Motakers navn</label>
+								  <input type="number" class="form-control" placeholder="Navn navnesen..." required="">
+								</div>
+
+								<div class="form-group col-md-4">
+								  <label for="sum">dato</label>
+								  <input type="number" class="form-control" placeholder="dd/mm/yyyy..." required="">
+								</div>
+							</row>
+						</div>
 					</div>
+
 					<div class="panel-footer">
 						<div class="row">
 							<div class="col-md-10 col-md-offset-0">
@@ -109,9 +121,7 @@
 						</div>
 					</div>
                 </div>
-
-
-            </div>
+            
 
 
 
