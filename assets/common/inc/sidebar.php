@@ -2,7 +2,7 @@
 	<div class="sidebar-container">
 		<ul class="nav nav-sidebar">
 			<li>
-				<a href="#">
+				<a href="index.php">
 					<i class="fa fa-home fa-fw" aria-hidden="true"></i> Hjem
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
