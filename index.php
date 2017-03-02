@@ -68,29 +68,32 @@
 						<ul class="nav nav-tabs">
 							<li class="active"><a href="#" data-toggle="tab">Betale</a></li>
 							<li><a href="#" data-toggle="tab">Overføre</a></li>
+							<li><a href="#" data-toggle="tab">VIPPS</a></li>
 						</ul>
                     </div>
-					<form>
-						<div class="form-group">
-						  <label for="tlf">Telefonnummer</label>
-						  <input type="number" class="form-control" id="tlf" placeholder="Eks.: 543 45 321" required="">
-						</div>
+					<div class="panel-body">
+						<form>
+							<div class="form-group">
+							  <label for="tlf">Fra konto</label>
+							  <input type="number" class="form-control" id="tlf" placeholder="Eks.: 543 45 321" required="">
+							</div>
 
-						<div class="form-group">
-						  <label for="sum">Beløp</label>
-						  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-						</div>
+							<div class="form-group">
+							  <label for="sum">Til konto</label>
+							  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
+							</div>
 
-						<div class="form-group">
-						  <label for="sum">Beløp</label>
-						  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-						</div>
+							<div class="form-group">
+							  <label for="sum">Beløp</label>
+							  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
+							</div>
 
-						<div class="form-group">
-						  <label for="sum">Beløp</label>
-						  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-						</div>
-					</form>
+							<div class="form-group">
+							  <label for="sum">KID/melding</label>
+							  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
+							</div>
+						</form>
+					</div>
 					<div class="panel-footer">
 						<div class="row">
 							<div class="col-md-10 col-md-offset-0">
@@ -99,8 +102,49 @@
 						</div>
 					</div>
                 </div>
+
+
             </div>
+
+
+
+
             <div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Sparemål
+					</div>
+					<div class="panel-body">
+						<h5>Ny macbook</h5>
+						<div class="progress">
+							  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+							    60%
+							  </div>
+						</div>
+
+						<h5>Ny bil</h5>
+						<div class="progress">
+							  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+							    15%
+							  </div>
+						</div>
+
+						<h5>Ny tattovering</h5>
+						<div class="progress">
+							  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+							    15%
+							  </div>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<div class="row">
+							<div class="col-md-10 col-md-offset-0">
+								<button type="submit" class="btn btn-primary">Gå til sparemål</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
                 <div class="panel panel-default">
 					<div class="panel-heading">
                         Vipps
@@ -118,89 +162,17 @@
                             </div>
                         </form>
                     </div>
-                </div>
-
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#tid" data-toggle="tab">tID</a></li>
-							<li><a href="#tbank" data-toggle="tab">T-Bank</a></li>
-							<li><a href="#oiu" data-toggle="tab">Oiu</a></li>
-						</ul>
+					<div class="panel-footer">
+						<div class="row">
+							<div class="col-md-10 col-md-offset-0">
+								<button type="submit" class="btn btn-primary">Betal</button>
+							</div>
+						</div>
 					</div>
-					<form rel="form">
-						<div class="tab-content">
-							<div class="tab-pane panel-form active" id="tid">
-								<div class="panel-body padding-none">
-									<div class="row valign margin-none border-bottom">
-										<div class="col-md-4 text-right border-right padding-all">
-											Brukerpanel
-										</div>
-										<div class="col-md-8 padding-all">
-											<div class="radio">
-												<label>
-													<input type="radio" name="transasksjonspanel" value="1" checked>
-													Ja
-												</label>
-											</div>
-
-											<div class="radio">
-												<label>
-													<input type="radio" name="transasksjonspanel" value="0">
-													Nei
-												</label>
-											</div>
-										</div>
-									</div>
-
-									<div class="row valign margin-none">
-										<div class="col-md-4 text-right border-right padding-all">
-											Tilgangsrettigheter
-										</div>
-										<div class="col-md-8 padding-all">
-											<div class="radio">
-												<label>
-													<input type="radio" name="tilgangsrettigheter" value="1" checked>
-													Ja
-												</label>
-											</div>
-
-											<div class="radio">
-												<label>
-													<input type="radio" name="tilgangsrettigheter" value="0">
-													Nei
-												</label>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="tab-pane panel-form" id="tbank">
-								<div class="panel-body padding-none">
-									T-Bank
-								</div>
-							</div>
-
-							<div class="tab-pane panel-form" id="oiu">
-								<div class="tab-pane" id="tbank">
-									Oiu
-								</div>
-							</div>
-						</div>
-
-						<div class="panel-footer">
-							<div class="row">
-								<div class="col-md-10 col-md-offset-0">
-									<button type="submit" class="btn btn-primary">Lagre rettigheter</button>
-									<button type="reset" class="btn btn-link">Avbryt</button>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
+                </div>
             </div>
         </div>
+
 
         <?php
 			include_once("assets/common/inc/footer.php");
