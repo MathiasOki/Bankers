@@ -237,7 +237,32 @@
 
 							<div class="tab-pane panel-form" id="betalingsbevegelser">
 								<div class="panel-body padding-none">
-									Betalingsbevegelser
+									<div class="row border-bottom">
+										<div class="col-md-12">
+											<div class="panel panel-default">
+												<table class="table table-striped">
+													<thead>
+														<tr>
+															<th>Dato</th>
+															<th>Tidspunkt</th>
+															<th>Kjøpested</th>
+															<th>Beløp inn</th>
+															<th>Beløp ut</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>02.03.17</td>
+															<td>14:57</td>
+															<td>Fjerdingen kantine</td>
+															<td>67,-</td>
+															<td></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 
