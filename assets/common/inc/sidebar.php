@@ -3,27 +3,33 @@
 		<ul class="nav nav-sidebar">
 			<li>
 				<a href="#">
-					<i class="fa fa-money fa-fw" aria-hidden="true"></i> Oversikt
+					<i class="fa fa-home fa-fw" aria-hidden="true"></i> Hjem
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
 			<li>
 				<a href="#">
-					<i class="fa fa-sort-amount-desc fa-fw" aria-hidden="true"></i> Konto
+					<i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> Kontobevegelser
+					<i class="fa fa-angle-right pull-right"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-exchange fa-fw" aria-hidden="true"></i> Flytter penger
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
 
 			<li>
 				<a href="#">
-					<i class="fa fa-exchange fa-fw" aria-hidden="true"></i> Betaling
+					<i class="fa fa-bar-chart fa-fw" aria-hidden="true"></i> Planlegging
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
 
 			<li>
 				<a href="#">
-					<i class="fa fa-life-ring fa-fw" aria-hidden="true"></i> Sparing
+					<i class="fa fa-phone fa-fw" aria-hidden="true"></i> Kontakt
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
