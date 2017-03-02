@@ -66,15 +66,39 @@
             <div class="col-md-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Mål
+						<ul class="nav nav-pills">
+						  <li role="presentation" class="active"><a href="#">Betale</a></li>
+						  <li role="presentation"><a href="#">Overføre</a></li>
+						</ul>
                     </div>
-                    <div class="panel-body">
-						<h1>Velkommen, Mathias!</h1>
+					<form>
+						<div class="form-group">
+						  <label for="tlf">Telefonnummer</label>
+						  <input type="number" class="form-control" id="tlf" placeholder="Eks.: 543 45 321" required="">
+						</div>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="form-group">
+						  <label for="sum">Beløp</label>
+						  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
+						</div>
 
-                        <p><canvas id="myChart" width="400" height="400"></canvas></p>
-                    </div>
+						<div class="form-group">
+						  <label for="sum">Beløp</label>
+						  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
+						</div>
+
+						<div class="form-group">
+						  <label for="sum">Beløp</label>
+						  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
+						</div>
+					</form>
+					<div class="panel-footer">
+						<div class="row">
+							<div class="col-md-10 col-md-offset-0">
+								<button type="submit" class="btn btn-primary">Betal</button>
+							</div>
+						</div>
+					</div>
                 </div>
             </div>
             <div class="col-md-4">
@@ -93,8 +117,6 @@
                               <label for="sum">Beløp</label>
                               <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
                             </div>
-
-                            <button type="submit" name="button" class="btn btn-default">Vipps!</button>
                         </form>
                     </div>
                 </div>
