@@ -8,7 +8,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="../../../cardTransactions.php">
+				<a href="cardTransactions.php">
 					<i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> Kontobevegelser
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
@@ -71,19 +71,6 @@
 							</div>
 							<div class="col-xs-5 text-right">
 								<span><?=$customClass->makeCurrency(1540323.65, NULL)?></span>
-							</div>
-							<div class="col-xs-2">
-								<i class="fa fa-angle-right pull-right"></i>
-							</div>
-						</div>
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						<div class="row valign">
-							<div class="col-xs-10">
-								<b>Se alle kontoer</b>
 							</div>
 							<div class="col-xs-2">
 								<i class="fa fa-angle-right pull-right"></i>
