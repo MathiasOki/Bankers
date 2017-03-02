@@ -10,7 +10,6 @@
 	$logged = $satan->getUser($_SESSION['user']);
 
 	require_once("assets/common/inc/head.php");
-	//require_once("assets/common/inc/header.php");
 	require_once("assets/common/inc/navbar.php");
 ?>
 <div class="support-btn">
