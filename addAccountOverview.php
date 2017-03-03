@@ -37,8 +37,11 @@
 										<div class="panel-heading">
 											Brukskonto
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Brukskonto er en konto til daglige banktjenester.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
@@ -47,8 +50,11 @@
 										<div class="panel-heading">
 											Sparekonto
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Sparekonto gjør det enklere å sette av penger til noe du ønsker deg.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
@@ -57,8 +63,11 @@
 										<div class="panel-heading">
 											Superspar
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Superspar gir deg god rente på pengene når du har en spareavtale til kontoen.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
@@ -67,8 +76,11 @@
 										<div class="panel-heading">
 											Fastrenteinnskudd
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Sparer du i fastrenteinnskudd, settes sparepengene på konto i en periode.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
@@ -79,8 +91,11 @@
 										<div class="panel-heading">
 											Barnas boligkonto
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Med Barnas boligkonto kan du spare med ekstra god rente til barns bolig.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
@@ -89,8 +104,11 @@
 										<div class="panel-heading">
 											Superspar for barn
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Superspar for barn passer når du skal spare et månedlig beløp til noen.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
@@ -99,8 +117,11 @@
 										<div class="panel-heading">
 											BSU
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Du kan spare inntil 25 000 kroner i året, og 100 000 kroner til sammen.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
@@ -109,8 +130,11 @@
 										<div class="panel-heading">
 											BSU 2.0
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Du kan spare inntil 25 000 kroner i året, og 100 000 kroner til sammen.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
@@ -121,8 +145,11 @@
 										<div class="panel-heading">
 											Depositumskonto
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Depositumskonto er en sikkerhet for utleier og leietaker.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
@@ -131,8 +158,11 @@
 										<div class="panel-heading">
 											Barnas sparekonto
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Barnas Sparekonto er for barn fra 0 til 18 år.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
@@ -141,8 +171,11 @@
 										<div class="panel-heading">
 											Intro sparekonto
 										</div>
-										<div class="panel-body text-center">
+										<div class="panel-body">
 											Med Intro sparekonto får man litt høyere rente slik at man kan spare mer.
+										</div>
+										<div class="panel-footer">
+											<button type="submit" class="btn btn-primary">Åpne konto</button>
 										</div>
 									</div>
 								</div>
