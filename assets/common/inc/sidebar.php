@@ -41,7 +41,7 @@
 					<h1>Dine kontoer</h1>
 				</div>
 				<div class="col-xs-2">
-					<a href="addAccount.php"><i class="fa fa-plus-circle pull-right"></i></a>
+					<a href="addAccountOverview.php"><i class="fa fa-plus-circle pull-right"></i></a>
 				</div>
 			</div>
 			<ul>
