@@ -45,8 +45,11 @@
 		}
 
 		if(empty($kroner)){
-			$error = true;
-			$errorMessage = "Du må skrive inn kroner.";
+
+			$kroner = 0;
+
+			//$error = true;
+			//$errorMessage = "Du må skrive inn kroner.";
 		}
 
 		if(empty($ore)){
