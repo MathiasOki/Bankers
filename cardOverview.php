@@ -25,62 +25,52 @@
 	<?php
 		require_once("assets/common/inc/sidebar.php");
 	?>
-
-	<div class="right-side container-fluid content">
-        <div class="row margin-invert">
+	<div class="right-side container-fluid content-padding">
+        <div class="row">
 			<div class="col-md-8">
-				<div class="panel panel-default panel-white">
+				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3>Mine kort</h3>
 					</div>
-					<div class="panel-body padding-none">
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Student visa</h4>
+					</div>
+					<div class="panel-body">
 						<div class="row border-bottom">
-							<div class="col-md-12">
-								<h4>Brukskonto</h4>
-								
-							</div>
-						</div>
-						<div class="row valign padding-all border-bottom">
-							<div class="col-md-4 text-right border-right">
-								Brukerpanel
+							<div class="col-md-4">
+								<h1>super fancy CSS kort</h1>
 							</div>
 							<div class="col-md-8">
-								<div class="radio">
-									<label>
-										<input type="radio" name="transasksjonspanel" value="1" checked>
-										Ja
-									</label>
-								</div>
+								<p>Korthaver : Haugan, Malin Glosli</p>
+								<p>	Kortnummer : **** **** ***1 2345</p>
+								<p>	Kontonavn : Student Brukskonto</p>
+								<p>	Kontonummer	: 1234.56.78910</p>
+								<p>	Status : Aktivt</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-								<div class="radio">
-									<label>
-										<input type="radio" name="transasksjonspanel" value="0">
-										Nei
-									</label>
-								</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Student visa</h4>
+					</div>
+					<div class="panel-body">
+						<div class="row border-bottom">
+							<div class="col-md-4">
+								<h1>super fancy CSS kort</h1>
+							</div>
+							<div class="col-md-8">
+								<h4>Student Mastercard</h4>
+								<p>Korthaver : Haugan, Malin Glosli</p>
+								<p>	Kortnummer : **** **** ***1 2345</p>
+								<p>	Kontonummer	: 1234.56.78910</p>
+								<p>	Status : Aktivt</p>
 							</div>
 						</div>
 
-						<div class="row valign margin-none">
-							<div class="col-md-4 text-right border-right">
-								Tilgangsrettigheter
-							</div>
-							<div class="col-md-8 padding-all">
-								<div class="radio">
-									<label>
-										<input type="radio" name="tilgangsrettigheter" value="1" checked>
-										Ja
-									</label>
-								</div>
-
-								<div class="radio">
-									<label>
-										<input type="radio" name="tilgangsrettigheter" value="0">
-										Nei
-									</label>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
