@@ -20,7 +20,6 @@
 </div>
 
 <div class="flex-container">
-
 	<?php
 		require_once("assets/common/inc/sidebar.php");
 	?>
