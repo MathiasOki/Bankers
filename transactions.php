@@ -43,8 +43,14 @@
 									<div class="row">
 										<div class="col-md-12 padding-all">
 											<ul class="nav nav-pills">
-												<li class="active"><a href="#brukskonto" data-toggle="tab">Brukskonto</a></li>
-												<li><a href="#regningskonto" data-toggle="tab">Regningskonto</a></li>
+												<?php
+													$result = $satan->getAccounts($logged['customerID']);
+													foreach($result as $row) {
+												?>
+												<li><a href="#brukskonto" data-toggle="tab"><?=$row['accountType']?></a></li>
+												<?php
+													}
+												?>
 											</ul>
 										</div>
 									</div>
