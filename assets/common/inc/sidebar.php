@@ -50,7 +50,7 @@
 					foreach($result as $row) {
 				?>
 				<li>
-					<a href="#">
+					<a href="account.php">
 						<div class="row valign">
 							<div class="col-xs-5">
 								<b><?=$row['accountType']?></b> <!--<i class="fa fa-credit-card card" aria-hidden="true"></i>--><br>
