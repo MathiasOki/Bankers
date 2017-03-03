@@ -33,7 +33,7 @@
                         Saldo på brukskonto
                     </div>
                     <div class="panel-body text-center">
-                        <h1><?=$customClass->makeCurrency(18342.5, NULL)?></h1>
+                        <h2><?=$customClass->makeCurrency(18342.5, NULL)?></h2>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                         Saldo på brukskonto
                     </div>
                     <div class="panel-body text-center">
-                        <h1><?=$customClass->makeCurrency(153498, NULL)?></h1>
+                        <h2><?=$customClass->makeCurrency(153498, NULL)?></h2>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                         Saldo på brukskonto
                     </div>
                     <div class="panel-body text-center">
-                        <h1><?=$customClass->makeCurrency(1542, 12)?></h1>
+                        <h2><?=$customClass->makeCurrency(1542, 12)?></h2>
                     </div>
                 </div>
             </div>
@@ -111,17 +111,18 @@
 								</div>
 							</row>
 						</div>
-					</div>
-
-					<div class="panel-footer">
-						<div class="row">
-							<div class="col-md-10 col-md-offset-0">
-								<button type="submit" class="btn btn-primary">Betal</button>
+						<div class="panel-footer">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-0">
+									<button type="submit" class="btn btn-primary">Betal</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
+
                 </div>
-            
+
 
 
 
@@ -149,7 +150,7 @@
 						<h5>Ny tattovering</h5>
 						<div class="progress">
 							  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-							    15%
+							    90%
 							  </div>
 						</div>
 					</div>
