@@ -120,4 +120,41 @@ class Satan{
 
 		return $data;
 	}
+
+	/**
+ 	 * Transfer
+ 	 *
+ 	 * @identification must be an account number.
+ 	 * @return password in array.
+	 */
+
+	public function transfer($from, $to, $kroner, $ore){
+		if(!empty($from) && !empty($to)){
+			$data = self::$server . '/' . $from . '/' . $to . '/' . $kroner . '/' . $ore;
+		}
+
+		$data = @file_get_contents($data);
+		if($data === FALSE){
+			$error = true;
+			return $error;
+		}
+		else {
+			$data = json_decode($data, true);
+
+			return $data;
+		}
+	}
+
+	/**
+ 	 * Transfer money between accounts
+ 	 *
+ 	 * @identification must be an account number.
+ 	 * @return password in array.
+	 */
+
+	public function internalTransfer($from, $to, $kroner, $ore){
+		$data = $this->transfer($from, $to, $kroner, $ore);
+
+		return $data;
+	}
 }
