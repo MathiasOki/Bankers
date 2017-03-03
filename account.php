@@ -68,7 +68,7 @@
 											Har bankkort
 										</div>
 										<div class="col-md-8">
-											Ja - <a href="#">Se oversikt over bankkort <i class="fa fa-angle-right fa-fw"></i></a>
+											Ja - <a href="cardOverview.php">Se oversikt over bankkort <i class="fa fa-angle-right fa-fw"></i></a>
 										</div>
 									</div>
 
