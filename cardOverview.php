@@ -38,16 +38,25 @@
 						<h4>Student visa</h4>
 					</div>
 					<div class="panel-body">
-						<div class="row border-bottom">
-							<div class="col-md-4">
-								<h1>super fancy CSS kort</h1>
+						<div class="row valign">
+							<div class="col-md-3">
+								<img src="./assets/common/img/dnb-bankkort.jpg" alt="picture of a baccard" class="img-responsive"/>
 							</div>
-							<div class="col-md-8">
-								<p>Korthaver : Haugan, Malin Glosli</p>
-								<p>	Kortnummer : **** **** ***1 2345</p>
-								<p>	Kontonavn : Student Brukskonto</p>
-								<p>	Kontonummer	: 1234.56.78910</p>
-								<p>	Status : Aktivt</p>
+							<div class="col-md-2">
+								<p>Korthaver</p>
+								<p>	Kortnummer</p>
+								<p>	Kontonavn</p>
+								<p>	Kontonummer</p>
+								<p>	Status</p>
+							</div><div class="col-md-4">
+								<p>: Haugan, Malin Glosli</p>
+								<p>: **** **** ***1 2345</p>
+								<p>: Student Brukskonto</p>
+								<p>: 1234.56.78910</p>
+								<p>: Aktivt</p>
+							</div><div class="col-md-3">
+								<button type="button" class="btn btn-default margin-bottom">Erstatt kort</button>
+  								<button type="button" class="btn btn-default">Se pinkode</button>
 							</div>
 						</div>
 					</div>
@@ -55,19 +64,28 @@
 
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h4>Student visa</h4>
+						<h4>Student Mastercard</h4>
 					</div>
 					<div class="panel-body">
-						<div class="row border-bottom">
-							<div class="col-md-4">
-								<h1>super fancy CSS kort</h1>
+						<div class="row valign">
+							<div class="col-md-3">
+								<img src="./assets/common/img/dnb-bankkort.jpg" alt="picture of a baccard" class="img-responsive"/>
 							</div>
-							<div class="col-md-8">
-								<h4>Student Mastercard</h4>
-								<p>Korthaver : Haugan, Malin Glosli</p>
-								<p>	Kortnummer : **** **** ***1 2345</p>
-								<p>	Kontonummer	: 1234.56.78910</p>
-								<p>	Status : Aktivt</p>
+							<div class="col-md-2">
+								<p>Korthaver</p>
+								<p>	Kortnummer</p>
+								<p>	Kontonummer</p>
+								<p>	Status</p>
+							</div>
+							<div class="col-md-4">
+								<p>: Haugan, Malin Glosli</p>
+								<p>: **** **** ***1 2345</p>
+								<p>: 1234.56.78910</p>
+								<p>: Aktivt</p>
+							</div>
+							<div class="col-md-3">
+								<button type="button" class="btn btn-default margin-bottom">Erstatt kort</button>
+  								<button type="button" class="btn btn-default">Se pinkode</button>
 							</div>
 						</div>
 
