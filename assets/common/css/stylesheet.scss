@@ -902,3 +902,49 @@ footer {
 	margin-left: 0;
 	margin-right: 0;
 }
+
+.btn-bankers {
+  color: #FFFFFF;
+  background-color: $primary-color;
+  border-color: #0090C9;
+}
+
+.btn-bankers:hover,
+.btn-bankers:focus,
+.btn-bankers:active,
+.btn-bankers.active,
+.open .dropdown-toggle.btn-bankers {
+  color: #FFFFFF;
+  background-color: $primary-color;
+  border-color: #0090C9;
+}
+
+.btn-bankers:active,
+.btn-bankers.active,
+.open .dropdown-toggle.btn-bankers {
+  background-image: none;
+}
+
+.btn-bankers.disabled,
+.btn-bankers[disabled],
+fieldset[disabled] .btn-bankers,
+.btn-bankers.disabled:hover,
+.btn-bankers[disabled]:hover,
+fieldset[disabled] .btn-bankers:hover,
+.btn-bankers.disabled:focus,
+.btn-bankers[disabled]:focus,
+fieldset[disabled] .btn-bankers:focus,
+.btn-bankers.disabled:active,
+.btn-bankers[disabled]:active,
+fieldset[disabled] .btn-bankers:active,
+.btn-bankers.disabled.active,
+.btn-bankers[disabled].active,
+fieldset[disabled] .btn-bankers.active {
+  background-color: $primary-color; 
+  border-color: #0090C9;
+}
+
+.btn-bankers .badge {
+  color: #00B8FF;
+  background-color: #FFFFFF;
+}
