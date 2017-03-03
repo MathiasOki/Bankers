@@ -55,8 +55,8 @@
 								<p>: 1234.56.78910</p>
 								<p>: Aktivt</p>
 							</div><div class="col-md-3">
-								<button type="button" class="btn btn-default margin-bottom">Erstatt kort</button>
-  								<button type="button" class="btn btn-default">Se pinkode</button>
+								<button type="button" class="btn btn-bankers margin-bottom">Erstatt kort</button>
+  								<button type="button" class="btn btn-bankers">Se pinkode</button>
 							</div>
 						</div>
 					</div>
@@ -84,8 +84,8 @@
 								<p>: Aktivt</p>
 							</div>
 							<div class="col-md-3">
-								<button type="button" class="btn btn-default margin-bottom">Erstatt kort</button>
-  								<button type="button" class="btn btn-default">Se pinkode</button>
+								<button type="button" class="btn btn-bankers margin-bottom">Erstatt kort</button>
+  								<button type="button" class="btn btn-bankers">Se pinkode</button>
 							</div>
 						</div>
 
