@@ -1,4 +1,4 @@
-<footer>
+<footer class="<?=($footerFull == true) ? 'footer-full':'';?>">
 	<div class="row">
 		<div class="col-md-4">
 			<h3 class="logotype">Bænkers</h3>

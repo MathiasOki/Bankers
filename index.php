@@ -193,6 +193,7 @@
 
 
         <?php
+			$footerFull = true;
 			include_once("assets/common/inc/footer.php");
 		?>
     </div><!-- /container -->

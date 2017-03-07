@@ -171,7 +171,7 @@ class Satan{
 	 */
 
 	public function getTransactions($account, $type){
-		if(!empty($from) && !empty($to)){
+		if(!empty($account) && !empty($type)){
 			$data = self::$server . '/' . $account . '/' . $type;
 		}
 
@@ -188,25 +188,25 @@ class Satan{
 	}
 
 	public function getAllTransactions($account){
-		$data = $this->transfer($account, "all");
+		$data = $this->getTransactions($account, "all");
 
 		return $data;
 	}
 
 	public function getCardTransactions($account){
-		$data = $this->transfer($account, "card");
+		$data = $this->getTransactions($account, "card");
 
 		return $data;
 	}
 
 	public function getPaymentTransactions($account){
-		$data = $this->transfer($account, "payment");
+		$data = $this->getTransactions($account, "payment");
 
 		return $data;
 	}
 
 	public function getTransferTransactions($account){
-		$data = $this->transfer($account, "transfer");
+		$data = $this->getTransactions($account, "transfer");
 
 		return $data;
 	}
