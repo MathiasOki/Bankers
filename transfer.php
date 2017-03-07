@@ -207,7 +207,7 @@
 
 												<div class="row padding-bottom">
 													<div class="col-md-12 padding-none">
-														<button type="submit" name="transfer" class="btn btn-primary btn-block">Overfør</button>
+														<button type="submit" name="transfer" class="btn btn-bankers btn-block">Overfør</button>
 													</div>
 												</div>
 											</form>
