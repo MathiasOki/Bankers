@@ -9,16 +9,9 @@
 
 	$logged = $satan->getUser($_SESSION['user']);
 
-	//$account = $_GET['account'];
-
-	if(empty($_GET['account'])) {
-		$result = $satan->getAccounts($logged['customerID']);
-		$account = $result[0]['accountNumber'];
-	} else {
-		$account = trim($_GET['account']);
-		$account = strip_tags($account);
-		$account = htmlspecialchars($account);
-	}
+	$account = trim($_GET['account']);
+	$account = strip_tags($account);
+	$account = htmlspecialchars($account);
 
 	require_once("assets/common/inc/head.php");
 	require_once("assets/common/inc/navbar.php");
@@ -46,7 +39,7 @@
 								$result = $satan->getAccounts($logged['customerID']);
 								foreach($result as $row) {
 							?>
-								<li class="text-center <?=($account == $row['accountNumber']) ? 'active':'';?>"><a href="?account=<?=$row['accountNumber']?>"><?=$row['accountType']?> <br><small class="text-muted" style="font-size:10px;">(<?=$customClass->makeAccountNumber($row['accountNumber'])?>)</small></a></li>
+								<li class="<?=($account == $row['accountNumber']) ? 'active':'';?>"><a href="?account=<?=$row['accountNumber']?>"><?=$row['accountType']?></a></li>
 							<?php
 								}
 							?>
