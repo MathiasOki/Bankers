@@ -1,4 +1,12 @@
 <?php
+
+
+/**
+ * DOCUMENTATION IN THIS DOCUMENT IS NOT LONGER VALID.
+ * PLEASE ASK DEVELOPER ABOUT THIS CODE.
+ */
+
+
 class Satan{
 
     private static $instance;
@@ -124,8 +132,11 @@ class Satan{
 	/**
  	 * Transfer
  	 *
- 	 * @identification must be an account number.
- 	 * @return password in array.
+ 	 * @from must be an account number.
+	 * @to must be an account number.
+	 * @kroner must be an integer.
+	 * @ore must be an integer.
+ 	 * @return true or false.
 	 */
 
 	public function transfer($from, $to, $kroner, $ore){
@@ -145,15 +156,57 @@ class Satan{
 		}
 	}
 
-	/**
- 	 * Transfer money between accounts
- 	 *
- 	 * @identification must be an account number.
- 	 * @return password in array.
-	 */
-
 	public function internalTransfer($from, $to, $kroner, $ore){
 		$data = $this->transfer($from, $to, $kroner, $ore);
+
+		return $data;
+	}
+
+	/**
+ 	 * Get transactions
+ 	 *
+ 	 * @account must be an account number.
+	 * @type must be a valid string.
+ 	 * @return transactions in array.
+	 */
+
+	public function getTransactions($account, $type){
+		if(!empty($from) && !empty($to)){
+			$data = self::$server . '/' . $account . '/' . $type;
+		}
+
+		$data = @file_get_contents($data);
+		if($data === FALSE){
+			$error = true;
+			return $error;
+		}
+		else {
+			$data = json_decode($data, true);
+
+			return $data;
+		}
+	}
+
+	public function getAllTransactions($account){
+		$data = $this->transfer($account, "all");
+
+		return $data;
+	}
+
+	public function getCardTransactions($account){
+		$data = $this->transfer($account, "card");
+
+		return $data;
+	}
+
+	public function getPaymentTransactions($account){
+		$data = $this->transfer($account, "payment");
+
+		return $data;
+	}
+
+	public function getTransferTransactions($account){
+		$data = $this->transfer($account, "transfer");
 
 		return $data;
 	}
