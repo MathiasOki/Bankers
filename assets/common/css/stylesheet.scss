@@ -119,6 +119,20 @@ h6.border:after {
 	margin-right: 0 !important;
 }
 
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #000;
+    background: #f0fbff;
+    border: 1px solid $primary-color;
+}
+
+.nav-pills > li > a {
+    border: 1px solid transparent;
+}
+
+.nav-pills > li > a:hover, .nav-pills > li > a:focus {
+	border: 1px solid #eee;
+}
+
 .support-btn {
 	position: fixed;
 	bottom: 15px;
