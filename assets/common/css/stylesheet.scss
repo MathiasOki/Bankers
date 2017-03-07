@@ -101,8 +101,22 @@ h6.border:after {
 	padding: 0;
 }
 
-.container-fluid.content-padding footer {
-	margin-left: -15px;
+.container-fluid.full-white {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.margin-invert > [class*=col]:first-child {
+	padding-left: 0;
+}
+
+.margin-invert > [class*=col]:last-child {
+	padding-right: 0;
+}
+
+.margin-invert {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 }
 
 .support-btn {
@@ -892,7 +906,7 @@ a.list-group-item:focus {
 }
 
 footer {
-    margin: 0px -15px -15px 0;
+    /*margin: 0px -15px -15px 0;*/
     background: white;
     padding: 25px 15px 15px;
     border-top: 1px solid #dae1e9;
@@ -940,7 +954,7 @@ fieldset[disabled] .btn-bankers:active,
 .btn-bankers.disabled.active,
 .btn-bankers[disabled].active,
 fieldset[disabled] .btn-bankers.active {
-  background-color: $primary-color; 
+  background-color: $primary-color;
   border-color: #0090C9;
 }
 
