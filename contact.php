@@ -28,7 +28,9 @@
 	<div class="right-side container-fluid content-padding">
 		<div class="row margin-bottom padding-bottom padding-top">
 			<div class="col-md-12">
-				<img class="img-responsive" src="assets/common/img/contact.png">
+				<img class="img-responsive padding-bottom" src="assets/common/img/contact.png">
+				<p class="lead text-center margin-top margin-bottom padding-top">Vi gjør vårt beste for å svare på din henvendelse så fort som mulig. Ring eller chat med oss, alle dager hele døgnet. Vi hjelper deg gjerne!
+</p>
 			</div>
 		</div>
 

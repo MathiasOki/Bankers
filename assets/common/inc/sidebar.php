@@ -36,12 +36,12 @@
 		</ul>
 
 		<div class="accounts">
-			<div class="row accounts-title valign">
+			<div class="row accounts-title valign margin-bottom">
 				<div class="col-xs-10">
 					<h1>Dine kontoer</h1>
 				</div>
 				<div class="col-xs-2">
-					<a href="addAccountOverview.php"><i class="fa fa-plus-circle pull-right"></i></a>
+					<a href="addAccountOverview.php"><i class="fa fa-plus pull-right"></i></a>
 				</div>
 			</div>
 			<ul>
