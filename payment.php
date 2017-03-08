@@ -1,92 +1,92 @@
 <?php
-require_once("global/config.php");
+	require_once("global/config.php");
 
-// if session is not set this will redirect to login page
-if( !isset($_SESSION['user']) ) {
-	header("Location: login.php");
-	exit;
-}
-
-$logged = $satan->getUser($_SESSION['user']);
-
-require_once("assets/common/inc/head.php");
-//require_once("assets/common/inc/header.php");
-require_once("assets/common/inc/navbar.php");
-
-$error = false;
-
-function countDigits($str)
-{
-    return preg_match_all( "/[0-9]/", $str);
-}
-
-if( isset($_POST['transfer']) ) {
-
-	// prevent injections/ clear user invalid inputs
-	$from = trim($_POST['accountFrom']);
-	$from = strip_tags($from);
-	$from = htmlspecialchars($from);
-
-	$to = trim($_POST['accountTo']);
-	$to = strip_tags($to);
-	$to = htmlspecialchars($to);
-
-	$msg = trim($_POST['message']);
-	$msg = rawurlencode($msg);
-
-	$kroner = trim($_POST['kroner']);
-	$kroner = strip_tags($kroner);
-	$kroner = htmlspecialchars($kroner);
-
-	$ore = trim($_POST['ore']);
-	$ore = strip_tags($ore);
-	$ore = htmlspecialchars($ore);
-
-	if(empty($from)){
-		$error = true;
-		$errorMessage = "Du må skrive inn fra-konto.";
+	// if session is not set this will redirect to login page
+	if( !isset($_SESSION['user']) || $satan->checkServer() != true) {
+		header("Location: logout.php");
+		exit;
 	}
 
-	if(empty($to)){
-		$error = true;
-		$errorMessage = "Du må skrive inn til-konto.";
+	$logged = $satan->getUser($_SESSION['user']);
+
+	require_once("assets/common/inc/head.php");
+	//require_once("assets/common/inc/header.php");
+	require_once("assets/common/inc/navbar.php");
+
+	$error = false;
+
+	function countDigits($str)
+	{
+	    return preg_match_all( "/[0-9]/", $str);
 	}
 
-	if(empty($msg)){
-		$msg = "%20";
-	}
+	if( isset($_POST['transfer']) ) {
 
-	if(countDigits($to) < 11){
-		$error = true;
-		$errorMessage = "Kononummeret eksisterer ikke.";
-	}
+		// prevent injections/ clear user invalid inputs
+		$from = trim($_POST['accountFrom']);
+		$from = strip_tags($from);
+		$from = htmlspecialchars($from);
 
-	if(empty($kroner)){
+		$to = trim($_POST['accountTo']);
+		$to = strip_tags($to);
+		$to = htmlspecialchars($to);
 
-		$kroner = 0;
+		$msg = trim($_POST['message']);
+		$msg = rawurlencode($msg);
 
-		//$error = true;
-		//$errorMessage = "Du må skrive inn kroner.";
-	}
+		$kroner = trim($_POST['kroner']);
+		$kroner = strip_tags($kroner);
+		$kroner = htmlspecialchars($kroner);
 
-	if(empty($ore)){
-		$error = true;
-		$errorMessage = "Du må skrive inn øre.";
-	}
+		$ore = trim($_POST['ore']);
+		$ore = strip_tags($ore);
+		$ore = htmlspecialchars($ore);
 
-	if(!$error){
-
-		$data = $satan->payment($msg, $from, $to, $kroner, $ore);
-
-		if ($data == true) {
-			$successMessage = "Pengene er overført.";
-		}
-		if ($data == false) {
+		if(empty($from)){
 			$error = true;
-			$errorMessage = "En feil skjedde. Prøv igjen.";
+			$errorMessage = "Du må skrive inn fra-konto.";
+		}
+
+		if(empty($to)){
+			$error = true;
+			$errorMessage = "Du må skrive inn til-konto.";
+		}
+
+		if(empty($msg)){
+			$msg = "%20";
+		}
+
+		if(countDigits($to) < 11){
+			$error = true;
+			$errorMessage = "Kononummeret eksisterer ikke.";
+		}
+
+		if(empty($kroner)){
+
+			$kroner = 0;
+
+			//$error = true;
+			//$errorMessage = "Du må skrive inn kroner.";
+		}
+
+		if(empty($ore)){
+			$error = true;
+			$errorMessage = "Du må skrive inn øre.";
+		}
+
+		if(!$error){
+
+			$data = $satan->payment($msg, $from, $to, $kroner, $ore);
+
+			if ($data == true) {
+				$successMessage = "Pengene er overført.";
+			}
+			if ($data == false) {
+				$error = true;
+				$errorMessage = "En feil skjedde. Prøv igjen.";
+			}
 		}
 	}
-}
 ?>
 <div class="flex-container">
 

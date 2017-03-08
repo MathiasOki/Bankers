@@ -2,8 +2,8 @@
     require_once("global/config.php");
 
 	// if session is not set this will redirect to login page
-	if( !isset($_SESSION['user']) ) {
-		header("Location: login.php");
+	if( !isset($_SESSION['user']) || $satan->checkServer() != true) {
+		header("Location: logout.php");
 		exit;
 	}
 
