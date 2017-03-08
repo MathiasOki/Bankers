@@ -31,6 +31,9 @@ if( isset($_POST['transfer']) ) {
 	$to = strip_tags($to);
 	$to = htmlspecialchars($to);
 
+	$msg = trim($_POST['message']);
+	$msg = rawurlencode($msg);
+
 	$kroner = trim($_POST['kroner']);
 	$kroner = strip_tags($kroner);
 	$kroner = htmlspecialchars($kroner);
@@ -47,6 +50,10 @@ if( isset($_POST['transfer']) ) {
 	if(empty($to)){
 		$error = true;
 		$errorMessage = "Du må skrive inn til-konto.";
+	}
+
+	if(empty($msg)){
+		$msg = "%20";
 	}
 
 	if(countDigits($to) < 11){
@@ -69,7 +76,7 @@ if( isset($_POST['transfer']) ) {
 
 	if(!$error){
 
-		$data = $satan->payment($from, $to, $kroner, $ore);
+		$data = $satan->payment($msg, $from, $to, $kroner, $ore);
 
 		if ($data == true) {
 			$successMessage = "Pengene er overført.";
@@ -158,7 +165,7 @@ if( isset($_POST['transfer']) ) {
 
 									<div class="form-group">
 										<label for="message">Melding</label>
-										<textarea class="form-control" rows="5"></textarea>
+										<textarea class="form-control" rows="5" name="message"></textarea>
 									</div>
 
 									<hr>

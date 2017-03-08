@@ -2,14 +2,12 @@
     require_once("global/config.php");
 
 	// if session is not set this will redirect to login page
-	if( !isset($_SESSION['user']) ) {
-		header("Location: login.php");
+	if( !isset($_SESSION['user']) || $satan->checkServer() == false) {
+		header("Location: logout.php");
 		exit;
 	}
 
 	$logged = $satan->getUser($_SESSION['user']);
-
-	//$account = $_GET['account'];
 
 	if(empty($_GET['account'])) {
 		$result = $satan->getAccounts($logged['customerID']);
@@ -60,7 +58,37 @@
 							<div class="col-md-12 padding-all margin-bottom">
 								<div class="tab-content">
 									<div class="tab-pane panel-form active" id="kortbeveglser">
-										lorem 0
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th>Dato</th>
+													<th>Tidspunkt</th>
+													<!--<th>Kontonummer</th>-->
+													<th>Kjøpested</th>
+													<th>Beløp</th>
+												</tr>
+											</thead>
+											<tbody>
+												<?php
+													$result = $satan->getCardTransactions($account);
+													foreach ($result as $row) {
+												?>
+													<tr>
+														<td><?=date('m.d.y', $row['timestamp'])?></td>
+														<td><?=date('H:i:s', $row['timestamp'])?></td>
+														<!--<td><?=$row['recievingAccount']?></td> -->
+														<td><?=$row['message_kid']?></td>
+														<?php
+															if($row['recievingAccount'] != $account){
+																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+															}
+														?>
+													</tr>
+												<?php
+													}
+												?>
+											</tbody>
+										</table>
 									</div>
 									<div class="tab-pane panel-form" id="betalingsbevegelser">
 										<table class="table table-striped">
@@ -101,7 +129,53 @@
 										</table>
 									</div>
 									<div class="tab-pane panel-form" id="allebevegelser">
-										lorem 2
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th>Dato</th>
+													<th>Tidspunkt</th>
+													<!--<th>Kontonummer</th>-->
+													<th>Type transaksjon</th>
+													<th>Melding/Kjøpested</th>
+													<th>Beløp inn</th>
+													<th>Beløp ut</th>
+												</tr>
+											</thead>
+											<tbody>
+												<?php
+													$result = $satan->getAllTransactions($account);
+													foreach ($result as $row) {
+												?>
+													<tr>
+														<td><?=date('m.d.y', $row['timestamp'])?></td>
+														<td><?=date('H:i:s', $row['timestamp'])?></td>
+														<?php
+															if($row['transactionType'] == "payment"){
+																echo ('<td>Betaling via nettbank</td>');
+															}
+															if($row['transactionType'] == "card"){
+																echo ('<td>Betaling med kort</td>');
+															}
+															if($row['transactionType'] == "transfer"){
+																echo ('<td>Overføring mellom kontoer</td>');
+															}
+														?>
+														<td><?=$row['message_kid']?></td>
+														<?php
+															if($row['recievingAccount'] != $account){
+																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+																echo ('<td></td>');
+															} else {
+																echo ('<td></td>');
+																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+															}
+														?>
+													</tr>
+												<?php
+													}
+												?>
+											</tbody>
+										</table>
 									</div>
 								</div>
 							</div>

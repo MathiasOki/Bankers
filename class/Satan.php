@@ -24,6 +24,15 @@ class Satan{
 
     }
 
+	public function checkServer(){
+		$host = self::$server;
+		if($socket =@ fsockopen($host, 80, $errno, $errstr, 30)){
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	/**
  	 * Method for getting data from server and convert to array.
  	 *
@@ -139,9 +148,9 @@ class Satan{
  	 * @return true or false.
 	 */
 
-	public function transfer($from, $to, $kroner, $ore){
+	public function transfer($msg, $from, $to, $kroner, $ore){
 		if(!empty($from) && !empty($to)){
-			$data = self::$server . '/' . $from . '/' . $to . '/' . $kroner . '/' . $ore;
+			$data = self::$server . 'sendmoney/' . $msg . '/' . $from . '/' . $to . '/' . $kroner . '/' . $ore;
 		}
 
 		$data = @file_get_contents($data);
@@ -156,14 +165,14 @@ class Satan{
 		}
 	}
 
-	public function internalTransfer($from, $to, $kroner, $ore){
-		$data = $this->transfer($from, $to, $kroner, $ore);
+	public function internalTransfer($msg, $from, $to, $kroner, $ore){
+		$data = $this->transfer($msg, $from, $to, $kroner, $ore);
 
 		return $data;
 	}
 
-	public function payment($from, $to, $kroner, $ore){
-		$data = $this->transfer($from, $to, $kroner, $ore);
+	public function payment($msg, $from, $to, $kroner, $ore){
+		$data = $this->transfer($msg, $from, $to, $kroner, $ore);
 
 		return $data;
 	}
