@@ -30,11 +30,7 @@
             <div class="col-md-8">
 				<div class="panel panel-default">
                     <div class="panel-heading">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#" data-toggle="tab">Betale</a></li>
-							<li><a href="#" data-toggle="tab">Overføre</a></li>
-							<li><a href="#" data-toggle="tab">VIPPS</a></li>
-						</ul>
+						<h3>Sett opp ny fast betaling</h3>
                     </div>
 
 					<div class="panel-body">
