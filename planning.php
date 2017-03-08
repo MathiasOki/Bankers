@@ -35,76 +35,39 @@
 				<div class="panel panel-default panel-white">
 					<div class="panel-heading">
 						<ul class="nav nav-tabs">
-							<?php
-								$result = $satan->getAccounts($logged['customerID']);
-								foreach($result as $row) {
-							?>
-								<li class="<?=($account == $row['accountNumber']) ? 'active':'';?>"><a href="?account=<?=$row['accountNumber']?>"><?=$row['accountType']?></a></li>
-							<?php
-								}
-							?>
+							<li><a href="#">Budsjett</a></li>
+							<li><a href="#">Spare</a></li>
+							<li><a href="#">Fast betaling</a></li>
 						</ul>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row margin-invert">
+			<div class="col-md-8">
+				<div class="panel panel-default panel-white">
 					<div class="panel-body padding-none">
 						<div class="row">
-							<div class="col-md-12 padding-all margin-bottom border-bottom">
-								<ul class="nav nav-pills">
-									<li class="active"><a href="#kortbeveglser" data-toggle="tab">Kortbeveglser</a></li>
-									<li><a href="#betalingsbevegelser" data-toggle="tab">Betalingsbevegelser</a></li>
-									<li><a href="#allebevegelser" data-toggle="tab">Alle bevegelser</a></li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-12 padding-all margin-bottom">
-								<div class="tab-content">
-									<div class="tab-pane panel-form active" id="kortbeveglser">
-										<table class="table table-striped">
-											<thead>
-												<tr>
-													<th>Dato</th>
-													<th>Tidspunkt</th>
-													<th>Mottaker/Avsender</th>
-													<th>Melding</th>
-													<th>Beløp inn</th>
-													<th>Beløp ut</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>02.03.17</td>
-													<td>14:57</td>
-													<td>Malin Glosli Haugan</td>
-													<td>For pizza</td>
-													<td>98,-</td>
-													<td></td>
-												</tr>
-												<tr>
-													<td>02.03.17</td>
-													<td>11:12</td>
-													<td>Eva Maria Dahlø</td>
-													<td>For Pepsi Max</td>
-													<td></td>
-													<td>10,-</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="tab-pane panel-form" id="betalingsbevegelser">
-										lorem 1
-									</div>
-									<div class="tab-pane panel-form" id="allebevegelser">
-										lorem 2
-									</div>
-								</div>
+							<div class="col-md-12">
+								<h3>Budsjett</h3>
+								<canvas id="myChart" width="100" height="100"></canvas>
 							</div>
 						</div>
 					</div>
 				</div>
 	        </div>
+			<div class="col-md-4">
+				<div class="panel panel-default panel-white">
+					<div class="panel-body padding-none">
+						<div class="row">
+							<div class="col-md-12">
+								<canvas id="myPieChart" width="100" height="100"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-
         <?php
 			include_once("assets/common/inc/footer.php");
 		?>
@@ -114,5 +77,64 @@
     <?php
 		include_once("assets/common/inc/scripts.php");
 	?>
+
+	<script>
+        var ctx = document.getElementById("myChart");
+		var myPieChart = new Chart(ctx,{
+		    type: 'pie',
+			data: {
+                labels: [],
+                datasets: [{
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+						'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ]
+                }]
+            },
+		});
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+
+    </script>
+
 </body>
 </html>
