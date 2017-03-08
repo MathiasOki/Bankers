@@ -83,7 +83,7 @@
 											</thead>
 											<tbody>
 												<?php
-													$result = $satan->getTransactions(76565184080, "payment");
+													$result = $satan->getPaymentTransactions($account);
 													foreach ($result as $row) {
 												?>
 													<tr>

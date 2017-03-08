@@ -162,6 +162,12 @@ class Satan{
 		return $data;
 	}
 
+	public function payment($from, $to, $kroner, $ore){
+		$data = $this->transfer($from, $to, $kroner, $ore);
+
+		return $data;
+	}
+
 	/**
  	 * Get transactions
  	 *
