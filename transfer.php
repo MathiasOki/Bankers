@@ -90,7 +90,7 @@ if( isset($_POST['transfer']) ) {
 				<div class="panel panel-default panel-white">
 					<div class="panel-heading">
 						<ul class="nav nav-tabs">
-							<li><a href="payment.php">Betaling</a></li>
+							<li><a href="payment.php">Betale</a></li>
 							<li class="active"><a href="transfer.php">Overføre</a></li>
 							<li><a href="vipps.php">Vipps</a></li>
 						</ul>
@@ -130,6 +130,7 @@ if( isset($_POST['transfer']) ) {
 											<div class="form-group">
 												<label for="accountFrom">Fra konto</label>
 												<select class="form-control" name="accountFrom" required="">
+													<option selected disabled>Velg konto</option>
 													<?php
 														$result = $satan->getAccounts($logged['customerID']);
 														foreach($result as $row) {
@@ -146,6 +147,7 @@ if( isset($_POST['transfer']) ) {
 											<div class="form-group">
 												<label for="accountTo">Til konto</label>
 												<select class="form-control" name="accountTo" required="">
+													<option selected disabled>Velg konto</option>
 													<?php
 														$result = $satan->getAccounts($logged['customerID']);
 														foreach($result as $row) {
