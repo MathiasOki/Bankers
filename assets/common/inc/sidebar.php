@@ -21,7 +21,7 @@
 			</li>
 
 			<li>
-				<a href="#">
+				<a href="planning.php">
 					<i class="fa fa-bar-chart fa-fw" aria-hidden="true"></i> Planlegge
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
