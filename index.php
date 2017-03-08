@@ -66,7 +66,6 @@
                     </div>
 
 					<div class="panel-body">
-						<form>
 							<row>
 								<div class="form-group col-md-6">
 								  <label for="tlf">Fra konto</label>

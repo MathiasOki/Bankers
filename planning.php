@@ -27,7 +27,7 @@
 						<ul class="nav nav-tabs">
 							<li><a href="#">Budsjett</a></li>
 							<li><a href="#">Spare</a></li>
-							<li><a href="#">Fast betaling</a></li>
+							<li><a href="regularPayment.php">Fast betaling</a></li>
 						</ul>
 					</div>
 				</div>

@@ -2,12 +2,12 @@
     require_once("global/config.php");
 
 	// if session is not set this will redirect to login page
-	/*if( !isset($_SESSION['user']) ) {
+	if( !isset($_SESSION['user']) ) {
 		header("Location: login.php");
 		exit;
-	}*/
+	}
 
-	//$logged = $satan->getUser($_SESSION['user']);
+	$logged = $satan->getUser($_SESSION['user']);
 
 	require_once("assets/common/inc/head.php");
 	//require_once("assets/common/inc/header.php");
@@ -25,181 +25,78 @@
 	<?php
 		require_once("assets/common/inc/sidebar.php");
 	?>
-
 	<div class="right-side container-fluid content-padding">
         <div class="row">
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Saldo på brukskonto
-                    </div>
-                    <div class="panel-body text-center">
-                        <h1><?=$customClass->makeCurrency(18342.5, NULL)?></h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Saldo på brukskonto
-                    </div>
-                    <div class="panel-body text-center">
-                        <h1><?=$customClass->makeCurrency(153498, NULL)?></h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Saldo på brukskonto
-                    </div>
-                    <div class="panel-body text-center">
-                        <h1><?=$customClass->makeCurrency(1542, 12)?></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
             <div class="col-md-8">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-						<ul class="nav nav-pills">
-						  <li role="presentation" class="active"><a href="#">Betale</a></li>
-						  <li role="presentation"><a href="#">Overføre</a></li>
-						</ul>
-                    </div>
-					<form>
-						<div class="form-group">
-						  <label for="tlf">Telefonnummer</label>
-						  <input type="number" class="form-control" id="tlf" placeholder="Eks.: 543 45 321" required="">
-						</div>
-
-						<div class="form-group">
-						  <label for="sum">Beløp</label>
-						  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-						</div>
-
-						<div class="form-group">
-						  <label for="sum">Beløp</label>
-						  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-						</div>
-
-						<div class="form-group">
-						  <label for="sum">Beløp</label>
-						  <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-						</div>
-					</form>
-					<div class="panel-footer">
-						<div class="row">
-							<div class="col-md-10 col-md-offset-0">
-								<button type="submit" class="btn btn-primary">Betal</button>
-							</div>
-						</div>
-					</div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-					<div class="panel-heading">
-                        Vipps
-                    </div>
-                    <div class="panel-body">
-                        <form>
-                            <div class="form-group">
-                              <label for="tlf">Telefonnummer</label>
-                              <input type="number" class="form-control" id="tlf" placeholder="Eks.: 543 45 321" required="">
-                            </div>
-
-                            <div class="form-group">
-                              <label for="sum">Beløp</label>
-                              <input type="number" class="form-control" id="sum" placeholder="Eks.: 100" required="">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
 				<div class="panel panel-default">
-					<div class="panel-heading">
+                    <div class="panel-heading">
 						<ul class="nav nav-tabs">
-							<li class="active"><a href="#tid" data-toggle="tab">tID</a></li>
-							<li><a href="#tbank" data-toggle="tab">T-Bank</a></li>
-							<li><a href="#oiu" data-toggle="tab">Oiu</a></li>
+							<li class="active"><a href="#" data-toggle="tab">Betale</a></li>
+							<li><a href="#" data-toggle="tab">Overføre</a></li>
+							<li><a href="#" data-toggle="tab">VIPPS</a></li>
 						</ul>
-					</div>
-					<form rel="form">
-						<div class="tab-content">
-							<div class="tab-pane panel-form active" id="tid">
-								<div class="panel-body padding-none">
-									<div class="row valign margin-none border-bottom">
-										<div class="col-md-4 text-right border-right padding-all">
-											Brukerpanel
-										</div>
-										<div class="col-md-8 padding-all">
-											<div class="radio">
-												<label>
-													<input type="radio" name="transasksjonspanel" value="1" checked>
-													Ja
-												</label>
-											</div>
+                    </div>
 
-											<div class="radio">
-												<label>
-													<input type="radio" name="transasksjonspanel" value="0">
-													Nei
-												</label>
-											</div>
-										</div>
-									</div>
-
-									<div class="row valign margin-none">
-										<div class="col-md-4 text-right border-right padding-all">
-											Tilgangsrettigheter
-										</div>
-										<div class="col-md-8 padding-all">
-											<div class="radio">
-												<label>
-													<input type="radio" name="tilgangsrettigheter" value="1" checked>
-													Ja
-												</label>
-											</div>
-
-											<div class="radio">
-												<label>
-													<input type="radio" name="tilgangsrettigheter" value="0">
-													Nei
-												</label>
-											</div>
-										</div>
-									</div>
+					<div class="panel-body">
+							<row>
+								<div class="form-group col-md-6">
+								  <label for="tlf">Fra konto</label>
+								  <input type="number" class="form-control" id="tlf" placeholder="Skriv eller søk..." required="">
 								</div>
-							</div>
 
-							<div class="tab-pane panel-form" id="tbank">
-								<div class="panel-body padding-none">
-									T-Bank
+								<div class="form-group col-md-6">
+								  <label for="sum">Til konto</label>
+								  <input type="number" class="form-control" id="sum" placeholder="Skriv eller søk...." required="">
 								</div>
-							</div>
+							</row>
 
-							<div class="tab-pane panel-form" id="oiu">
-								<div class="tab-pane" id="tbank">
-									Oiu
+
+							<row>
+								<div class="form-group col-md-8">
+								  <label for="sum">KID/melding</label>
+								  <input type="number" class="form-control" id="sum" placeholder="skriv her..." required="">
 								</div>
-							</div>
+
+								<div class="form-group col-md-4">
+								  <label for="sum">Beløp</label>
+								  <input type="number" class="form-control" placeholder="00.00" required="">
+								</div>
+							</row>
+
+							<row>
+								<div class="form-group col-md-8">
+								  <label for="sum">Motakers navn</label>
+								  <input type="number" class="form-control" placeholder="Navn navnesen..." required="">
+								</div>
+
+								<div class="form-group col-md-4">
+								  <label for="sum">dato</label>
+								  <input type="number" class="form-control" placeholder="dd/mm/yyyy..." required="">
+								</div>
+							</row>
 						</div>
-
 						<div class="panel-footer">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-0">
-									<button type="submit" class="btn btn-primary">Lagre rettigheter</button>
-									<button type="reset" class="btn btn-link">Avbryt</button>
+									<button type="submit" class="btn btn-primary">Betal</button>
 								</div>
 							</div>
 						</div>
-					</form>
-				</div>
+					</div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+					<div class="panel-heading">
+                        Faste betalinger
+                    </div>
+                    <div class="panel-body">
+                        <p>
+							Faste betalinger gjør at du kan sette overføringer og betalinger så de går automatisk. Disse kan du foreksempel sette opp på dagen i måneden du får lønn. Da slipper du å manuelt flytte pengene mellom kontoer.
+						</p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
