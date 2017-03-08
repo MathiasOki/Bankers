@@ -25,8 +25,8 @@ class Satan{
     }
 
 	public function checkServer(){
-		$host = self::$server;
-		if($socket =@ fsockopen($host, 80, $errno, $errstr, 30)){
+		$host = self::$server . '/check';
+		if($host == true){
 			return true;
 		} else {
 			return false;
