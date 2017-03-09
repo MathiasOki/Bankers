@@ -21,35 +21,231 @@
 	<div class="right-side container-fluid content-padding">
         <div class="row">
             <div class="col-md-4">
-                <div class="panel panel-default">
+                <div class="panel panel-default" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                     <div class="panel-heading">
                         Saldo på brukskonto
                     </div>
                     <div class="panel-body text-center">
                         <h2><?=$customClass->makeCurrency(18342.5, NULL)?></h2>
+						<div class="collapse" id="collapse1">
+							  <table class="table table-striped">
+								<thead>
+									<th>Tid</th>
+									<th>Type</th>
+									<th>Beløp</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+								</tbody>
+							  </table>
+						</div>
                     </div>
+					<div class="panel-footer text-center">
+						<p><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
+					</div>
+
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="panel panel-default">
+                <div class="panel panel-default"data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                     <div class="panel-heading">
                         Saldo på brukskonto
                     </div>
                     <div class="panel-body text-center">
                         <h2><?=$customClass->makeCurrency(153498, NULL)?></h2>
+						<div class="collapse" id="collapse2">
+							  <table class="table table-striped">
+								<thead>
+									<th>Tid</th>
+									<th>Type</th>
+									<th>Beløp</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+								</tbody>
+							  </table>
+						</div>
                     </div>
+					<div class="panel-footer text-center">
+						<p><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
+					</div>
+
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="panel panel-default">
+                <div class="panel panel-default"data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                     <div class="panel-heading">
                         Saldo på brukskonto
                     </div>
                     <div class="panel-body text-center">
                         <h2><?=$customClass->makeCurrency(1542, 12)?></h2>
+						<div class="collapse" id="collapse3">
+							  <table class="table table-striped">
+								<thead>
+									<th>Tid</th>
+									<th>Type</th>
+									<th>Beløp</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+									<tr>
+										<td>09.03.2017</td>
+										<td>Visa</td>
+										<td>123,-</td>
+									</tr>
+								</tbody>
+							  </table>
+						</div>
                     </div>
+					<div class="panel-footer text-center">
+						<p><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
+					</div>
+
+
                 </div>
             </div>
         </div>
