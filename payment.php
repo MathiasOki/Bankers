@@ -42,6 +42,12 @@
 		$ore = strip_tags($ore);
 		$ore = htmlspecialchars($ore);
 
+		if(empty($_POST['recurring'])){
+			$recurring = 0;
+		} else {
+			$recurring = $_POST['recurring'];
+		}
+
 		if(empty($from)){
 			$error = true;
 			$errorMessage = "Du må skrive inn fra-konto.";
@@ -75,13 +81,14 @@
 		}
 
 		if(!$error){
+			$interval = 0;
+			$endDate = 0;
 
-			$data = $satan->payment($msg, $from, $to, $kroner, $ore);
+			$data = $satan->payment($msg, $from, $to, $kroner, $ore, $recurring, $interval, $endDate);
 
 			if ($data == true) {
 				$successMessage = "Pengene er overført.";
-			}
-			if ($data == false) {
+			} else {
 				$error = true;
 				$errorMessage = "En feil skjedde. Prøv igjen.";
 			}
@@ -179,7 +186,7 @@
 
 											<div class="form-group">
 												<label for="">Er dette en fast overføring?</label><br>
-												<input type="checkbox" data-toggle="toggle" data-on="Ja" data-off="Nei" name="recurring">
+												<input type="checkbox" data-toggle="toggle" data-on="Ja" data-off="Nei" name="recurring" value="1">
 											</div>
 										</div>
 

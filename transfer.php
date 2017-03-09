@@ -65,7 +65,6 @@
 		}
 
 		if(!$error){
-
 			$data = $satan->internalTransfer($msg, $from, $to, $kroner, $ore);
 
 			if ($data == true) {

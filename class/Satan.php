@@ -148,9 +148,9 @@ class Satan{
  	 * @return true or false.
 	 */
 
-	public function transfer($msg, $from, $to, $kroner, $ore){
+	public function transfer($msg, $from, $to, $kroner, $ore, $recurring, $inteval, $endDate){
 		if(!empty($from) && !empty($to)){
-			$data = self::$server . 'sendmoney/' . $msg . '/' . $from . '/' . $to . '/' . $kroner . '/' . $ore;
+			$data = self::$server . 'sendmoney/' . $msg . '/' . $from . '/' . $to . '/' . $kroner . '/' . $ore . '/' . $recurring . '/' . $inteval . '/' . $endDate;
 		}
 
 		$data = @file_get_contents($data);
@@ -166,13 +166,17 @@ class Satan{
 	}
 
 	public function internalTransfer($msg, $from, $to, $kroner, $ore){
-		$data = $this->transfer($msg, $from, $to, $kroner, $ore);
+		$recurring = 0;
+		$inteval = 0;
+		$endDate = 0;
+
+		$data = $this->transfer($msg, $from, $to, $kroner, $ore, $recurring, $inteval, $endDate);
 
 		return $data;
 	}
 
-	public function payment($msg, $from, $to, $kroner, $ore){
-		$data = $this->transfer($msg, $from, $to, $kroner, $ore);
+	public function payment($msg, $from, $to, $kroner, $ore, $recurring, $inteval, $endDate){
+		$data = $this->transfer($msg, $from, $to, $kroner, $ore, $recurring, $inteval, $endDate);
 
 		return $data;
 	}
