@@ -66,7 +66,7 @@
                     </div>
 
 					<div class="panel-body">
-							<row>
+							<div class="row">
 								<div class="form-group col-md-6">
 								  <label for="tlf">Fra konto</label>
 								  <input type="number" class="form-control" id="tlf" placeholder="Skriv eller søk..." required="">
@@ -76,10 +76,10 @@
 								  <label for="sum">Til konto</label>
 								  <input type="number" class="form-control" id="sum" placeholder="Skriv eller søk...." required="">
 								</div>
-							</row>
+							</div>
 
 
-							<row>
+							<div class="row">
 								<div class="form-group col-md-8">
 								  <label for="sum">KID/melding</label>
 								  <input type="number" class="form-control" id="sum" placeholder="skriv her..." required="">
@@ -89,9 +89,9 @@
 								  <label for="sum">Beløp</label>
 								  <input type="number" class="form-control" placeholder="00.00" required="">
 								</div>
-							</row>
+							</div>
 
-							<row>
+							<div class="row">
 								<div class="form-group col-md-8">
 								  <label for="sum">Motakers navn</label>
 								  <input type="number" class="form-control" placeholder="Navn navnesen..." required="">
@@ -101,7 +101,7 @@
 								  <label for="sum">dato</label>
 								  <input type="number" class="form-control" placeholder="dd/mm/yyyy..." required="">
 								</div>
-							</row>
+							</div>
 						</div>
 						<div class="panel-footer">
 							<div class="row">
@@ -111,8 +111,6 @@
 							</div>
 						</div>
 					</div>
-
-
                 </div>
 
 
