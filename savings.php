@@ -273,6 +273,74 @@
 										</div><!--end panel body-->
 									</div><!--end panel-->
 								</div>
+								<div class="col-md-6">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Sparekonto
+										</div>
+										<div class="panel-body">
+
+										</div>
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-md-10 col-md-offset-0">
+													<button type="submit" class="btn btn-bankers">Opprett sparekonto</button>
+												</div>
+											</div><!--end row-->
+										</div><!--end panel footer-->
+									</div><!--end panel-->
+								</div><!--end col-->
+								<div class="col-md-6">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Sparekonto 2
+										</div>
+										<div class="panel-body">
+
+										</div>
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-md-10 col-md-offset-0">
+													<button type="submit" class="btn btn-bankers">Opprett sparekonto</button>
+												</div>
+											</div><!--end row-->
+										</div><!--end panel footer-->
+									</div><!--end panel-->
+								</div><!--end col-->
+								<div class="col-md-6">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											BSU
+										</div>
+										<div class="panel-body">
+
+										</div>
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-md-10 col-md-offset-0">
+													<button type="submit" class="btn btn-bankers">Opprett sparekonto</button>
+												</div>
+											</div><!--end row-->
+										</div><!--end panel footer-->
+									</div><!--end panel-->
+								</div><!--end col-->
+								<div class="col-md-6">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											BSU 2.0
+										</div>
+										<div class="panel-body">
+
+										</div>
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-md-10 col-md-offset-0">
+													<button type="submit" class="btn btn-bankers">Opprett sparekonto</button>
+												</div>
+											</div><!--end row-->
+										</div><!--end panel footer-->
+									</div><!--end panel-->
+								</div><!--end col-->
 							</div><!--end tab pane-->
 						</div><!--end tab content-->
 		        </div>
