@@ -14,7 +14,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="transfer.php">
+				<a href="payment.php">
 					<i class="fa fa-exchange fa-fw" aria-hidden="true"></i> Flytte penger
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>

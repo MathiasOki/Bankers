@@ -47,9 +47,9 @@
 						<div class="row">
 							<div class="col-md-12 padding-all margin-bottom border-bottom">
 								<ul class="nav nav-pills">
-									<li class="active"><a href="#kortbeveglser" data-toggle="tab">Kortbeveglser</a></li>
+									<li class="active"><a href="#allebevegelser" data-toggle="tab">Alle bevegelser</a></li>
+									<li><a href="#kortbeveglser" data-toggle="tab">Kortbeveglser</a></li>
 									<li><a href="#betalingsbevegelser" data-toggle="tab">Betalingsbevegelser</a></li>
-									<li><a href="#allebevegelser" data-toggle="tab">Alle bevegelser</a></li>
 								</ul>
 							</div>
 						</div>
@@ -57,7 +57,7 @@
 						<div class="row">
 							<div class="col-md-12 padding-all margin-bottom">
 								<div class="tab-content">
-									<div class="tab-pane panel-form active" id="kortbeveglser">
+									<div class="tab-pane panel-form" id="kortbeveglser">
 										<table class="table table-striped">
 											<thead>
 												<tr>
@@ -128,7 +128,7 @@
 											</tbody>
 										</table>
 									</div>
-									<div class="tab-pane panel-form" id="allebevegelser">
+									<div class="tab-pane panel-form active" id="allebevegelser">
 										<table class="table table-striped">
 											<thead>
 												<tr>
