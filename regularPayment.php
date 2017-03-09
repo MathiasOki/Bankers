@@ -32,7 +32,7 @@
 					<div class="panel-heading">
 						<ul class="nav nav-tabs">
 							<li><a href="planning.php">Budsjett</a></li>
-							<li><a href="#">Spare</a></li>
+							<li><a href="savings.php">Spare</a></li>
 							<li class="active"><a href="regularPayment.php">Fast betaling</a></li>
 						</ul>
 					</div>

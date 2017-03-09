@@ -26,7 +26,7 @@
 					<div class="panel-heading">
 						<ul class="nav nav-tabs">
 							<li class="active"><a href="#">Budsjett</a></li>
-							<li><a href="#">Spare</a></li>
+							<li><a href="savings.php">Spare</a></li>
 							<li><a href="regularPayment.php">Fast betaling</a></li>
 						</ul>
 					</div>
