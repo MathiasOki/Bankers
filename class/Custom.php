@@ -100,7 +100,7 @@ class Custom extends Satan{
             '%d måneder',
         ],
         'day' => [
-            '%d dag',
+            ['i morgen kl. %2$02d:%3$02d', 'i går kl. %2$d:%3$d'],
             '%d dager',
         ],
         'hour' => [
@@ -115,8 +115,8 @@ class Custom extends Satan{
     ];
 
     protected static $presence = [
-        'past' => 'siden',
-        'future' => 'til'
+        'future' => ['om', 'til'],
+        'past' => ['for', 'siden'],
     ];
 
     /**
@@ -134,23 +134,17 @@ class Custom extends Satan{
         $diff = $now->diff($date);
 
         if ($diff->y) {
-            $converted = self::pluralOrSingle("year", $diff->y);
+            $converted = self::pluralOrSingle("year", $diff->y, $diff->invert);
         } elseif ($diff->m) {
-            $converted = self::pluralOrSingle("month", $diff->m);
+            $converted = self::pluralOrSingle("month", $diff->m, $diff->invert);
         } elseif ($diff->d) {
-            $converted = self::pluralOrSingle("day", $diff->d);
+            $converted = self::pluralOrSingle("day", $diff->d, $diff->invert, $date->format("H"), $date->format("i"));
         } elseif ($diff->h) {
-            $converted = self::pluralOrSingle("hour", $diff->h);
+            $converted = self::pluralOrSingle("hour", $diff->h, $diff->invert);
         } elseif ($diff->i) {
-            $converted = self::pluralOrSingle("minute", $diff->i);
+            $converted = self::pluralOrSingle("minute", $diff->i, $diff->invert);
         } else {
-            $converted = self::pluralOrSingle("second", 0);
-        }
-
-        if ($diff->invert) {
-            $converted .= " " .self::$presence['past'];
-        } else {
-            $converted .= " " .self::$presence['future'];
+            $converted = self::pluralOrSingle("second", 0, $diff->invert);
         }
 
         return $converted;
@@ -158,20 +152,46 @@ class Custom extends Satan{
 
     /**
      * @param string $type
-     * @param mixed $value
+     * @param mixed  $value
+     * @param        $presence
+     * @param mixed  $extra
      *
      * @return string
      * @throws \Exception
      */
-     protected static function pluralOrSingle($type, $value)
-     {
-         if (!isset(self::$langStrings[$type])) {
-             throw new \Exception("Language does not exist for given type");
-         }
+    protected static function pluralOrSingle($type, $value, $presence, ...$extra)
+    {
+        if (!isset(self::$langStrings[$type])) {
+            throw new \Exception("Language does not exist for given type");
+        }
 
-         if ($value != 1 && count(self::$langStrings[$type]) == 2) {
-             return sprintf(self::$langStrings[$type][1], $value);
-         }
-         return sprintf(self::$langStrings[$type][0], $value);
-     }
+        if ($value != 1 && count(self::$langStrings[$type]) == 2) {
+            return self::convertPresence($presence, self::$langStrings[$type][1], $value, ...$extra);
+        }
+        return self::convertPresence($presence, self::$langStrings[$type][0], $value, ...$extra);
+    }
+
+    /**
+     * @param       $presence
+     * @param       $lines
+     * @param       $value
+     * @param array ...$extra
+     *
+     * @return string
+     */
+    protected static function convertPresence($presence, $lines, $value, ...$extra)
+    {
+        if (is_array($lines)) {
+            return sprintf($lines[$presence], $value, ...$extra);
+        }
+        $string = sprintf($lines, $value, ...$extra);
+
+        if ($presence) {
+            $string = self::$presence['past'][0] . " " . $string . " " . self::$presence['past'][1];
+        } else {
+            $string = self::$presence['future'][0] . " " . $string . " " . self::$presence['future'][1];
+        }
+
+        return $string;
+    }
 }
