@@ -51,75 +51,99 @@
 		</div>
 		<div class="container-fluid padding-top">
 				<div class="row">
-		            <div class="col-md-12">
+		            <!--<div class="col-md-12">-->
 						<div class="tab-content">
 							<div class="tab-pane panel-form active" id="oversikt">
-								<div class="panel panel-default col-md-12">
-									<div class="panel-body">
-										<table class="table table-striped">
-											<thead>
-												<tr>
-													<th>Dine sparekontoer</th>
-													<th>Disponibelt</th>
-												</tr>
-											</thead>
-											<tbody>
+								<div class="col-md-12">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Dine sparekontoer
+										</div><!--end panel heading-->
+										<div class="panel-body">
+											<table class="table table-striped">
+												<thead>
 													<tr>
-														<td>Spare</td>
-														<td>15000,-</td>
+														<th>Konto</th>
+														<th>Disponibelt</th>
 													</tr>
-													<tr>
-														<td>BSU</td>
-														<td>25000,-</td>
-													</tr>
-													<tr>
-														<td>Spare til meg selv</td>
-														<td>5000,-</td>
-													</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="panel-footer">
-										<div class="row">
-											<div class="col-md-10 col-md-offset-0">
-												<button type="submit" class="btn btn-bankers">Opprett ny</button>
+												</thead><!--end table head-->
+												<tbody>
+														<tr>
+															<td>Spare</td>
+															<td>15000,-</td>
+														</tr>
+														<tr>
+															<td>BSU</td>
+															<td>25000,-</td>
+														</tr>
+														<tr>
+															<td>Spare til meg selv</td>
+															<td>5000,-</td>
+														</tr>
+												</tbody><!--end table body-->
+											</table><!--end table-->
+										</div><!--end panel body-->
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-md-10 col-md-offset-0">
+													<button type="submit" class="btn btn-bankers">Opprett ny sparekonto</button>
+												</div>
 											</div>
-										</div>
-									</div>
+										</div><!--end panel footer-->
+									</div><!--end panel-->
 								</div>
-								<div class="panel panel-default col-md-6">
-									<div class="panel-heading">
-										Sparemål
-									</div>
-									<div class="panel-body">
-										<h5>Ny macbook</h5>
-										<div class="progress">
-											  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-											    60%
-											  </div>
-										</div>
-
-										<h5>Ny bil</h5>
-										<div class="progress">
-											  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
-											    15%
-											  </div>
-										</div>
-
-										<h5>Ny tattovering</h5>
-										<div class="progress">
-											  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-											    90%
-											  </div>
-										</div>
-									</div>
-									<div class="panel-footer">
-										<div class="row">
-											<div class="col-md-10 col-md-offset-0">
-												<button type="submit" class="btn btn-bankers">Opprett ny</button>
+								<div class="col-md-6">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Sparemål
+										</div><!--end panel heading-->
+										<div class="panel-body">
+											<h5>Ny macbook</h5>
+											<div class="progress">
+												  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+												    60%
+												  </div>
 											</div>
-										</div>
-									</div>
+
+											<h5>Ny bil</h5>
+											<div class="progress">
+												  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+												    15%
+												  </div>
+											</div>
+
+											<h5>Ny tattovering</h5>
+											<div class="progress">
+												  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+												    90%
+												  </div>
+											</div>
+										</div><!--end panel body-->
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-md-10 col-md-offset-0">
+													<button type="submit" class="btn btn-bankers">Opprett nytt sparemål</button>
+												</div>
+											</div><!--end row-->
+										</div><!--end panel footer-->
+									</div><!--end panel-->
+								</div>
+								<div class="col-md-6">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Sparing i fond
+										</div><!--end panel heading-->
+										<div class="panel-body">
+
+										</div><!--end panel body-->
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-md-10 col-md-offset-0">
+													<button type="submit" class="btn btn-bankers">Se mer om fond</button>
+												</div>
+											</div><!--end row-->
+										</div><!--end panel footer-->
+									</div><!--end panel-->
 								</div>
 							</div><!--end tab pane-->
 							<div class="tab-pane panel-form" id="sparemal">
@@ -192,7 +216,7 @@
 								</div>
 							</div><!--end tab pane-->
 						</div><!--end tab content-->
-		            </div>
+		            <!--</div>-->
 		        </div>
 		</div>
         <?php
