@@ -33,66 +33,56 @@
 				</div>
 			</div>
 		</div>
-		<div class="row margin-invert">
-			<div class="col-md-8">
-				<div class="panel panel-default panel-white">
-					<div class="panel-heading">
-						<h3>Budsjett</h3>
-					</div>
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-md-12">
-								<canvas id="myChart" width="200" height="100"></canvas>
+		<div class="container-fluid padding-top">
+			<div class="row margin-invert">
+				<div class="col-md-8">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3>Budsjett</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+									<canvas id="myChart" width="200" height="100"></canvas>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="panel-footer">
-						<div class="row">
-							<div class="col-md-2 col-md-offset-10">
-								<button type="submit" class="btn btn-primary">Endre budsjett</button>
-							</div>
+						<div class="panel-footer text-right">
+									<button type="submit" class="btn btn-primary">Endre budsjett</button>
 						</div>
 					</div>
-				</div>
-	        </div>
-			<div class="col-md-4">
-				<div class="panel panel-default panel-white">
-					<div class="panel-heading">
-						<h3>Oppdelt budsjett</h3>
-					</div>
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-md-12">
-								<canvas id="myPieChart" width="100" height="100"></canvas>
+		        </div>
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3>Oppdelt budsjett</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+									<canvas id="myPieChart" width="100" height="100"></canvas>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="panel-footer">
-						<div class="row">
-							<div class="col-md-2 col-md-offset-0">
-								<button type="submit" class="btn btn-primary">Endre budsjett</button>
-							</div>
+						<div class="panel-footer text-right">
+									<button type="submit" class="btn btn-primary">Endre budsjett</button>
 						</div>
 					</div>
-				</div>
-				<div class="panel panel-default panel-white">
-					<div class="panel-heading">
-						<h3>Foreslått budsjett</h3>
-					</div>
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-md-12">
-								<p>
-									Å sette opp et budsjett for første gang kan være vanskelig. Vi har samlet inn informasjon om hvordan budsjettene til folk på din alder og med samme inntekt har satt opp sine budsjett. Velg foreslått budsjett fra menyen i lag budsjett for å se om disse budsjettene kan passe deg.
-								</p>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3>Foreslått budsjett</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+									<p>
+										Å sette opp et budsjett for første gang kan være vanskelig. Vi har samlet inn informasjon om hvordan budsjettene til folk på din alder og med samme inntekt har satt opp sine budsjett. Velg foreslått budsjett fra menyen i lag budsjett for å se om disse budsjettene kan passe deg.
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="panel-footer">
-						<div class="row">
-							<div class="col-md-2 col-md-offset-0">
-								<button type="submit" class="btn btn-primary">Endre budsjett</button>
-							</div>
+						<div class="panel-footer text-right">
+							<button type="submit" class="btn btn-primary">Endre budsjett</button>
 						</div>
 					</div>
 				</div>
