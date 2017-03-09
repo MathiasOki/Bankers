@@ -229,10 +229,47 @@
 										<div class="panel-heading">
 											Nytt mål
 										</div><!--end panel heading-->
-										<div class="panel-body">
+										<div class="panel-body text-center">
 											<a href="addAccountOverview.php">
-												<i class="fa fa-plus fa-6"></i>
+												<i class="fa fa-plus fa-5x"></i>
 											</a>
+										</div><!--end panel body-->
+									</div><!--end panel-->
+								</div>
+							</div><!--end tab pane-->
+							<div class="tab-pane panel-form" id="sparekontoer">
+								<div class="col-md-12">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Dine sparekontoer
+										</div><!--end panel heading-->
+										<div class="panel-body">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Konto</th>
+														<th>Type</th>
+														<th>Disponibelt</th>
+													</tr>
+												</thead><!--end table head-->
+												<tbody>
+														<tr>
+															<td>Spare</td>
+															<td>Kapital</td>
+															<td>15000,-</td>
+														</tr>
+														<tr>
+															<td>BSU</td>
+															<td>BSU</td>
+															<td>25000,-</td>
+														</tr>
+														<tr>
+															<td>Spare til meg selv</td>
+															<td>Sparekonto</td>
+															<td>5000,-</td>
+														</tr>
+												</tbody><!--end table body-->
+											</table><!--end table-->
 										</div><!--end panel body-->
 									</div><!--end panel-->
 								</div>
