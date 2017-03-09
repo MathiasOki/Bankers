@@ -54,7 +54,7 @@
 		            <div class="col-md-12">
 						<div class="tab-content">
 							<div class="tab-pane panel-form active" id="oversikt">
-								<div class="panel panel-default">
+								<div class="panel panel-default col-md-12">
 									<div class="panel-body">
 										<table class="table table-striped">
 											<thead>
@@ -87,30 +87,31 @@
 										</div>
 									</div>
 								</div>
-								<div class="panel panel-default">
+								<div class="panel panel-default col-md-6">
+									<div class="panel-heading">
+										Sparemål
+									</div>
 									<div class="panel-body">
-										<table class="table table-striped">
-											<thead>
-												<tr>
-													<th>Dine sparekontoer</th>
-													<th>Disponibelt</th>
-												</tr>
-											</thead>
-											<tbody>
-													<tr>
-														<td>Spare</td>
-														<td>15000,-</td>
-													</tr>
-													<tr>
-														<td>BSU</td>
-														<td>25000,-</td>
-													</tr>
-													<tr>
-														<td>Spare til meg selv</td>
-														<td>5000,-</td>
-													</tr>
-											</tbody>
-										</table>
+										<h5>Ny macbook</h5>
+										<div class="progress">
+											  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+											    60%
+											  </div>
+										</div>
+
+										<h5>Ny bil</h5>
+										<div class="progress">
+											  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+											    15%
+											  </div>
+										</div>
+
+										<h5>Ny tattovering</h5>
+										<div class="progress">
+											  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+											    90%
+											  </div>
+										</div>
 									</div>
 									<div class="panel-footer">
 										<div class="row">
