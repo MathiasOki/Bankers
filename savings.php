@@ -198,5 +198,9 @@
 		?>
     </div><!-- /container -->
 </div>
+
+<?php
+	include_once("assets/common/inc/scripts.php");
+?>
 </body>
 </html>
