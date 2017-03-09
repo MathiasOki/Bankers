@@ -7,5 +7,6 @@
 <script>
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip()
+	$('[data-toggle="collapse"]').collapse()
 })
 </script>
