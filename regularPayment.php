@@ -34,7 +34,7 @@
                     </div>
 
 					<div class="panel-body">
-							<row>
+							<div class="row">
 								<div class="form-group col-md-6">
 								  <label for="tlf">Fra konto</label>
 								  <input type="number" class="form-control" id="tlf" placeholder="Skriv eller søk..." required="">
@@ -44,10 +44,10 @@
 								  <label for="sum">Til konto</label>
 								  <input type="number" class="form-control" id="sum" placeholder="Skriv eller søk...." required="">
 								</div>
-							</row>
+							</div>
 
 
-							<row>
+							<div class="row">
 								<div class="form-group col-md-8">
 								  <label for="sum">KID/melding</label>
 								  <input type="number" class="form-control" id="sum" placeholder="skriv her..." required="">
@@ -57,19 +57,38 @@
 								  <label for="sum">Beløp</label>
 								  <input type="number" class="form-control" placeholder="00.00" required="">
 								</div>
-							</row>
+							</div>
 
-							<row>
-								<div class="form-group col-md-8">
+							<div class="row valign">
+								<div class="form-group col-md-6">
 								  <label for="sum">Motakers navn</label>
 								  <input type="number" class="form-control" placeholder="Navn navnesen..." required="">
 								</div>
 
 								<div class="form-group col-md-4">
-								  <label for="sum">dato</label>
+								  <label for="sum">Dato</label>
 								  <input type="number" class="form-control" placeholder="dd/mm/yyyy..." required="">
 								</div>
-							</row>
+
+								<div class="form-group col-md-2">
+									<p><b>Fast?</b></p>
+									<div class="dropdown">
+										  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										    Nei
+										    <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											    <li><a href="#">Daglig</a></li>
+											    <li><a href="#">Ukentlig</a></li>
+											    <li><a href="#">Annenhver uke</a></li>
+											    <li role="separator" class="divider"></li>
+												<li><a href="#">Månedlig</a></li>
+												<li><a href="#">Kvartal</a></li>
+											    <li><a href="#">Årlig</a></li>
+										  </ul>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="panel-footer">
 							<div class="row">
@@ -91,10 +110,54 @@
 						</p>
                     </div>
                 </div>
-
-
             </div>
         </div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3>Mine faste betalinger</h3>
+					</div>
+					<div class="panel-body">
+						<table class="table table-striped">
+						  	<thead>
+								<tr>
+									<th>Fra</th>
+									<th>Til</th>
+									<th>Intervall</th>
+									<th>Beløp</th>
+									<th>Funksjoner</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Brukskonto</td>
+									<td>Regningkonto</td>
+									<td>Månedlig</td>
+									<td>4000.00</td>
+									<td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-remove"></span><span class="glyphicon glyphicon-menu-down"></span></td>
+								</tr>
+								<tr>
+									<td>Regningkonto <br /> 1234.56.78910</td>
+									<td>Navn Navnesen <br />1098.76.54321</td>
+									<td>Månedlig <br />Dag: <br />Siste dag i måneden</td>
+									<td>6000.00</td>
+									<td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-remove"></span><span class="glyphicon glyphicon-menu-up"></span></td>
+								</tr>
+								<tr>
+									<td>Brukskonto</td>
+									<td>Sparekonto</td>
+									<td>Månedlig</td>
+									<td>500.00</td>
+									<td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-remove"></span><span class="glyphicon glyphicon-menu-down"></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 
         <?php
 			include_once("assets/common/inc/footer.php");
