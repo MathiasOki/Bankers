@@ -28,7 +28,7 @@
 			</li>
 
 			<li>
-				<a href="#">
+				<a href="contact.php">
 					<i class="fa fa-phone fa-fw" aria-hidden="true"></i> Kontakt
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
