@@ -25,7 +25,7 @@
 </nav>
 
 <div class="support-btn">
-	<a href="#"><span class="fa-stack fa-2x">
+	<a href="#"><span class="fa-stack fa-4x">
 		<i class="fa fa-circle fa-stack-2x text-blue"></i>
 		<i class="fa fa-comments-o fa-stack-1x fa-inverse"></i>
 	</span></a>
