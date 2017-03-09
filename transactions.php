@@ -61,7 +61,6 @@
 										<table class="table table-striped">
 											<thead>
 												<tr>
-													<th>Dato</th>
 													<th>Tidspunkt</th>
 													<!--<th>Kontonummer</th>-->
 													<th>Kjøpested</th>
@@ -74,8 +73,7 @@
 													foreach ($result as $row) {
 												?>
 													<tr>
-														<td><?=date('d. F Y', $row['timestamp'])?></td>
-														<td><?=date('H:i:s', $row['timestamp'])?></td>
+														<td><span data-toggle="tooltip" data-placement="top" title="<?=date('d. F Y \k\l. H:i:s', $row['timestamp'])?>"><?=$customClass->convertTime($row['timestamp'])?></span></td>
 														<!--<td><?=$row['recievingAccount']?></td> -->
 														<td><?=$row['message_kid']?></td>
 														<?php
@@ -94,7 +92,6 @@
 										<table class="table table-striped">
 											<thead>
 												<tr>
-													<th>Dato</th>
 													<th>Tidspunkt</th>
 													<!--<th>Kontonummer</th>-->
 													<th>Melding</th>
@@ -108,8 +105,7 @@
 													foreach ($result as $row) {
 												?>
 													<tr>
-														<td><?=date('d. F Y', $row['timestamp'])?></td>
-														<td><?=date('H:i:s', $row['timestamp'])?></td>
+														<td><span data-toggle="tooltip" data-placement="top" title="<?=date('d. F Y \k\l. H:i:s', $row['timestamp'])?>"><?=$customClass->convertTime($row['timestamp'])?></span></td>
 														<!--<td><?=$row['recievingAccount']?></td> -->
 														<td><?=$row['message_kid']?></td>
 														<?php
@@ -132,7 +128,6 @@
 										<table class="table table-striped">
 											<thead>
 												<tr>
-													<th>Dato</th>
 													<th>Tidspunkt</th>
 													<!--<th>Kontonummer</th>-->
 													<th>Type transaksjon</th>
@@ -147,8 +142,7 @@
 													foreach ($result as $row) {
 												?>
 													<tr>
-														<td><?=date('d. F Y', $row['timestamp'])?></td>
-														<td><?=date('H:i:s', $row['timestamp'])?></td>
+														<td><span data-toggle="tooltip" data-placement="top" title="<?=date('d. F Y \k\l. H:i:s', $row['timestamp'])?>"><?=$customClass->convertTime($row['timestamp'])?></span></td>
 														<?php
 															if($row['transactionType'] == "payment"){
 																echo ('<td>Betaling via nettbank</td>');

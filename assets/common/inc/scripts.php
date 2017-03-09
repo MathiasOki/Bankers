@@ -4,3 +4,8 @@
 <script src="assets/lib/bootstrap-toggle/js/bootstrap-toggle.js"></script>
 <script src="assets/lib/chartjs-2.3.0/Chart.js"></script>
 <script src="assets/lib/stackable-1.0.1/stacktable.js"></script>
+<script>
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})
+</script>

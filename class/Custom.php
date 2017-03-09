@@ -92,4 +92,86 @@ class Custom extends Satan{
 		return $str1 .".". $str2 .".". $str3;
 		}
 	}
+
+	protected static $langStrings = [
+        'year' => ['%d år'],
+        'month' => [
+            '%d måned',
+            '%d måneder',
+        ],
+        'day' => [
+            '%d dag',
+            '%d dager',
+        ],
+        'hour' => [
+            '%d time',
+            '%d timer',
+        ],
+        'minute' => [
+            '%d minutt',
+            '%d minutter',
+        ],
+        'second' => ['mindre enn 1 minutt'],
+    ];
+
+    protected static $presence = [
+        'past' => 'siden',
+        'future' => 'til'
+    ];
+
+    /**
+     * @param $timestamp
+     *
+     * @return string
+     */
+    public static function convertTime($timestamp)
+    {
+        $date = new \DateTime();
+        $date->setTimestamp($timestamp);
+
+        $now = new \DateTime();
+
+        $diff = $now->diff($date);
+
+        if ($diff->y) {
+            $converted = self::pluralOrSingle("year", $diff->y);
+        } elseif ($diff->m) {
+            $converted = self::pluralOrSingle("month", $diff->m);
+        } elseif ($diff->d) {
+            $converted = self::pluralOrSingle("day", $diff->d);
+        } elseif ($diff->h) {
+            $converted = self::pluralOrSingle("hour", $diff->h);
+        } elseif ($diff->i) {
+            $converted = self::pluralOrSingle("minute", $diff->i);
+        } else {
+            $converted = self::pluralOrSingle("second", 0);
+        }
+
+        if ($diff->invert) {
+            $converted .= " " .self::$presence['past'];
+        } else {
+            $converted .= " " .self::$presence['future'];
+        }
+
+        return $converted;
+    }
+
+    /**
+     * @param string $type
+     * @param mixed $value
+     *
+     * @return string
+     * @throws \Exception
+     */
+     protected static function pluralOrSingle($type, $value)
+     {
+         if (!isset(self::$langStrings[$type])) {
+             throw new \Exception("Language does not exist for given type");
+         }
+
+         if ($value != 1 && count(self::$langStrings[$type]) == 2) {
+             return sprintf(self::$langStrings[$type][1], $value);
+         }
+         return sprintf(self::$langStrings[$type][0], $value);
+     }
 }
