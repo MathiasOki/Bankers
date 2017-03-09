@@ -51,7 +51,6 @@
 		</div>
 		<div class="container-fluid padding-top">
 				<div class="row">
-		            <!--<div class="col-md-12">-->
 						<div class="tab-content">
 							<div class="tab-pane panel-form active" id="oversikt">
 								<div class="col-md-12">
@@ -134,7 +133,32 @@
 											Sparing i fond
 										</div><!--end panel heading-->
 										<div class="panel-body">
-
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Fond</th>
+														<th>Verdi</th>
+													</tr>
+												</thead><!--end table head-->
+												<tbody>
+														<tr>
+															<td>DNB Aktiv 10</td>
+															<td>123</td>
+														</tr>
+														<tr>
+															<td>DNB Aktiv 30</td>
+															<td>125</td>
+														</tr>
+														<tr>
+															<td>DNB Aktiv 50</td>
+															<td>131</td>
+														</tr>
+														<tr>
+															<td>DNB Aktiv 60</td>
+															<td>135</td>
+														</tr>
+												</tbody><!--end table body-->
+											</table><!--end table-->
 										</div><!--end panel body-->
 										<div class="panel-footer">
 											<div class="row">
@@ -147,76 +171,73 @@
 								</div>
 							</div><!--end tab pane-->
 							<div class="tab-pane panel-form" id="sparemal">
-								<div class="panel panel-default">
-									<div class="panel-body">
-										lorem
-										<table class="table table-striped">
-											<thead>
-												<tr>
-													<th>Dine sparekontoer</th>
-													<th>Disponibelt</th>
-												</tr>
-											</thead>
-											<tbody>
+								<div class="col-md-6">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Ny Macbook Pro
+										</div><!--end panel heading-->
+										<div class="panel-body">
+											<table class="table table-striped">
+												<tbody>
 													<tr>
-														<td>Spare</td>
-														<td>15000,-</td>
+														<th>Spart</th>
+														<td>10 000,-</td>
 													</tr>
 													<tr>
-														<td>BSU</td>
-														<td>25000,-</td>
+														<th>Gjenstår</th>
+														<td>19 000,-</td>
 													</tr>
 													<tr>
-														<td>Spare til meg selv</td>
-														<td>5000,-</td>
+														<th>Spart i snitt per mnd</th>
+														<td>1050,-</td>
 													</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="panel-footer">
-										<div class="row">
-											<div class="col-md-10 col-md-offset-0">
-												<button type="submit" class="btn btn-bankers">Opprett ny</button>
-											</div>
-										</div>
-									</div>
+													<tr>
+														<th>Dager spart</th>
+														<td>280</td>
+													</tr>
+													<tr>
+														<th>Dager igjen</th>
+														<td>300</td>
+													</tr>
+													<tr>
+														<th>Antall innskudd</th>
+														<td>4</td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="row">
+												<div class="col-md-12">
+													<div class="progress">
+														  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+														    55%
+														  </div>
+													</div>
+												</div>
+											</div><!--end row-->
+										</div><!--end panel body-->
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-md-10 col-md-offset-0">
+													<button type="submit" class="btn btn-bankers">Sett inn</button>
+												</div>
+											</div><!--end row-->
+										</div><!--end panel footer-->
+									</div><!--end panel-->
 								</div>
-								<div class="panel panel-default">
-									<div class="panel-body">
-										<table class="table table-striped">
-											<thead>
-												<tr>
-													<th>Dine sparekontoer</th>
-													<th>Disponibelt</th>
-												</tr>
-											</thead>
-											<tbody>
-													<tr>
-														<td>Spare</td>
-														<td>15000,-</td>
-													</tr>
-													<tr>
-														<td>BSU</td>
-														<td>25000,-</td>
-													</tr>
-													<tr>
-														<td>Spare til meg selv</td>
-														<td>5000,-</td>
-													</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="panel-footer">
-										<div class="row">
-											<div class="col-md-10 col-md-offset-0">
-												<button type="submit" class="btn btn-bankers">Opprett ny</button>
-											</div>
-										</div>
-									</div>
+								<div class="col-md-6">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Nytt mål
+										</div><!--end panel heading-->
+										<div class="panel-body">
+											<a href="addAccountOverview.php">
+												<i class="fa fa-plus fa-6"></i>
+											</a>
+										</div><!--end panel body-->
+									</div><!--end panel-->
 								</div>
 							</div><!--end tab pane-->
 						</div><!--end tab content-->
-		            <!--</div>-->
 		        </div>
 		</div>
         <?php
