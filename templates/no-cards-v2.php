@@ -2,8 +2,8 @@
     require_once("global/config.php");
 
 	// if session is not set this will redirect to login page
-	if( !isset($_SESSION['user']) ) {
-		header("Location: login.php");
+	if( !isset($_SESSION['user']) || $satan->checkServer() != true) {
+		header("Location: logout.php");
 		exit;
 	}
 
@@ -35,69 +35,15 @@
 				<div class="panel panel-default panel-white">
 					<div class="panel-heading">
 						<ul class="nav nav-tabs">
-							<?php
-								$result = $satan->getAccounts($logged['customerID']);
-								foreach($result as $row) {
-							?>
-								<li class="<?=($account == $row['accountNumber']) ? 'active':'';?>"><a href="?account=<?=$row['accountNumber']?>"><?=$row['accountType']?></a></li>
-							<?php
-								}
-							?>
+							<li class="active"><a href="#kortbeveglser">Kortbeveglser</a></li>
+							<li><a href="#betalingsbevegelser">Betalingsbevegelser</a></li>
+							<li><a href="#allebevegelser">Alle bevegelser</a></li>
 						</ul>
 					</div>
 					<div class="panel-body padding-none">
 						<div class="row">
-							<div class="col-md-12 padding-all margin-bottom border-bottom">
-								<ul class="nav nav-pills">
-									<li class="active"><a href="#kortbeveglser" data-toggle="tab">Kortbeveglser</a></li>
-									<li><a href="#betalingsbevegelser" data-toggle="tab">Betalingsbevegelser</a></li>
-									<li><a href="#allebevegelser" data-toggle="tab">Alle bevegelser</a></li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="row">
 							<div class="col-md-12 padding-all margin-bottom">
-								<div class="tab-content">
-									<div class="tab-pane panel-form active" id="kortbeveglser">
-										<table class="table table-striped">
-											<thead>
-												<tr>
-													<th>Dato</th>
-													<th>Tidspunkt</th>
-													<th>Mottaker/Avsender</th>
-													<th>Melding</th>
-													<th>Beløp inn</th>
-													<th>Beløp ut</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>02.03.17</td>
-													<td>14:57</td>
-													<td>Malin Glosli Haugan</td>
-													<td>For pizza</td>
-													<td>98,-</td>
-													<td></td>
-												</tr>
-												<tr>
-													<td>02.03.17</td>
-													<td>11:12</td>
-													<td>Eva Maria Dahlø</td>
-													<td>For Pepsi Max</td>
-													<td></td>
-													<td>10,-</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="tab-pane panel-form" id="betalingsbevegelser">
-										lorem 1
-									</div>
-									<div class="tab-pane panel-form" id="allebevegelser">
-										lorem 2
-									</div>
-								</div>
+								<p>lorem</p>
 							</div>
 						</div>
 					</div>
