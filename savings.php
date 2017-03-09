@@ -342,6 +342,58 @@
 									</div><!--end panel-->
 								</div><!--end col-->
 							</div><!--end tab pane-->
+							<div class="tab-pane panel-form" id="spareifond">
+								<div class="col-md-8">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Dine fond
+										</div><!--end panel heading-->
+										<div class="panel-body">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Fond</th>
+														<th>Tjent</th>
+														<th>Verdi</th>
+													</tr>
+												</thead><!--end table head-->
+												<tbody>
+														<tr>
+															<td>DNB Aktiv 30</td>
+															<td>23</td>
+															<td>123</td>
+														</tr>
+														<tr>
+															<td>DNB Aktiv 30</td>
+															<td>23</td>
+															<td>123</td>
+														</tr>
+														<tr>
+															<td>DNB Aktiv 30</td>
+															<td>23</td>
+															<td>123</td>
+														</tr>
+														<tr>
+															<td>DNB Aktiv 30</td>
+															<td>23</td>
+															<td>123</td>
+														</tr>
+												</tbody><!--end table body-->
+											</table><!--end table-->
+										</div><!--end panel body-->
+									</div><!--end panel-->
+								</div><!--end col-->
+								<div class="col-md-4">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Fakta om fond
+										</div>
+										<div class="panel-body">
+											"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+										</div>
+									</div>
+								</div>
+							</div><!--end tab pane-->
 						</div><!--end tab content-->
 		        </div>
 		</div>
