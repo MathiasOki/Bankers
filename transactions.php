@@ -74,7 +74,7 @@
 													foreach ($result as $row) {
 												?>
 													<tr>
-														<td><?=date('m.d.y', $row['timestamp'])?></td>
+														<td><?=date('d. F Y', $row['timestamp'])?></td>
 														<td><?=date('H:i:s', $row['timestamp'])?></td>
 														<!--<td><?=$row['recievingAccount']?></td> -->
 														<td><?=$row['message_kid']?></td>
@@ -108,7 +108,7 @@
 													foreach ($result as $row) {
 												?>
 													<tr>
-														<td><?=date('m.d.y', $row['timestamp'])?></td>
+														<td><?=date('d. F Y', $row['timestamp'])?></td>
 														<td><?=date('H:i:s', $row['timestamp'])?></td>
 														<!--<td><?=$row['recievingAccount']?></td> -->
 														<td><?=$row['message_kid']?></td>
@@ -147,7 +147,7 @@
 													foreach ($result as $row) {
 												?>
 													<tr>
-														<td><?=date('m.d.y', $row['timestamp'])?></td>
+														<td><?=date('d. F Y', $row['timestamp'])?></td>
 														<td><?=date('H:i:s', $row['timestamp'])?></td>
 														<?php
 															if($row['transactionType'] == "payment"){

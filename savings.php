@@ -53,7 +53,7 @@
 				<div class="row">
 		            <div class="col-md-12">
 						<div class="tab-content">
-							<div class="tab-pane panel-form" id="oversikt">
+							<div class="tab-pane panel-form active" id="oversikt">
 								<div class="panel panel-default">
 									<div class="panel-body">
 										<table class="table table-striped">
@@ -124,6 +124,7 @@
 							<div class="tab-pane panel-form" id="sparemal">
 								<div class="panel panel-default">
 									<div class="panel-body">
+										lorem
 										<table class="table table-striped">
 											<thead>
 												<tr>

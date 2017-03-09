@@ -1,5 +1,5 @@
 <?php
-setlocale(LC_TIME, "norwegian");
+setlocale(LC_TIME, "no_NO");
 date_default_timezone_set("Europe/Oslo");
 error_reporting(E_ALL);
 ini_set("display_errors", "On");
