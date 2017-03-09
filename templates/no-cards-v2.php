@@ -9,10 +9,6 @@
 
 	$logged = $satan->getUser($_SESSION['user']);
 
-	$account = trim($_GET['account']);
-	$account = strip_tags($account);
-	$account = htmlspecialchars($account);
-
 	require_once("assets/common/inc/head.php");
 	require_once("assets/common/inc/navbar.php");
 ?>
