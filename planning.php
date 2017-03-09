@@ -106,7 +106,7 @@
 			data: {
                 labels: [],
                 datasets: [{
-                    data: [12, 19, 3, 5, 2, 3],
+                    data: [3500, 2000, 1200, 1000, 1500, 800],
                     backgroundColor: [
 						'rgba(255,99,132,1)',
                         'rgba(54, 162, 235, 1)',
