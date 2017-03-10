@@ -13,13 +13,6 @@
 	//require_once("assets/common/inc/header.php");
 	require_once("assets/common/inc/navbar.php");
 ?>
-<div class="support-btn">
-	<a href="#"><span class="fa-stack fa-2x">
-		<i class="fa fa-circle fa-stack-2x text-blue"></i>
-		<i class="fa fa-question fa-stack-1x fa-inverse"></i>
-	</span></a>
-</div>
-
 <div class="flex-container">
 
 	<?php
@@ -231,7 +224,7 @@
 										</div><!--end panel heading-->
 										<div class="panel-body text-center">
 											<a href="addAccountOverview.php" class="text-center">
-												<img class="img-responsive margin-all" src="assets/common/img/plus-sign.jpg"/>
+												<img src="assets/common/img/plus-sign.jpg"/>
 											</a>
 										</div><!--end panel body-->
 									</div><!--end panel-->
