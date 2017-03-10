@@ -20,71 +20,57 @@
 
 	<div class="right-side container-fluid content-padding">
         <div class="row">
+
+			<?php
+			$result = $satan->getAccounts($logged['customerID']);
+			for ($i=0; $i < 3 && $i < count($result); $i++) {
+				$row = $result[$i];
+			?>
             <div class="col-md-4">
-                <div class="panel panel-default" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                <div class="panel panel-default" data-toggle="collapse" data-target="#<?=$row['accountNumber']?>" aria-expanded="false" aria-controls="collapse">
                     <div class="panel-heading">
-                        Saldo på brukskonto
+						<small class="text-muted pull-right">(<?=$customClass->makeAccountNumber($row['accountNumber'])?>)</small>
+                        Disponibel saldo på <?=$row['accountType']?>
                     </div>
                     <div class="panel-body text-center">
-                        <h2><?=$customClass->makeCurrency(18342.5, NULL)?></h2>
-						<div class="collapse" id="collapse1">
+                        <h2><?=$customClass->makeCurrency($row['kroner'], $row['oere'])?></h2>
+						<div class="collapse" id="<?=$row['accountNumber']?>">
 							  <table class="table table-striped">
 								<thead>
-									<th>Tid</th>
+									<th>Tidspunkt</th>
 									<th>Type</th>
 									<th>Beløp</th>
 								</thead>
 								<tbody>
+									<?php
+										$account = $row['accountNumber'];
+										$resultTransactions = $satan->getAllTransactions($account);
+										foreach ($resultTransactions as $row) {
+									?>
 									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
+										<td><span data-toggle="tooltip" data-placement="top" title="<?=date('d. F Y \k\l. H:i:s', $row['timestamp'])?>"><?=$customClass->convertTime($row['timestamp'])?></span></td>
+										<?php
+											if($row['transactionType'] == "payment"){
+												echo ('<td>Betaling via nettbank</td>');
+											}
+											if($row['transactionType'] == "card"){
+												echo ('<td>Betaling med kort</td>');
+											}
+											if($row['transactionType'] == "transfer"){
+												echo ('<td>Overføring mellom kontoer</td>');
+											}
+										?>
+										<?php
+											if($row['recievingAccount'] != $account){
+												echo ('<td class="text-success">+ '.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+											} else {
+												echo ('<td class="text-danger">- '.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+											}
+										?>
 									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
+									<?php
+										}
+									?>
 								</tbody>
 							  </table>
 						</div>
@@ -95,159 +81,9 @@
 
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="panel panel-default"data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                    <div class="panel-heading">
-                        Saldo på brukskonto
-                    </div>
-                    <div class="panel-body text-center">
-                        <h2><?=$customClass->makeCurrency(153498, NULL)?></h2>
-						<div class="collapse" id="collapse2">
-							  <table class="table table-striped">
-								<thead>
-									<th>Tid</th>
-									<th>Type</th>
-									<th>Beløp</th>
-								</thead>
-								<tbody>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-								</tbody>
-							  </table>
-						</div>
-                    </div>
-					<div class="panel-footer text-center">
-						<p><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
-					</div>
-
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="panel panel-default"data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                    <div class="panel-heading">
-                        Saldo på brukskonto
-                    </div>
-                    <div class="panel-body text-center">
-                        <h2><?=$customClass->makeCurrency(1542, 12)?></h2>
-						<div class="collapse" id="collapse3">
-							  <table class="table table-striped">
-								<thead>
-									<th>Tid</th>
-									<th>Type</th>
-									<th>Beløp</th>
-								</thead>
-								<tbody>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-									<tr>
-										<td>09.03.2017</td>
-										<td>Visa</td>
-										<td>123,-</td>
-									</tr>
-								</tbody>
-							  </table>
-						</div>
-                    </div>
-					<div class="panel-footer text-center">
-						<p><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
-					</div>
-
-
-                </div>
-            </div>
+			<?php
+				}
+			?>
         </div>
 
         <div class="row">
