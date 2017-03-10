@@ -47,9 +47,10 @@
 						<div class="row">
 							<div class="col-md-12 padding-all margin-bottom border-bottom">
 								<ul class="nav nav-pills">
-									<li class="active"><a href="#allebevegelser" data-toggle="tab">Alle bevegelser</a></li>
-									<li><a href="#kortbeveglser" data-toggle="tab">Kortbeveglser</a></li>
-									<li><a href="#betalingsbevegelser" data-toggle="tab">Betalingsbevegelser</a></li>
+									<li class="active"><a href="#allebevegelser" data-toggle="tab">Full oversikt</a></li>
+									<li><a href="#kortbeveglser" data-toggle="tab">Overikt over kortbruk</a></li>
+									<li><a href="#betalingsbevegelser" data-toggle="tab">Betalinger til andre kontoer</a></li>
+									<li><a href="#overforinger" data-toggle="tab">Overføringer mellom kontoer</a></li>
 								</ul>
 							</div>
 						</div>
@@ -154,6 +155,43 @@
 																echo ('<td>Overføring mellom kontoer</td>');
 															}
 														?>
+														<td><?=$row['message_kid']?></td>
+														<?php
+															if($row['recievingAccount'] != $account){
+																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+																echo ('<td></td>');
+															} else {
+																echo ('<td></td>');
+																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+															}
+														?>
+													</tr>
+												<?php
+													}
+												?>
+											</tbody>
+										</table>
+									</div>
+
+									<div class="tab-pane panel-form" id="overforinger">
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th>Tidspunkt</th>
+													<!--<th>Kontonummer</th>-->
+													<th>Melding</th>
+													<th>Beløp inn</th>
+													<th>Beløp ut</th>
+												</tr>
+											</thead>
+											<tbody>
+												<?php
+													$result = $satan->getTransferTransactions($account);
+													foreach ($result as $row) {
+												?>
+													<tr>
+														<td><span data-toggle="tooltip" data-placement="top" title="<?=date('d. F Y \k\l. H:i:s', $row['timestamp'])?>"><?=$customClass->convertTime($row['timestamp'])?></span></td>
+														<!--<td><?=$row['recievingAccount']?></td> -->
 														<td><?=$row['message_kid']?></td>
 														<?php
 															if($row['recievingAccount'] != $account){
