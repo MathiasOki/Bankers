@@ -135,7 +135,7 @@
 								   }
 								?>
 
-								<h3 class="border">Overføre mellom kontoer</h3>
+								<h3 class="border">Betal til en annen konto</h3>
 							</div>
 						</div>
 
