@@ -13,6 +13,12 @@
 
 		<ul class="nav navbar-nav navbar-right">
 			<li>
+				<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="label label-danger">2 <i class="fa fa-angle-down"></i></span></a>
+				<div class="dropdown-menu">
+					<p>Her kommer notifikasjoner (samme som inbox i vanlig nettbanker).</p>
+				</div>
+			</li>
+			<li>
 				<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="hidden-xs"><?=$logged['firstName']?> <?=$logged['surName']?></span><i class="fa fa-user hidden-sm hidden-md hidden-lg" aria-hidden="true"></i> <i class="fa fa-angle-down"></i></a>
 				<ul class="dropdown-menu">
 					<li><a href="#">Kontoinnstillinger</a></li>
