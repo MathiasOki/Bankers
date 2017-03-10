@@ -48,9 +48,9 @@
 							<div class="col-md-12 padding-all margin-bottom border-bottom">
 								<ul class="nav nav-pills">
 									<li class="active"><a href="#allebevegelser" data-toggle="tab">Full oversikt</a></li>
-									<li><a href="#kortbeveglser" data-toggle="tab">Overikt over kortbruk</a></li>
-									<li><a href="#betalingsbevegelser" data-toggle="tab">Betalinger til andre kontoer</a></li>
-									<li><a href="#overforinger" data-toggle="tab">Overføringer mellom kontoer</a></li>
+									<li><a href="#kortbeveglser" data-toggle="tab">Oversikt over kortbruk</a></li>
+									<li><a href="#betalingsbevegelser" data-toggle="tab">Overføringer til/fra andre</a></li>
+									<li><a href="#overforinger" data-toggle="tab">Overføringer egne kontoer</a></li>
 								</ul>
 							</div>
 						</div>
