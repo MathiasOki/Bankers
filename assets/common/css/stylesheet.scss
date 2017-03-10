@@ -1057,3 +1057,39 @@ fieldset[disabled] .btn-bankers.active {
 {
     color: #444;
 }
+
+/*.collapse {
+	&-handler {
+		cursor: pointer;
+	}
+
+	&-with-caret {
+		position: relative;
+		&:after {
+			content: "\f107";
+			font: normal normal normal 14px/1 FontAwesome;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+		}
+
+		&[aria-expanded=true]:after {
+			content: "\f106";
+		}
+	}
+}
+*/
+.collapse {
+  &-with-caret {
+    .fa.collapse-caret {
+
+      &:after {
+        content: "\f106";
+      }
+    }
+
+    &[aria-expanded=true] .fa.collapse-caret:after {
+      content: "\f107";
+    }
+  }
+}

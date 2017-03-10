@@ -46,15 +46,18 @@
 				$row = $result[$i];
 			?>
             <div class="col-md-4">
-                <div class="panel panel-default" data-toggle="collapse" data-target="#<?=$row['accountNumber']?>" aria-expanded="false" aria-controls="collapse">
+                <div class="panel panel-default">
                     <div class="panel-heading">
 						<small class="text-muted pull-right">(<?=$customClass->makeAccountNumber($row['accountNumber'])?>)</small>
                         Disponibel saldo på <?=$row['accountType']?>
                     </div>
                     <div class="panel-body text-center">
                         <h2><?=$customClass->makeCurrency($row['kroner'], $row['oere'])?></h2>
-						<div class="collapse" id="<?=$row['accountNumber']?>">
-							  <table class="table table-striped">
+                    </div>
+					<div class="panel-footer text-center collapse-with-caret" data-toggle="collapse" data-target="#collapse-<?=$row['accountNumber']?>" aria-expanded="false" aria-controls="collapse-<?=$row['accountNumber']?>">
+						<p>Siste transaksjoner<br><i class="fa collapse-caret"></i></p>
+						<div class="collapse" id="collapse-<?=$row['accountNumber']?>">
+							<table class="table table-striped">
 								<thead>
 									<th>Tidspunkt</th>
 									<th>Type</th>
@@ -62,13 +65,16 @@
 								</thead>
 								<tbody>
 									<?php
-										$account = $row['accountNumber'];
-										$resultTransactions = $satan->getAllTransactions($account);
-										foreach ($resultTransactions as $row) {
-									?>
-									<tr>
-										<td><span data-toggle="tooltip" data-placement="top" title="<?=date('d. F Y \k\l. H:i:s', $row['timestamp'])?>"><?=$customClass->convertTime($row['timestamp'])?></span></td>
-										<?php
+									$account = $row['accountNumber']; // prøv nå
+									$resultTransactions = $satan->getAllTransactions($account);
+
+									for ($x=0; $x < 11 && $x < count($result); $x++) {
+										$row = $resultTransactions[$x];
+									/*foreach ($resultTransactions as $row) {*/
+										?>
+										<tr>
+											<td><span data-toggle="tooltip" data-placement="top" title="<?=date('d. F Y \k\l. H:i:s', $row['timestamp'])?>"><?=$customClass->convertTime($row['timestamp'])?></span></td>
+											<?php
 											if($row['transactionType'] == "payment"){
 												echo ('<td>Betaling via nettbank</td>');
 											}
@@ -78,26 +84,22 @@
 											if($row['transactionType'] == "transfer"){
 												echo ('<td>Overføring mellom kontoer</td>');
 											}
-										?>
-										<?php
+											?>
+											<?php
 											if($row['recievingAccount'] != $account){
 												echo ('<td class="text-success">+ '.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
 											} else {
 												echo ('<td class="text-danger">- '.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
 											}
-										?>
-									</tr>
-									<?php
-										}
+											?>
+										</tr>
+										<?php
+									}
 									?>
 								</tbody>
-							  </table>
+							</table>
 						</div>
-                    </div>
-					<div class="panel-footer text-center">
-						<p><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
 					</div>
-
                 </div>
             </div>
 			<?php
