@@ -48,7 +48,7 @@
 							</div>
 						</div>
 						<div class="panel-footer text-right">
-									<button type="submit" class="btn btn-primary">Endre budsjett</button>
+									<button type="submit" class="btn btn-bankers">Endre budsjett</button>
 						</div>
 					</div>
 		        </div>
@@ -65,7 +65,7 @@
 							</div>
 						</div>
 						<div class="panel-footer text-right">
-									<button type="submit" class="btn btn-primary">Endre budsjett</button>
+									<button type="submit" class="btn btn-bankers">Endre budsjett</button>
 						</div>
 					</div>
 					<div class="panel panel-default">
@@ -82,7 +82,7 @@
 							</div>
 						</div>
 						<div class="panel-footer text-right">
-							<button type="submit" class="btn btn-primary">Endre budsjett</button>
+							<button type="submit" class="btn btn-bankers">Endre budsjett</button>
 						</div>
 					</div>
 				</div>

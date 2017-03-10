@@ -100,7 +100,7 @@
 							<div class="panel-footer">
 								<div class="row">
 									<div class="col-md-10 col-md-offset-0">
-										<button type="submit" class="btn btn-primary">Betal</button>
+										<button type="submit" class="btn btn-bankers">Betal</button>
 									</div>
 								</div>
 							</div>
