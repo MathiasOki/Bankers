@@ -393,6 +393,72 @@
 										</div>
 									</div>
 								</div>
+								<div class="col-md-12">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Se så rik du kan bli!!!!
+										</div>
+										<div class="panel-body">
+											"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Kjøp fond
+										</div>
+										<div class="panel-body">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Fond</th>
+														<th>Min engang</th>
+														<th>Min måned</th>
+														<th>Rente nå</th>
+														<th>Rente nå</th>
+														<th>Risiko</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>DNB Aktiv 10</td>
+														<td>100</td>
+														<td>100</td>
+														<td>%</td>
+														<td>%</td>
+														<td>
+															<div class="progress">
+																<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>DNB Aktiv 10</td>
+														<td>100</td>
+														<td>100</td>
+														<td>%</td>
+														<td>%</td>
+														<td>
+															<div class="progress">
+																<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;"></div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table><!--end table-->
+											<div class="col-md-8">
+												<h3>Fakta om fond</h3>
+												<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+												<h3>Fakta om fond</h3>
+												<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+											</div><!--end col-->
+											<div class="col-md-4">
+												Her skal det være en graf. Det fikser chart.js dronning Malin? :D
+											</div><!--end col-->
+										</div><!--end panel body-->
+									</div><!--end panel-->
+								</div><!--end col-->
 							</div><!--end tab pane-->
 						</div><!--end tab content-->
 		        </div>
