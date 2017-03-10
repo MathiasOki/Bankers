@@ -65,7 +65,7 @@
 								</thead>
 								<tbody>
 									<?php
-									$account = $row['accountNumber']; // prøv nå
+									$account = $row['accountNumber'];
 									$resultTransactions = $satan->getAllTransactions($account);
 
 									for ($x=0; $x < 11 && $x < count($result); $x++) {
