@@ -230,8 +230,8 @@
 											Nytt mål
 										</div><!--end panel heading-->
 										<div class="panel-body text-center">
-											<a href="addAccountOverview.php">
-												<i class="fa fa-plus fa-5x"></i>
+											<a href="addAccountOverview.php" class="text-center">
+												<img class="img-responsive margin-all" src="assets/common/img/plus-sign.jpg"/>
 											</a>
 										</div><!--end panel body-->
 									</div><!--end panel-->
@@ -454,7 +454,7 @@
 												<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 											</div><!--end col-->
 											<div class="col-md-4">
-												Her skal det være en graf. Det fikser chart.js dronning Malin? :D
+												<canvas id="myLineChart" width="100" height="100"></canvas>
 											</div><!--end col-->
 										</div><!--end panel body-->
 									</div><!--end panel-->
@@ -472,5 +472,38 @@
 <?php
 	include_once("assets/common/inc/scripts.php");
 ?>
+<script>
+	var ctx = document.getElementById("myLineChart");
+	var myLineChart = new Chart(ctx, {
+	    type: 'line',
+	    data: {
+		    labels: ["2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+		    datasets: [{
+		            label: "Verdiutvikling",
+		            fill: false,
+		            lineTension: 0.1,
+		            backgroundColor: "rgba(75,192,192,0.4)",
+		            borderColor: "rgba(75,192,192,1)",
+		            borderCapStyle: 'butt',
+		            borderDash: [],
+		            borderDashOffset: 0.0,
+		            borderJoinStyle: 'miter',
+		            pointBorderColor: "rgba(75,192,192,1)",
+		            pointBackgroundColor: "#fff",
+		            pointBorderWidth: 1,
+		            pointHoverRadius: 5,
+		            pointHoverBackgroundColor: "rgba(75,192,192,1)",
+		            pointHoverBorderColor: "rgba(220,220,220,1)",
+		            pointHoverBorderWidth: 2,
+		            pointRadius: 1,
+		            pointHitRadius: 10,
+		            data: [100, 100, 110, 90, 100, 120, 130],
+		            spanGaps: false,
+		        }
+		    ]
+		}
+	});
+</script>
+
 </body>
 </html>
