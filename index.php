@@ -19,6 +19,25 @@
 	?>
 
 	<div class="right-side container-fluid content-padding">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="alert-message alert-message-success">
+					<div class="row">
+						<div class="col-xs-2 text-center">
+							<img src="assets/common/img/maskot/15.svg">
+						</div>
+
+						<div class="col-md-10">
+							<h4>Tjen penger uten å løfte en finger!</h4>
+							<p>Hey! Nå har du hatt mye penger på en konto en stund og der kunne du tjent masse renter! Vil du at jeg skal hjelpe deg med å sette opp en sparekonto, og kanskje gi deg en innføring i enkle penger med sparing?</p>
+
+							<p><a href="#" class="btn btn-bankers">Ja, vis meg!</a> <a href="" class="btn btn-link">Nei, deg vil jeg ikke :(</a></p>
+						</div>
+					</div>
+	            </div>
+	        </div>
+		</div>
+
         <div class="row">
 
 			<?php
