@@ -18,7 +18,7 @@
 	<?php
 		require_once("assets/common/inc/sidebar.php");
 	?>
-	<div class="right-side container-fluid content-padding">
+	<div class="right-side container-fluid full-white">
         <div class="row">
 			<div class="col-md-8">
 				<div class="panel panel-default">
