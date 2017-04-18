@@ -34,7 +34,21 @@
 												Brukskonto
 											</div>
 											<div class="panel-body">
-												Brukskonto er en konto til daglige banktjenester.
+                        <div class="col-md-4">
+                            <img src="assets/common/img/maskot/11.svg">
+                        </div>
+												<div class="col-md-8">
+                          <h4>Fordeler</h4>
+                          <ul>
+                            <li>Du kan ha bankkort til denne kontoen</li>
+                            <li>Du kan enkelt overføre til andre kontoer fra denne</li>
+                            <li>Du kan opprette spareavtaler som går herfra</li>
+                          </ul>
+                          <h4>Ulemper</h4>
+                          <ul>
+                            <li>Det er lav rente og ikke ideelt for sparing</li>
+                          </ul>
+                        </div>
 											</div>
 											<div class="panel-footer">
 												<button type="submit" class="btn btn-primary">Åpne konto</button>
@@ -47,7 +61,22 @@
 												Depositumskonto
 											</div>
 											<div class="panel-body">
-												Brukskonto er en konto til daglige banktjenester.
+                        <div class="col-md-4">
+                          <img src="assets/common/img/maskot/15.svg">
+                        </div>
+                        <div class="col-md-8">
+                          <h4>Fordeler</h4>
+                          <ul>
+                            <li>Større sikkerhet for utleier og leietaker</li>
+                            <li>Pengene er låst på konto, begge parter må signere for å ta ut penger</li>
+                            <li>Leietaker får rentene</li>
+                          </ul>
+                          <h4>Ulemper</h4>
+                          <ul>
+                            <li>Pengene er ikke tilgjengelig</li>
+                            <li>Kan ikke være større enn 6 måneders husleie</li>
+                          </ul>
+                        </div>
 											</div>
 											<div class="panel-footer">
 												<button type="submit" class="btn btn-primary">Åpne konto</button>
@@ -62,10 +91,25 @@
 										</div>
 										<div class="panel panel-default">
 											<div class="panel-heading">
-												Sparekonto
+                        Sparekonto
 											</div>
 											<div class="panel-body">
-												Brukskonto er en konto til daglige banktjenester.
+                        <div class="col-md-4">
+                          <img src="assets/common/img/maskot/14.svg">
+                        </div>
+                        <div class="col-md-8">
+                          <h4>Fordeler</h4>
+                          <ul>
+                            <li>Høy rente, optimal konto for sparing</li>
+                            <li>Kan enkelt overføre mellom kontoer</li>
+                            <li>Lett å sette opp spareplan til denne kontoen</li>
+                          </ul>
+                          <h4>Ulemper</h4>
+                          <ul>
+                            <li>Kun 12 gebyrfrie uttak i året</li>
+                            <li>Ikke mulighet for kort</li>
+                          </ul>
+                        </div>
 											</div>
 											<div class="panel-footer">
 												<button type="submit" class="btn btn-primary">Åpne konto</button>
@@ -78,7 +122,22 @@
 												Superspar
 											</div>
 											<div class="panel-body">
-												Brukskonto er en konto til daglige banktjenester.
+                        <div class="col-md-4">
+                          <img src="assets/common/img/maskot/13.svg">
+                        </div>
+                        <div class="col-md-8">
+                          <h4>Fordeler</h4>
+                          <ul>
+                            <li>Høy rente, optimal konto for sparing</li>
+                            <li>Ingen bindingstid</li>
+                            <li>Du kan selv velge beløp per måned</li>
+                          </ul>
+                          <h4>Ulemper</h4>
+                          <ul>
+                            <li>Kun 12 gebyrfrie uttak i året</li>
+                            <li>Ikke mulighet for kort</li>
+                          </ul>
+                        </div>
 											</div>
 											<div class="panel-footer">
 												<button type="submit" class="btn btn-primary">Åpne konto</button>
@@ -91,7 +150,22 @@
 												BSU
 											</div>
 											<div class="panel-body">
-												Brukskonto er en konto til daglige banktjenester.
+                        <div class="col-md-4">
+                          <img src="assets/common/img/maskot/12.svg">
+                        </div>
+                        <div class="col-md-8">
+                          <h4>Fordeler</h4>
+                          <ul>
+                            <li>Høyeste rente, optimal konto for sparing</li>
+                            <li>Skattelette</li>
+                            <li>Velger selv hvor mye du vil spare</li>
+                          </ul>
+                          <h4>Ulemper</h4>
+                          <ul>
+                            <li>Kun en per kunde</li>
+                            <li>Ikke mulighet for uttak</li>
+                          </ul>
+                        </div>
 											</div>
 											<div class="panel-footer">
 												<button type="submit" class="btn btn-primary">Åpne konto</button>
