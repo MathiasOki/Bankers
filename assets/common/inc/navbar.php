@@ -1,14 +1,5 @@
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
 	<div class="container-fluid">
-		<ul class="nav navbar-nav navbar-left">
-			<li>
-				<a href="#">
-					<span class="sr-only">Navigering</span>
-					<span class="fa fa-bars"></span>
-				</a>
-			</li>
-		</ul>
-
 		<a href="index.php" class="navbar-brand">Bænkers</a>
 
 		<ul class="nav navbar-nav navbar-right">
