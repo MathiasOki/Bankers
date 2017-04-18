@@ -20,6 +20,28 @@ $primary-color: rgba(0, 184, 255, 1);
 	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@mixin speech-bubble($size, $background){
+	background: $background;
+	display: inline-block;
+	padding: $size;
+	position: relative;
+	margin-left: $size;
+	border-radius: 5px;
+	max-width: 300px;
+
+	&:after{
+		content: '';
+		position: absolute;
+		right: -$size;
+		top: 75%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		border-top: ($size / 2) solid transparent;
+		border-left: $size solid $background;
+		border-bottom: ($size / 2) solid transparent;
+	}
+}
+
 /*
  * ======================================================
  * IMPORT EXTERNAL CSS
@@ -138,6 +160,16 @@ h6.border:after {
 	bottom: 15px;
 	right: 15px;
 	z-index: 100;
+
+	img {
+		margin-left: 25px;
+	}
+
+	.speech-bubble {
+	   @include speech-bubble(15px, rgb(249, 250, 252));
+	   border: 1px solid #dbdee0;
+	   box-shadow: 0 0 10px rgba(0,0,0,.1);
+	}
 }
 
 .dropdown:hover .dropdown-menu {

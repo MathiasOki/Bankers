@@ -31,8 +31,8 @@
 </nav>
 
 <div class="support-btn">
-	<a href="#"><span class="fa-stack fa-3x">
-		<i class="fa fa-circle fa-stack-2x text-blue"></i>
-		<i class="fa fa-comments-o fa-stack-1x fa-inverse"></i>
-	</span></a>
+	<div class="speech-bubble">
+		<p>Hey! Nå har du hatt mye penger på en konto en stund og der kunne du tjent masse renter! Vil du at jeg skal hjelpe deg med å sette opp en sparekonto, og kanskje gi deg en innføring i enkle penger med sparing?</p>
+		<p><a href="#" class="btn btn-sm btn-bankers">Ja, vis meg!</a> <a href="#" class="btn btn-sm btn-link">Nei, lukk boksen :(</a></p></div>
+	<?=$bot->reveal('img', 31)?>
 </div>
