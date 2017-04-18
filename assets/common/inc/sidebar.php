@@ -54,7 +54,7 @@
 						<div class="row valign">
 							<div class="col-xs-5">
 								<b><?=$row['accountType']?></b> <!--<i class="fa fa-credit-card card" aria-hidden="true"></i>--><br>
-								<small class="text-muted"><?=$customClass->makeAccountNumber($row['accountNumber'])?></small>
+								<small class="text-muted"><?=$customClass->makeAccountNumber($row['accountNumber'], false)?></small>
 							</div>
 							<div class="col-xs-5 text-right">
 								<span><?=$customClass->makeCurrency($row['kroner'], $row['oere'])?></span>

@@ -83,13 +83,19 @@ class Custom extends Satan{
 		}
 	}
 
-	public function makeAccountNumber($number) {
+	public function makeAccountNumber($number, $desc = true) {
 		if(!empty($number)){
 		$str1 = substr($number, 0, 4);
 		$str2 = substr($number, 4, 2);
 		$str3 = substr($number, 6, 5);
 
-		return $str1 .".". $str2 .".". $str3;
+		if($desc == true){
+			$accountNuber = "Kontonummer: ";
+		}else{
+			$accountNuber = "";
+		}
+
+		return $accountNuber . $str1 .".". $str2 .".". $str3;
 		}
 	}
 
