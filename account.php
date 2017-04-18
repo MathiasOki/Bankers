@@ -83,7 +83,7 @@
   						</div>
   					</div>
             <div class="panel-footer text-right">
-              <button type="submit" class="btn btn-bankers">Se alle kort</button>
+              <button type="button" class="btn btn-bankers"><a href="cardOverview.php">Se alle kort</a></button>
             </div>
   				</div>
 				</div>
@@ -149,7 +149,7 @@
 						</div>
 					</div>
 		    </div>
-        
+
 			</div>
 		</div>
         <?php
