@@ -479,12 +479,14 @@ a.list-group-item:focus {
 
 .panel-heading > .nav-tabs {
 	margin: -10px -15px -15px;
-	border-bottom: 0;
+    border-bottom: 2px solid;
+    margin-bottom: -17px;
 }
 
 .panel-heading > .nav-tabs > li > a {
 	padding: 15px 20px;
 	color: #666666;
+	font-size: 18px;
 }
 
 .panel-heading > .nav-tabs > li:first-child > a {
@@ -501,11 +503,10 @@ a.list-group-item:focus {
 	color: $primary-color;
     cursor: default;
     background-color: #fff;
-    border-left: 0;
-    border-bottom-color: $primary-color;
-    border-bottom-width: 2px;
-    border-right: 0;
-    border-top: 0;
+	border-color: $primary-color;
+	border-width: 2px;
+	border-bottom: 2px solid white;
+    margin-bottom: -2px;
 }
 
 .panel.panel-default.panel-white {
