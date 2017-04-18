@@ -160,7 +160,7 @@ h6.border:after {
 	bottom: 15px;
 	left: 0;
 	z-index: 100;
-	
+
 	img {
 		margin-left: 25px;
 	}
@@ -169,6 +169,10 @@ h6.border:after {
 	   @include speech-bubble(15px, rgb(249, 250, 252));
 	   border: 1px solid #dbdee0A;
 	   box-shadow: 0 0 10px rgba(0,0,0,.1);
+	}
+
+	.maskot {
+		height: 80px;
 	}
 }
 

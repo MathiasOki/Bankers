@@ -36,7 +36,7 @@ class Bot{
 
 	private function img($id){
 		$id = $this->exist($id);
-		return ('<img src="assets/common/img/maskot/' . $id . '.svg">');
+		return ('<img src="assets/common/img/maskot/' . $id . '.svg" class="maskot">');
 	}
 
 	public function reveal($type, $id, $title = "", $text = "", $url = "#", $btnTitle = ""){
