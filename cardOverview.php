@@ -19,6 +19,7 @@
 		require_once("assets/common/inc/sidebar.php");
 	?>
 	<div class="right-side container-fluid full-white">
+    <div class="container-fluid padding-top">
         <div class="row">
 			<div class="col-md-8">
 				<div class="panel panel-default">
@@ -86,7 +87,7 @@
 				</div>
 			</div>
         </div>
-
+</div>
         <?php
 			include_once("assets/common/inc/footer.php");
 		?>
