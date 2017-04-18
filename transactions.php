@@ -158,11 +158,11 @@
 														<td><?=$row['message_kid']?></td>
 														<?php
 															if($row['recievingAccount'] != $account){
-																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
 																echo ('<td></td>');
+																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
 															} else {
-																echo ('<td></td>');
 																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+																echo ('<td></td>');
 															}
 														?>
 													</tr>
@@ -195,11 +195,11 @@
 														<td><?=$row['message_kid']?></td>
 														<?php
 															if($row['recievingAccount'] != $account){
-																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
 																echo ('<td></td>');
+																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
 															} else {
-																echo ('<td></td>');
 																echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+																echo ('<td></td>');
 															}
 														?>
 													</tr>
