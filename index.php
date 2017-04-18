@@ -19,7 +19,8 @@
 	?>
 
 	<div class="right-side container-fluid content-padding">
-		<?=$bot->alert(
+		<?=$bot->reveal(
+			'alert',
 			15,
 			'Tjen penger uten å løfte en finger!',
 			'Hey! Nå har du hatt mye penger på en konto en stund og der kunne du tjent masse renter! Vil du at jeg skal hjelpe deg med å sette opp en sparekonto, og kanskje gi deg en innføring i enkle penger med sparing?',
