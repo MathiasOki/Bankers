@@ -9,220 +9,149 @@
 
 	$logged = $satan->getUser($_SESSION['user']);
 
+  if(empty($_GET['account'])) {
+		$result = $satan->getAccounts($logged['customerID']);
+		$account = $result[0]['accountNumber'];
+	} else {
+		$account = trim($_GET['account']);
+		$account = strip_tags($account);
+		$account = htmlspecialchars($account);
+	}
+
+
 	require_once("assets/common/inc/head.php");
 	require_once("assets/common/inc/navbar.php");
 ?>
 <div class="flex-container">
+
 	<?php
 		require_once("assets/common/inc/sidebar.php");
 	?>
 
-	<div class="right-side container-fluid content">
-        <div class="row">
-            <div class="col-md-6">
-				<div class="panel panel-default panel-white">
-					<div class="panel-heading">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#account" data-toggle="tab">Brukskonto</a></li>
-							<li class="pull-right"><a href="#edit" data-toggle="tab">Rediger</a></li>
-						</ul>
-					</div>
-					<form rel="form">
-						<div class="tab-content">
-							<div class="tab-pane panel-form active" id="account">
-								<div class="panel-body padding-none">
-									<div class="row">
-										<div class="col-md-12">
-											<h3 class="border">
-												Kontoopplysninger
-											</h3>
-										</div>
-									</div>
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Kontonummer
-										</div>
-										<div class="col-md-8">
-											1254.23.12323
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Kontonavn
-										</div>
-										<div class="col-md-8">
-											Brukskonto
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Har bankkort
-										</div>
-										<div class="col-md-8">
-											Ja - <a href="cardOverview.php">Se oversikt over bankkort <i class="fa fa-angle-right fa-fw"></i></a>
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Kontoeier
-										</div>
-										<div class="col-md-8">
-											Mathias Tollerud
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Kontoutskrift går til
-										</div>
-										<div class="col-md-8">
-											Mathias Tollerud
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Åpningsdato
-										</div>
-										<div class="col-md-8">
-											12. februar 2018, klokken 16:32
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											IBAN-nummer
-										</div>
-										<div class="col-md-8">
-											NO75 1203 7971 454
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											BIC-adresse
-										</div>
-										<div class="col-md-8">
-											DNBANOKKXXX
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Bokført saldo
-										</div>
-										<div class="col-md-8">
-											<?=$customClass->makeCurrency(183.65, NULL)?>
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Rentesats for beløp over 0,00
-										</div>
-										<div class="col-md-8">
-											0,10%
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Opptjente renter hittil i år
-										</div>
-										<div class="col-md-8">
-											<?=$customClass->makeCurrency(0.15, NULL)?>
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Påløpte renter og omkostninger hittil i år
-										</div>
-										<div class="col-md-8">
-											<?=$customClass->makeCurrency(0.00, NULL)?>
-										</div>
-									</div>
-
-									<div class="row valign padding-all">
-										<div class="col-md-4 text-right border-right">
-											Gebyr hittil i år
-										</div>
-										<div class="col-md-8">
-											<?=$customClass->makeCurrency(34.00, NULL)?>
-										</div>
-									</div>
-
-									<div class="row valign padding-all margin-bottom">
-										<div class="col-md-4 text-right border-right">
-											Opptjente renter fra i fjor
-										</div>
-										<div class="col-md-8">
-											<?=$customClass->makeCurrency(1.20, NULL)?>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="tab-pane panel-form" id="edit">
-								<div class="panel-body padding-none">
-									<div class="row border-bottom">
-										<div class="col-md-12">
-											<h3>Velkommen</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										</div>
-									</div>
-									<div class="row valign padding-all border-bottom">
-										<div class="col-md-4 text-right border-right">
-											Brukerpanel
-										</div>
-										<div class="col-md-8">
-											<div class="radio">
-												<label>
-													<input type="radio" name="transasksjonspanel" value="1" checked>
-													Ja
-												</label>
-											</div>
-
-											<div class="radio">
-												<label>
-													<input type="radio" name="transasksjonspanel" value="0">
-													Nei
-												</label>
-											</div>
-										</div>
-									</div>
-
-									<div class="row valign margin-none">
-										<div class="col-md-4 text-right border-right">
-											Tilgangsrettigheter
-										</div>
-										<div class="col-md-8 padding-all">
-											<div class="radio">
-												<label>
-													<input type="radio" name="tilgangsrettigheter" value="1" checked>
-													Ja
-												</label>
-											</div>
-
-											<div class="radio">
-												<label>
-													<input type="radio" name="tilgangsrettigheter" value="0">
-													Nei
-												</label>
-											</div>
-										</div>
-									</div>
+	<div class="right-side container-fluid full-white">
+		<div class="container-fluid padding-top">
+			<div class="row margin-invert">
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3>Konto opplysninger</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+                  <table class="table table-striped">
+                    <tbody>
+                      <tr>
+                        <td>Kontonummer: </td>
+                        <td>1234.56.78910</td>
+                      </tr>
+                      <tr>
+                        <td>Kontonavn: </td>
+                        <td>Lommepenger</td>
+                      </tr>
+                      <tr>
+                        <td>Har bankkort: </td>
+                        <td>Ja</td>
+                      </tr>
+                      <tr>
+                        <td>Kontoeier: </td>
+                        <td>Hannan Navnesen</td>
+                      </tr>
+                    </tbody>
+                  </table>
 								</div>
 							</div>
 						</div>
-					</form>
-				</div>
+						<div class="panel-footer text-right">
+									<button type="submit" class="btn btn-bankers">Se mer</button>
+						</div>
+					</div>
+          <div class="panel panel-default">
+  					<div class="panel-heading">
+  						<h4>Student visa</h4>
+  					</div>
+  					<div class="panel-body">
+  						<div class="row valign">
+  							<div class="col-md-6">
+  								<img src="./assets/common/img/dnb-bankkort.jpg" alt="picture of a baccard" class="img-responsive"/>
+  							</div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+  								<button type="button" class="btn btn-bankers margin-bottom">Erstatt kort</button>
+    								<button type="button" class="btn btn-bankers">Se pinkode</button>
+  							</div>
+  						</div>
+  					</div>
+            <div class="panel-footer text-right">
+              <button type="submit" class="btn btn-bankers">Se alle kort</button>
             </div>
-        </div>
+  				</div>
+				</div>
 
+        <div class="col-md-8">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3>Siste transaksjoner</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Tidspunkt</th>
+                        <!--<th>Kontonummer</th>-->
+                        <th>Type transaksjon</th>
+                        <th>Melding/Kjøpested</th>
+                        <th>Beløp inn</th>
+                        <th>Beløp ut</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                        $result = $satan->getAllTransactions($account);
+                        foreach ($result as $row) {
+                      ?>
+                        <tr>
+                          <td><span data-toggle="tooltip" data-placement="top" title="<?=date('d. F Y \k\l. H:i:s', $row['timestamp'])?>"><?=$customClass->convertTime($row['timestamp'])?></span></td>
+                          <?php
+                            if($row['transactionType'] == "payment"){
+                              echo ('<td>Betaling via nettbank</td>');
+                            }
+                            if($row['transactionType'] == "card"){
+                              echo ('<td>Betaling med kort</td>');
+                            }
+                            if($row['transactionType'] == "transfer"){
+                              echo ('<td>Overføring mellom kontoer</td>');
+                            }
+                          ?>
+                          <td><?=$row['message_kid']?></td>
+                          <?php
+                            if($row['recievingAccount'] != $account){
+                              echo ('<td></td>');
+                              echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+                            } else {
+                              echo ('<td>'.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+                              echo ('<td></td>');
+                            }
+                          ?>
+                        </tr>
+                      <?php
+                        }
+                      ?>
+                    </tbody>
+                  </table>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer text-right">
+									<button type="submit" class="btn btn-bankers">Se flere</button>
+						</div>
+					</div>
+		    </div>
+        
+			</div>
+		</div>
         <?php
 			include_once("assets/common/inc/footer.php");
 		?>
@@ -233,50 +162,5 @@
 		include_once("assets/common/inc/scripts.php");
 	?>
 
-    <script>
-        var ctx = document.getElementById("myChart");
-        var myChart = new Chart(ctx, {
-            type: 'horizontalBar',
-            data: {
-                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255,99,132,1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero:true
-                        }
-                    }]
-                }
-            }
-        });
-
-		$(document).ready(function () {
-    /* ----------  equal height columns   -------- */
-    $('.inner').matchHeight();
-}); // end document ready
-
-    </script>
 </body>
 </html>
