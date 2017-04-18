@@ -58,7 +58,7 @@
 									$account = $row['accountNumber'];
 									$resultTransactions = $satan->getAllTransactions($account);
 
-									for ($x=0; $x < 11 && $x < count($result); $x++) {
+									for ($x=0; $x < 11 && $x < count($resultTransactions); $x++) {
 										$row = $resultTransactions[$x];
 									/*foreach ($resultTransactions as $row) {*/
 										?>
@@ -77,9 +77,9 @@
 											?>
 											<?php
 											if($row['recievingAccount'] != $account){
-												echo ('<td class="text-success">+ '.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
-											} else {
 												echo ('<td class="text-danger">- '.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
+											} else {
+												echo ('<td class="text-success">+ '.$customClass->makeCurrency($row['kroner'], $row['oere']).'</td>');
 											}
 											?>
 										</tr>
