@@ -48,7 +48,7 @@ class Custom extends Satan{
         $browser    = $db->escape($_SERVER['HTTP_USER_AGENT']);
         $protocol   = $db->escape($_SERVER['SERVER_PROTOCOL']);
         $method     = $db->escape($_SERVER['REQUEST_METHOD']);
-        $referer    = $db->escape((isset($_SEVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER'] : null));
+        $referer    = $db->escape(isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : null);
         $time       = time();
 
         $db->query("INSERT INTO `log` SET
