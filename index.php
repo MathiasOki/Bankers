@@ -238,9 +238,10 @@
 
 				<div class="panel panel-default">
 					<div class="panel-heading">
+						<h5 class="text-semiblack margin-none">Flytte penger</h5>
+					</div>
+					<div class="panel-heading">
 						<ul class="nav nav-tabs">
-							<li><i class="fa fa-exchange fa-2x padding-left padding-top text-semiblack" aria-hidden="true"></i></li>
-							<li><h3 class="padding-left padding-right margin-top text-semiblack">Flytte penger</h3></li>
 							<li class="active"><a href="#betale" data-toggle="tab">Til andre</a></li>
 							<li><a href="#overfore" data-toggle="tab">Egne kontoer</a></li>
 							<li><a href="#vipps" data-toggle="tab">VIPPS</a></li>
