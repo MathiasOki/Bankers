@@ -41,7 +41,7 @@ class Bot{
 
 	public function reveal($type, $id, $title = "", $text = "", $url = "#", $btnTitle = ""){
 		if($type == 'alert'){
-return ('
+			return ('
 <div class="row">
 	<div class="col-md-12">
 		<div class="alert-message alert-message-success">
@@ -60,10 +60,23 @@ return ('
 		</div>
 	</div>
 </div>
-');
+			');
 		}
 		if($type == 'img') {
 			return $this->img($id);
+		}
+
+		if($type == 'bubble'){
+			return ('
+<div class="support-btn">
+	' . $this->img($id) . '
+	<div class="speech-bubble">
+		<h4>' . $title . '</h4>
+		<p>' . $text . '</p>
+		<p><a href="' . $url . '" class="btn btn-sm btn-bankers">' . $btnTitle . '</a> <a href="#" class="btn btn-sm btn-link">Nei, lukk boksen :(</a></p>
+	</div>
+</div>
+			');
 		}
 	}
 }

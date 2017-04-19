@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^(.*)\.html$ $1.php [nc]
+
+ErrorDocument 404 /westerdals/PJ3100-BANKERS/404.php 

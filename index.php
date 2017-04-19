@@ -19,8 +19,6 @@
 	?>
 
 	<div class="right-side container-fluid content-padding">
-
-
         <div class="row">
 
 			<?php

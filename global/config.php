@@ -37,7 +37,7 @@ $customClass = Custom::init();
 $satan = Satan::init();
 $bot = Bot::init();
 
-require_once ('pages.php');
+//require_once ('pages.php');
 
 $conf['sitename'] = "Bankers";
 
