@@ -297,8 +297,6 @@
 											</div><!--end row-->
 										</div><!--end panel footer-->
 									</div><!--end panel-->
-								</div><!--end col-->
-								<div class="col-md-6">
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											Superspar
@@ -361,8 +359,6 @@
 											</div><!--end row-->
 										</div><!--end panel footer-->
 									</div><!--end panel-->
-								</div><!--end col-->
-								<div class="col-md-6">
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											BSU 2.0
