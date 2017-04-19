@@ -114,7 +114,7 @@
 										<div class="panel-footer">
 											<div class="row">
 												<div class="col-md-10 col-md-offset-0">
-													<button type="submit" class="btn btn-bankers">Opprett nytt sparemål</button>
+													<a class="btn btn-bankers" href="addSavingstarget.php">Opprett nytt sparemål</a>
 												</div>
 											</div><!--end row-->
 										</div><!--end panel footer-->
@@ -220,13 +220,28 @@
 								<div class="col-md-6">
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											Nytt mål
+											Nytt sparemål
 										</div><!--end panel heading-->
-										<div class="panel-body text-center">
-											<a href="addAccountOverview.php" class="text-center">
-												<img src="assets/common/img/plus-sign.jpg"/>
-											</a>
+										<div class="panel-body">
+											<div class="row">
+												<div class="form-group col-md-6">
+												  <label for="tlf">Navn</label>
+												  <input type="number" class="form-control" id="tlf" placeholder="Skriv eller søk..." required="">
+												</div>
+
+												<div class="form-group col-md-6">
+												  <label for="sum">Beløp</label>
+												  <input type="number" class="form-control" id="sum" placeholder="Skriv eller søk...." required="">
+												</div>
+											</div>
 										</div><!--end panel body-->
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-md-10 col-md-offset-0">
+													<button type="submit" class="btn btn-bankers">Start nytt mål</button>
+												</div>
+											</div><!--end row-->
+										</div><!--end panel footer-->
 									</div><!--end panel-->
 								</div>
 							</div><!--end tab pane-->
