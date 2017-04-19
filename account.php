@@ -83,7 +83,7 @@
   						</div>
   					</div>
             <div class="panel-footer text-right">
-              <button type="button" class="btn btn-bankers"><a href="cardOverview.php">Se alle kort</a></button>
+              <a href="cardOverview.php" class="btn btn-bankers">Se alle kort</a>
             </div>
   				</div>
 				</div>
