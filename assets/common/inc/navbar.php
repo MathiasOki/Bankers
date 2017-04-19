@@ -5,8 +5,19 @@
 		<ul class="nav navbar-nav navbar-right">
 			<li>
 				<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="label label-danger">2 <i class="fa fa-angle-down"></i></span></a>
-				<div class="dropdown-menu">
-					<p>Her kommer notifikasjoner (samme som inbox i vanlig nettbanker).</p>
+				<div class="dropdown-menu padding-none">
+					<table class="table table-striped table-bordered table-hover margin-none">
+						<tbody>
+	                      <tr>
+							<td><i class="fa fa-bell-o padding-top" aria-hidden="true"></i></td>
+	                        <td>Du har fått 1000,- inn på brukskonto</td>
+	                      </tr>
+	                      <tr>
+							<td><i class="fa fa-bell-o padding-top" aria-hidden="true"></i></td>
+							<td>Du har betalt en avtalegiro siden sist du var i banken</td>
+	                      </tr>
+	                    </tbody>
+					</table>
 				</div>
 			</li>
 			<li>
