@@ -28,11 +28,12 @@
 			?>
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
+                    <div class="panel-heading text-semiblack">
 						<small class="text-muted pull-right">(<?=$customClass->makeAccountNumber($row['accountNumber'])?>)</small>
-                        Disponibel saldo på <?=$row['accountType']?>
+                        Disponibel saldo
                     </div>
                     <div class="panel-body text-center">
+						<h4 class="text-bankers"><?=$row['accountType']?></h4>
                         <h2><?=$customClass->makeCurrency($row['kroner'], $row['oere'])?></h2>
                     </div>
 					<div class="panel-footer text-center collapse-with-caret" data-toggle="collapse" data-target="#collapse-<?=$row['accountNumber']?>" aria-expanded="false" aria-controls="collapse-<?=$row['accountNumber']?>">
