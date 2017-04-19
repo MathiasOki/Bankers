@@ -272,7 +272,22 @@
 											Sparekonto
 										</div>
 										<div class="panel-body">
-
+                      <div class="col-md-4">
+                        <img src="assets/common/img/maskot/14.svg">
+                      </div>
+                      <div class="col-md-8">
+                        <h4>Fordeler</h4>
+                        <ul>
+                          <li>Høy rente, optimal konto for sparing</li>
+                          <li>Kan enkelt overføre mellom kontoer</li>
+                          <li>Lett å sette opp spareplan til denne kontoen</li>
+                        </ul>
+                        <h4>Ulemper</h4>
+                        <ul>
+                          <li>Kun 12 gebyrfrie uttak i året</li>
+                          <li>Ikke mulighet for kort</li>
+                        </ul>
+                      </div>
 										</div>
 										<div class="panel-footer">
 											<div class="row">
@@ -286,10 +301,25 @@
 								<div class="col-md-6">
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											Sparekonto 2
+											Superspar
 										</div>
 										<div class="panel-body">
-
+                      <div class="col-md-4">
+                        <img src="assets/common/img/maskot/13.svg">
+                      </div>
+                      <div class="col-md-8">
+                        <h4>Fordeler</h4>
+                        <ul>
+                          <li>Høy rente, optimal konto for sparing</li>
+                          <li>Ingen bindingstid</li>
+                          <li>Du kan selv velge beløp per måned</li>
+                        </ul>
+                        <h4>Ulemper</h4>
+                        <ul>
+                          <li>Kun 12 gebyrfrie uttak i året</li>
+                          <li>Ikke mulighet for kort</li>
+                        </ul>
+                      </div>
 										</div>
 										<div class="panel-footer">
 											<div class="row">
@@ -306,7 +336,22 @@
 											BSU
 										</div>
 										<div class="panel-body">
-
+                      <div class="col-md-4">
+                        <img src="assets/common/img/maskot/12.svg">
+                      </div>
+                      <div class="col-md-8">
+                        <h4>Fordeler</h4>
+                        <ul>
+                          <li>Høyeste rente, optimal konto for sparing</li>
+                          <li>Skattelette</li>
+                          <li>Velger selv hvor mye du vil spare</li>
+                        </ul>
+                        <h4>Ulemper</h4>
+                        <ul>
+                          <li>Kun en per kunde</li>
+                          <li>Ikke mulighet for uttak</li>
+                        </ul>
+                      </div>
 										</div>
 										<div class="panel-footer">
 											<div class="row">
@@ -323,7 +368,25 @@
 											BSU 2.0
 										</div>
 										<div class="panel-body">
-
+                      <div class="col-md-4">
+                        <img src="assets/common/img/maskot/12.svg">
+                      </div>
+                      <div class="col-md-8">
+                        <h4>Fordeler</h4>
+                        <ul>
+                          <li>Høyeste rente, optimal konto for sparing</li>
+                          <li>Kan ha denne ved siden av BSU</li>
+                          <li>Velger selv hvor mye du vil spare</li>
+                        </ul>
+                        <h4>Ulemper</h4>
+                        <ul>
+                          <li>Kun en per kunde</li>
+                          <li>Ikke mulighet for uttak</li>
+                          <li>
+                            Ikke skattelette
+                          </li>
+                        </ul>
+                      </div>
 										</div>
 										<div class="panel-footer">
 											<div class="row">
@@ -382,7 +445,9 @@
 											Fakta om fond
 										</div>
 										<div class="panel-body">
-											"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+											<p>
+                        De fond som er opprettet for å tilgodese humanitære eller ideelle formål, utbetaler gjerne kun midler fra avkastningen av fondet til utvalgte kandidater. Det vil si den avkastningen styret for et fond har klart å tjene ved å plassere fondets kapital i aksjer, obligasjoner og andre verdipapirer eller kapitalplasseringsalternativer.
+                      </p>
 										</div>
 									</div>
 								</div>
@@ -417,7 +482,7 @@
 														</td>
 													</tr>
 													<tr>
-														<td>DNB Aktiv 10</td>
+														<td>DNB Aktiv 30</td>
 														<td>100</td>
 														<td>100</td>
 														<td>%</td>
@@ -432,9 +497,61 @@
 											</table><!--end table-->
 											<div class="col-md-8">
 												<h3>Om fondet</h3>
-												<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+												<p>DNB Aktiv 30 er en alt-i-ett portefølje for investorer som ønsker å investere både i rente- og aksjefond, men som ikke selv ønsker å følge med som aktiv investor. 30 prosent vil normalt være plassert i aksjemarkedet, resten plasseres i rentemarkedet, noe som skal gi en stabil utvikling. Forvalterne har imidlertid stor frihet til å gjøre aktive skifter i denne fordelingen.</p>
 												<h3>Best case scenario</h3>
-												<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+												<p>Hvis du kjøper fond for 100 kr nå kan du få dette utbyttet hvis økningen holder seg der den er i dag.</p>
+                        <table class="table table-striped">
+                          <thead>
+                            <th>
+                              År
+                            </th>
+                            <th>
+                              Verdi
+                            </th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                1
+                              </td>
+                              <td>
+                                105
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                3
+                              </td>
+                              <td>
+                                115,76
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                5
+                              </td>
+                              <td>
+                                127,63
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                10
+                              </td>
+                              <td>
+                                162,88
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                15
+                              </td>
+                              <td>
+                                207,89
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
 											</div><!--end col-->
 											<div class="col-md-4">
 												<canvas id="myLineChart" width="100" height="100"></canvas>
