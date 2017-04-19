@@ -88,11 +88,11 @@
 
 					<div class="form-group">
 						<label for="user">Personnummer</label>
-						<input type="text" class="form-control" id="user" name="user" placeholder="Skriv inn personnummer, 11 tall." value="<?=$user?>">
+						<input type="text" class="form-control" id="user" name="user" placeholder="Skriv inn personnummer, 11 tall." value="<?=$user?>20010070242">
 					</div>
 					<div class="form-group">
 						<label for="password">Passord</label>
-						<input type="password" class="form-control" id="password" name="password" placeholder="Skriv inn passord.">
+						<input type="password" class="form-control" id="password" name="password" placeholder="Skriv inn passord." value="HejhoPp155">
 					</div>
 					<div class="form-group">
 						<button class="btn btn-default btn-block" type="submit" name="btn-login">Logg inn</button>
