@@ -238,6 +238,7 @@
 
 				<div class="panel panel-default">
 					<div class="panel-heading">
+						<i class="fa fa-exchange fa-fw float-left text-semiblack margin-right" aria-hidden="true"></i>
 						<h5 class="text-semiblack margin-none">Flytte penger</h5>
 					</div>
 					<div class="panel-heading">
