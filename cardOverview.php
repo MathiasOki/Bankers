@@ -43,7 +43,7 @@
 								<p>	Kontonummer</p>
 								<p>	Status</p>
 							</div><div class="col-md-4">
-								<p>: Haugan, Malin Glosli</p>
+								<p>: Gulbrandsen, Hannan</p>
 								<p>: **** **** ***1 2345</p>
 								<p>: Student Brukskonto</p>
 								<p>: 1234.56.78910</p>
@@ -72,7 +72,7 @@
 								<p>	Status</p>
 							</div>
 							<div class="col-md-4">
-								<p>: Haugan, Malin Glosli</p>
+								<p>: Gulbrandsen, Hannan</p>
 								<p>: **** **** ***1 2345</p>
 								<p>: 1234.56.78910</p>
 								<p>: Aktivt</p>

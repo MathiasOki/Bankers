@@ -55,7 +55,7 @@
                       </tr>
                       <tr>
                         <td>Kontoeier: </td>
-                        <td>Hannan Navnesen</td>
+                        <td>Hannan Gulbrandsen</td>
                       </tr>
                     </tbody>
                   </table>
