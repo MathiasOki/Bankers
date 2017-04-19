@@ -22,8 +22,10 @@
 			</li>
 			<li>
 				<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="hidden-xs"><?=$logged['firstName']?> <?=$logged['surName']?></span><i class="fa fa-user hidden-sm hidden-md hidden-lg" aria-hidden="true"></i> <i class="fa fa-angle-down"></i></a>
-				<ul class="dropdown-menu">
+				<ul class="dropdown-menu full-width">
 					<li><a href="#">Kontoinnstillinger</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="cardOverview.php">Kortoversikt</a></li>
 					<li role="separator" class="divider"></li>
 					<li><a href="logout.php">Logg ut</a></li>
 				</ul>
