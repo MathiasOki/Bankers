@@ -36,7 +36,7 @@
                         <h2><?=$customClass->makeCurrency($row['kroner'], $row['oere'])?></h2>
                     </div>
 					<div class="panel-footer text-center collapse-with-caret" data-toggle="collapse" data-target="#collapse-<?=$row['accountNumber']?>" aria-expanded="false" aria-controls="collapse-<?=$row['accountNumber']?>">
-						<p>Siste transaksjoner<br><i class="fa collapse-caret"></i></p>
+						<p>Siste bevegelser<br><i class="fa collapse-caret margin-top btn btn-bankers"></i></p>
 						<div class="collapse" id="collapse-<?=$row['accountNumber']?>">
 							<table class="table table-striped">
 								<thead>
