@@ -161,11 +161,6 @@ h6.border:after {
 	left: 0;
 	z-index: 100;
 
-	.chat-up{
-		bottom: 95px;
-    left: 43px;
-	}
-
 	img {
 		margin-left: 25px;
 	}
@@ -179,6 +174,11 @@ h6.border:after {
 	.maskot {
 		height: 80px;
 	}
+}
+
+.chat-up {
+bottom: 95px;
+left: 43px;
 }
 
 .dropdown:hover .dropdown-menu {
