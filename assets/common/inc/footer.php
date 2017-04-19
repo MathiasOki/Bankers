@@ -6,11 +6,58 @@
 			<p>&copy; PJ3100 Gruppe 15 - høsten 2016, vår 2017<br>
 			<?=$visitorIP?></p>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-5">
 			<h3>Kontakt</h3>
+			<table class="table">
+				<tbody>
+					<tr>
+						<td>
+							<i class="fa fa-envelope fa-lg" aria-hidden="true"></i> Email:
+						</td>
+						<td>
+							kontakt@dnb.no
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<i class="fa fa-phone fa-lg" aria-hidden="true"></i> Telefon:
+						</td>
+						<td>
+							04800
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<i class="fa fa-home fa-lg" aria-hidden="true"></i> Hovedkontor:
+						</td>
+						<td>
+							Dronning Eufemias gate 30,<br />0191 Oslo
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<i class="fa fa-inbox fa-lg" aria-hidden="true"></i> Postadresse:
+						</td>
+						<td>
+							DNB, Postboks 1600 Sentrum, <br />0021 Oslo
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<h3>Sosiale medier</h3>
+			<ul class="list-unstyled">
+				<li>
+					<a href="www.facebook.com"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> Facebook side</a>
+				</li>
+				<li>
+					<a href="www.instagram.com"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i> Instagram konto</a>
+				</li>
+				<li>
+					<a href="www.twitter.com"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> Twitter konto</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </footer>
