@@ -39,7 +39,7 @@ class Bot{
 		return ('<img src="assets/common/img/maskot/' . $id . '.svg" class="maskot">');
 	}
 
-	public function reveal($type, $id, $title = "", $text = "", $url = "#", $btnTitle = ""){
+	public function reveal($type, $id, $title = "", $text = "", $url = "", $btnTitle = ""){
 		if($type == 'alert'){
 			return ('
 <div class="row">
@@ -67,13 +67,19 @@ class Bot{
 		}
 
 		if($type == 'bubble'){
+			if(!empty($btnTitle) && !empty($url)){
+				$btn = '<p><a href="' . $url . '" class="btn btn-sm btn-bankers">' . $btnTitle . '</a> <a href="#" class="btn btn-sm btn-link">Nei, lukk boksen :(</a></p>';
+			}
+			else {
+				$btn = '';
+			}
 			return ('
 <div class="support-btn">
 	' . $this->img($id) . '
 	<div class="speech-bubble">
 		<h4>' . $title . '</h4>
 		<p>' . $text . '</p>
-		<p><a href="' . $url . '" class="btn btn-sm btn-bankers">' . $btnTitle . '</a> <a href="#" class="btn btn-sm btn-link">Nei, lukk boksen :(</a></p>
+		' . $btn . '
 	</div>
 </div>
 			');
