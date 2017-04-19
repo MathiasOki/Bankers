@@ -33,8 +33,9 @@
 		</ul>
 	</div>
 </nav>
-
+<i class="fa fa-weixin fa-3x text-green support-btn chat-up" aria-hidden="true"></i>
 <!--<div class="support-btn">
+
 	<?=$bot->reveal('img', 31)?>
 	<div class="speech-bubble">
 		<p>Hey! Nå har du hatt mye penger på en konto en stund og der kunne du tjent masse renter! Vil du at jeg skal hjelpe deg med å sette opp en sparekonto, og kanskje gi deg en innføring i enkle penger med sparing?</p>
