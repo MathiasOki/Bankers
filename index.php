@@ -489,7 +489,7 @@
 
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3>Budsjett</h3>
+							<h4>Budsjett</h4>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -507,7 +507,7 @@
             <div class="col-md-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						Sparemål
+						<h4>Sparemål</h4>
 					</div>
 					<div class="panel-body">
 						<?php
@@ -551,7 +551,7 @@
 
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3>Dagens tips</h3>
+						<h4>Dagens tips</h4>
 					</div>
 					<div class="panel-body text-center">
 						<h4>BSU - Bolig sparing for unge</h4>

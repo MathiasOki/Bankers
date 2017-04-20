@@ -38,7 +38,7 @@
 				<div class="col-md-8">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3>Budsjett</h3>
+							<h4>Budsjett</h4>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -56,7 +56,7 @@
 
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3>Foreslått budsjett</h3>
+							<h4>Foreslått budsjett</h4>
 						</div>
 						<div class="panel-body">
 							<div class="row">

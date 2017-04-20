@@ -31,7 +31,7 @@
 										</div>
 										<div class="panel panel-default">
 											<div class="panel-heading">
-												Brukskonto
+												<h4>Brukskonto</h4>
 											</div>
 											<div class="panel-body">
                         <div class="col-md-4">
@@ -58,7 +58,7 @@
 									<div class="col-md-12">
 										<div class="panel panel-default">
 											<div class="panel-heading">
-												Depositumskonto
+												<h4>Depositumskonto</h4>
 											</div>
 											<div class="panel-body">
                         <div class="col-md-4">
@@ -91,7 +91,7 @@
 										</div>
 										<div class="panel panel-default">
 											<div class="panel-heading">
-                        Sparekonto
+                        <h4>Sparekonto</h4>
 											</div>
 											<div class="panel-body">
                         <div class="col-md-4">
@@ -119,7 +119,7 @@
 									<div class="col-md-12">
 										<div class="panel panel-default">
 											<div class="panel-heading">
-												Superspar
+												<h4>Superspar</h4>
 											</div>
 											<div class="panel-body">
                         <div class="col-md-4">
@@ -147,7 +147,7 @@
 									<div class="col-md-12">
 										<div class="panel panel-default">
 											<div class="panel-heading">
-												BSU
+												<h4>BSU</h4>
 											</div>
 											<div class="panel-body">
                         <div class="col-md-4">

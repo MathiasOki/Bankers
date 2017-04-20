@@ -31,7 +31,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Telefon
+                        <h4>Telefon</h4>
                     </div>
                     <div class="panel-body text-center">
                         <p class="lead"><b>04800</b></p>
@@ -44,7 +44,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Facebook
+                        <h4>Facebook</h4>
                     </div>
                     <div class="panel-body text-center">
 						<p class="lead">Vi kan svare deg på de fleste generelle spørsmål alle dager, hele døgnet!</p>
@@ -56,7 +56,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Hvor er vi?
+                        <h4>Hvor er vi?</h4>
                     </div>
                     <div class="panel-body text-center">
                         <p class="lead">Lurer du på hvor du kan besøke oss? Her kan du søke etter kontorer og åpningstider.</p>

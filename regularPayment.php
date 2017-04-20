@@ -37,7 +37,7 @@
 	            <div class="col-md-8">
 					<div class="panel panel-default">
 	                    <div class="panel-heading">
-							<h3>Sett opp ny fast betaling</h3>
+							<h4>Sett opp ny fast betaling</h4>
 	                    </div>
 
 						<div class="panel-body">
@@ -109,7 +109,7 @@
 	            <div class="col-md-4">
 	                <div class="panel panel-default">
 						<div class="panel-heading">
-	                        Faste betalinger
+	                       <h4>Faste betalinger</h4>
 	                    </div>
 	                    <div class="panel-body">
 	                        <p>
@@ -124,7 +124,7 @@
 				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3>Mine faste betalinger</h3>
+							<h4>Mine faste betalinger</h4>
 						</div>
 						<div class="panel-body">
 							<table class="table table-striped">
