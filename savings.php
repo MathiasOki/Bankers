@@ -159,7 +159,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 									<div class="panel-footer">
 										<div class="row">
 											<div class="col-md-10 col-md-offset-0">
-												<button type="submit" class="btn btn-bankers">Opprett nytt sparemål</button>
+												<a href="savings.php#tab_sparemal" class="btn btn-bankers">Opprett nytt sparemål</a>
 											</div>
 										</div><!--end row-->
 									</div><!--end panel footer-->
@@ -201,7 +201,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 									<div class="panel-footer">
 										<div class="row">
 											<div class="col-md-10 col-md-offset-0">
-												<button type="submit" class="btn btn-bankers">Se mer om fond</button>
+												<a href="savings.php#tab_spareifond" class="btn btn-bankers">Se mer om fond</a>
 											</div>
 										</div><!--end row-->
 									</div><!--end panel footer-->
