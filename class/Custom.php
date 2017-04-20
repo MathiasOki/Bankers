@@ -83,6 +83,10 @@ class Custom extends Satan{
 		}
 	}
 
+	public function progressBarPercentage($part, $whole){
+		return round($part/$whole*100);
+	}
+
 	public function makeAccountNumber($number, $desc = true) {
 		if(!empty($number)){
 		$str1 = substr($number, 0, 4);

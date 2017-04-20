@@ -447,26 +447,34 @@
 						Sparemål
 					</div>
 					<div class="panel-body">
-						<h5>Ny macbook</h5>
-						<div class="progress">
-							  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							    60%
-							  </div>
-						</div>
+						<?php
+						$result = $satan->getSavingsTargets($logged['customerID']);
+						foreach($result as $row) {
 
-						<h5>Ny bil</h5>
-						<div class="progress">
-							  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
-							    15%
-							  </div>
-						</div>
+							if($row['savedKroner'] == 0){
+								$savedKroner = 0.0001;
+							} else {
+								$savedKroner = $row['savedKroner'];
+							}
 
-						<h5>Ny tattovering</h5>
-						<div class="progress">
-							  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-							    90%
-							  </div>
-						</div>
+							if($customClass->progressBarPercentage($savedKroner,$row['goalKroner']) <= 100 && $customClass->progressBarPercentage($savedKroner,$row['goalKroner']) > 75){
+								$color = 'success';
+							}
+							elseif($customClass->progressBarPercentage($savedKroner,$row['goalKroner']) <= 75 && $customClass->progressBarPercentage($savedKroner,$row['goalKroner']) > 10){
+								$color = 'warning';
+							}
+							elseif($customClass->progressBarPercentage($savedKroner,$row['goalKroner']) <= 10) {
+								$color = 'danger';
+							}
+							?>
+							<h5><?=$row['name']?></h5>
+							<div class="progress">
+								<div class="progress-bar progress-bar-<?=$color?>" role="progressbar" aria-valuenow="<?=$customClass->progressBarPercentage($savedKroner,$row['goalKroner'])?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=$customClass->progressBarPercentage($savedKroner,$row['goalKroner'])?>%;">
+									<?=$customClass->progressBarPercentage($savedKroner,$row['goalKroner'])?>%
+								</div>
+							</div>
+
+							<?php } ?>
 					</div>
 					<div class="panel-footer">
 						<div class="row">

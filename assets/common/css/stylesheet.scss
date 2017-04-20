@@ -159,8 +159,6 @@ h6.border:after {
 	bottom: 15px;
 	left: 0;
 	z-index: 100;
-	opacity: 0.5;
-	transition: opacity 0.5s;
 
 	img {
 		margin-left: 25px;
@@ -175,16 +173,12 @@ h6.border:after {
 	.maskot {
 		height: 80px;
 	}
-
-	&:hover {
-		opacity: 1;
-		transition: opacity 0.5s;
-	}
 }
 
 .chat-up{
 	left: 45px;
 	bottom: 95px;
+	position: fixed;
 }
 
 .dropdown:hover .dropdown-menu {
