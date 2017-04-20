@@ -960,7 +960,11 @@ a.list-group-item:focus {
 .accounts>ul>li>a {
 	padding: 15px 20px;
 	display: block;
-	color: #666666;
+	color: #333333;
+}
+
+.text-muted {
+	color: #333333;
 }
 
 .accounts > ul > li > a b {
