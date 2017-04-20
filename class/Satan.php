@@ -229,4 +229,47 @@ class Satan{
 
 		return $data;
 	}
+
+	/**
+ 	 * Savings targets
+ 	 *
+ 	 * @from must be an account number.
+	 * @to must be an account number.
+	 * @kroner must be an integer.
+	 * @ore must be an integer.
+ 	 * @return true or false.
+	 */
+
+	public function createSavingsTarget($name, $customerId, $kroner, $ore){
+		if(!empty($name) && !empty($customerId)){
+			$data = self::$server . 'createsavingstargets/' . $name . '/' . $customerId . '/' . $kroner . '/' . $ore;
+		}
+
+		$data = @file_get_contents($data);
+		if($data === FALSE){
+			$error = true;
+			return $error;
+		}
+		else {
+			$data = json_decode($data, true);
+			return $data;
+		}
+	}
+
+	public function getSavingsTargets($account){
+		if(!empty($account)){
+			$data = self::$server . '/' . $account . '/allsavingstargets';
+		}
+
+		$data = @file_get_contents($data);
+		if($data === FALSE){
+			$error = true;
+			return $error;
+		}
+		else {
+			$data = json_decode($data, true);
+
+			return $data;
+		}
+	}
 }

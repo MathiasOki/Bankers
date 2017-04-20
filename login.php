@@ -88,7 +88,7 @@
 
 					<div class="form-group">
 						<label for="user">Personnummer</label>
-						<input type="text" class="form-control" id="user" name="user" placeholder="Skriv inn personnummer, 11 tall." value="<?=$user?>20010070242">
+						<input type="text" class="form-control" id="user" name="user" placeholder="Skriv inn personnummer, 11 tall." value="<?=$user?>20010170242">
 					</div>
 					<div class="form-group">
 						<label for="password">Passord</label>
