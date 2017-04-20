@@ -90,26 +90,27 @@
 											Sparemål
 										</div><!--end panel heading-->
 										<div class="panel-body">
-											<h5>Ny macbook</h5>
+											<?php
+												function progress($part, $whole){
+													return round($part/$whole*100);
+												}
+
+												$result = $satan->getSavingsTargets($logged['customerID']);
+												foreach($result as $row) {
+
+													if($row['savedKroner'] == 0){
+														$savedKroner = 1;
+													}
+											?>
+
+											<h5><?=$row['name']?></h5>
 											<div class="progress">
-												  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-												    60%
-												  </div>
+												<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="<?=progress($savedKroner,$row['goalKroner'])?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=progress($savedKroner,$row['goalKroner'])?>%;">
+													<?=progress($savedKroner,$row['goalKroner'])?>%
+												</div>
 											</div>
 
-											<h5>Ny bil</h5>
-											<div class="progress">
-												  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
-												    15%
-												  </div>
-											</div>
-
-											<h5>Ny tattovering</h5>
-											<div class="progress">
-												  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-												    90%
-												  </div>
-											</div>
+											<?php } ?>
 										</div><!--end panel body-->
 										<div class="panel-footer">
 											<div class="row">
@@ -223,9 +224,24 @@
 											Nytt mål
 										</div><!--end panel heading-->
 										<div class="panel-body text-center">
-											<a href="addAccountOverview.php" class="text-center">
-												<img src="assets/common/img/plus-sign.jpg"/>
-											</a>
+											<div class="row">
+												<div class="form-group col-md-6">
+												  <label for="tlf">Navn</label>
+												  <input type="number" class="form-control" id="tlf" placeholder="Skriv eller søk..." required="">
+												</div>
+
+												<div class="form-group col-md-6">
+												  <label for="sum">Beløp</label>
+												  <input type="number" class="form-control" id="sum" placeholder="Skriv eller søk...." required="">
+												</div>
+											</div>
+										</div><!--end panel body-->
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-md-10 col-md-offset-0">
+													<button type="submit" class="btn btn-bankers">Start nytt mål</button>
+												</div>
+											</div><!--end row-->
 										</div><!--end panel body-->
 									</div><!--end panel-->
 								</div>
