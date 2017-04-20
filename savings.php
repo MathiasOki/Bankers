@@ -128,10 +128,6 @@ if( isset($_POST['createSavingsTarget']) ) {
 								</div><!--end panel heading-->
 								<div class="panel-body">
 									<?php
-									function progress($part, $whole){
-										return round($part/$whole*100);
-									}
-
 									$result = $satan->getSavingsTargets($logged['customerID']);
 									foreach($result as $row) {
 
@@ -141,20 +137,20 @@ if( isset($_POST['createSavingsTarget']) ) {
 											$savedKroner = $row['savedKroner'];
 										}
 
-										if(progress($savedKroner,$row['goalKroner']) <= 100 && progress($savedKroner,$row['goalKroner']) > 75){
+										if($customClass->progressBarPercentage($savedKroner,$row['goalKroner']) <= 100 && $customClass->progressBarPercentage($savedKroner,$row['goalKroner']) > 75){
 											$color = 'success';
 										}
-										elseif(progress($savedKroner,$row['goalKroner']) <= 75 && progress($savedKroner,$row['goalKroner']) > 10){
+										elseif($customClass->progressBarPercentage($savedKroner,$row['goalKroner']) <= 75 && $customClass->progressBarPercentage($savedKroner,$row['goalKroner']) > 10){
 											$color = 'warning';
 										}
-										elseif(progress($savedKroner,$row['goalKroner']) <= 10) {
+										elseif($customClass->progressBarPercentage($savedKroner,$row['goalKroner']) <= 10) {
 											$color = 'danger';
 										}
 										?>
 										<h5><?=$row['name']?></h5>
 										<div class="progress">
-											<div class="progress-bar progress-bar-<?=$color?>" role="progressbar" aria-valuenow="<?=progress($savedKroner,$row['goalKroner'])?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=progress($savedKroner,$row['goalKroner'])?>%;">
-												<?=progress($savedKroner,$row['goalKroner'])?>%
+											<div class="progress-bar progress-bar-<?=$color?>" role="progressbar" aria-valuenow="<?=$customClass->progressBarPercentage($savedKroner,$row['goalKroner'])?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=$customClass->progressBarPercentage($savedKroner,$row['goalKroner'])?>%;">
+												<?=$customClass->progressBarPercentage($savedKroner,$row['goalKroner'])?>%
 											</div>
 										</div>
 
