@@ -48,12 +48,13 @@
 				<?php
 					$result = $satan->getAccounts($logged['customerID']);
 					foreach($result as $row) {
+						$accountName = $row['name'] != null ? $row['name'] : $row['accountType'];
 				?>
 				<li>
 					<a href="account.php">
 						<div class="row valign">
 							<div class="col-xs-5">
-								<b><?=$row['accountType']?></b> <!--<i class="fa fa-credit-card card" aria-hidden="true"></i>--><br>
+								<b><?=$accountName?></b> <!--<i class="fa fa-credit-card card" aria-hidden="true"></i>--><br>
 								<small class="text-muted"><?=$customClass->makeAccountNumber($row['accountNumber'], false)?></small>
 							</div>
 							<div class="col-xs-5 text-right">

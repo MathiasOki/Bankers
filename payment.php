@@ -151,8 +151,9 @@
 													<?php
 														$result = $satan->getAccounts($logged['customerID']);
 														foreach($result as $row) {
+															$accountName = $row['name'] != null ? $row['name'] : $row['accountType'];
 													?>
-													<option value="<?=$row['accountNumber']?>"><?=$row['accountType']?> (<?=$customClass->makeAccountNumber($row['accountNumber'])?>)</option>
+													<option value="<?=$row['accountNumber']?>"><?=$accountName?> (<?=$customClass->makeAccountNumber($row['accountNumber'])?>)</option>
 													<?php
 														}
 													?>

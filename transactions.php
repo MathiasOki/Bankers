@@ -36,8 +36,9 @@
 							<?php
 								$result = $satan->getAccounts($logged['customerID']);
 								foreach($result as $row) {
+									$accountName = $row['name'] != null ? $row['name'] : $row['accountType'];
 							?>
-								<li class="text-center <?=($account == $row['accountNumber']) ? 'active':'';?>"><a href="?account=<?=$row['accountNumber']?>"><?=$row['accountType']?> <br><small class="text-muted" style="font-size:10px;">(<?=$customClass->makeAccountNumber($row['accountNumber'])?>)</small></a></li>
+								<li class="text-center <?=($account == $row['accountNumber']) ? 'active':'';?>"><a href="?account=<?=$row['accountNumber']?>"><?=$accountName?> <br><small class="text-muted" style="font-size:10px;">(<?=$customClass->makeAccountNumber($row['accountNumber'])?>)</small></a></li>
 							<?php
 								}
 							?>
