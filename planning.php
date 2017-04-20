@@ -53,21 +53,7 @@
 					</div>
 		        </div>
 				<div class="col-md-4">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3>Oppdelt budsjett</h3>
-						</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-md-12">
-									<canvas id="myPieChart" width="100" height="100"></canvas>
-								</div>
-							</div>
-						</div>
-						<div class="panel-footer text-right">
-									<button type="submit" class="btn btn-bankers">Endre budsjett</button>
-						</div>
-					</div>
+
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3>Foreslått budsjett</h3>
@@ -100,24 +86,6 @@
 
 	<script>
 		var ctx = document.getElementById("myChart");
-        var cty = document.getElementById("myPieChart");
-		var myPieChart = new Chart(cty,{
-		    type: 'pie',
-			data: {
-                labels: [],
-                datasets: [{
-                    data: [3500, 2000, 1200, 1000, 1500, 800],
-                    backgroundColor: [
-						'rgba(255,99,132,1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ]
-                }]
-            },
-		});
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
