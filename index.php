@@ -471,7 +471,7 @@
 					<div class="panel-footer">
 						<div class="row">
 							<div class="col-md-10 col-md-offset-0">
-								<a href="savings.php#sparemal" class="btn btn-primary">Gå til sparemål</a>
+								<a href="#" class="btn btn-primary">Gå til sparemål</a>
 							</div>
 						</div>
 					</div>

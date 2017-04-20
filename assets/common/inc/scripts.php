@@ -10,8 +10,7 @@ $(function () {
 	$('[data-toggle="collapse"]').collapse()
 })
 
-$(function () {
-	var activeTab = $('[href=' + location.hash + ']');
-	activeTab && activeTab.tab('show');
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
 });
 </script>
