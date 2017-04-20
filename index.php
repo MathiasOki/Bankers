@@ -181,8 +181,8 @@
 						<h4 class="text-bankers"><?=$accountName?></h4>
                         <h2><?=$customClass->makeCurrency($row['kroner'], $row['oere'])?></h2>
                     </div>
-					<div class="panel-footer text-center collapse-with-caret" data-toggle="collapse" data-target="#collapse-<?=$row['accountNumber']?>" aria-expanded="false" aria-controls="collapse-<?=$row['accountNumber']?>">
-						<p>Siste bevegelser<br><i class="fa collapse-caret margin-top btn btn-bankers"></i></p>
+					<div class="panel-footer text-center" data-toggle="collapse" data-target="#collapse-<?=$row['accountNumber']?>" aria-expanded="false" aria-controls="collapse-<?=$row['accountNumber']?>">
+						<p class="btn btn-default">Siste bevegelser <i class="fa fa-angle-down" aria-hidden="true"></i></p>
 						<div class="collapse" id="collapse-<?=$row['accountNumber']?>">
 							<table class="table table-striped">
 								<thead>
