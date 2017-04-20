@@ -422,7 +422,66 @@
 
 						<div class="tab-pane panel-form" id="vipps">
 							<div class="panel-body">
-								Vipps kommer snart!
+								<div class="row">
+									<div class="col-md-12">
+										<form class="form-horizontal form-custom" method="post" action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>">
+											<div class="row">
+												<div class="col-sm-4 border-right">
+													<div class="form-group">
+														<label for="accountFrom">Fra konto</label>
+														<select class="form-control" name="accountFrom" required="">
+															<option selected disabled>Velg konto</option>
+															<?php
+																$result = $satan->getAccounts($logged['customerID']);
+																foreach($result as $row) {
+																	$accountName = $row['name'] != null ? $row['name'] : $row['accountType'];
+															?>
+															<option value="<?=$row['accountNumber']?>"><?=$accountName?> (<?=$customClass->makeAccountNumber($row['accountNumber'])?>)</option>
+															<?php
+																}
+															?>
+														</select>
+													</div>
+												</div>
+
+												<div class="col-sm-4 border-right">
+													<div class="form-group">
+														<label for="accountTo">Til (telefonnummer)</label>
+														<input type="text" class="form-control typeahead" name="accountTo" required="">
+													</div>
+												</div>
+
+												<div class="col-sm-4">
+													<div class="form-group">
+														<label for="kroner">Beløp (kroner og øre)</label>
+														<div class="row">
+															<div class="col-xs-8 ">
+																<input class="form-control" type="number" name="kroner" required="">
+															</div>
+															<div class="col-xs-4 padding-none padding-right">
+																<input class="form-control" type="number" name="ore" value="00" required="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<hr>
+
+											<div class="form-group">
+												<label for="message">Melding</label>
+												<textarea class="form-control" rows="2" name="message"></textarea>
+											</div>
+											<hr>
+
+											<div class="row">
+												<div class="col-md-12">
+													<button type="submit" name="vipps" class="btn btn-bankers btn-block">Vipps!</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -558,6 +617,49 @@
                 }
             }
         });
+
+		var substringMatcher = function(strs) {
+  return function findMatches(q, cb) {
+    var matches, substringRegex;
+
+    // an array that will be populated with substring matches
+    matches = [];
+
+    // regex used to determine if a string contains the substring `q`
+    substrRegex = new RegExp(q, 'i');
+
+    // iterate through the pool of strings and for any string that
+    // contains the substring `q`, add it to the `matches` array
+    $.each(strs, function(i, str) {
+      if (substrRegex.test(str)) {
+        matches.push(str);
+      }
+    });
+
+    cb(matches);
+  };
+};
+
+var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
+  'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
+  'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
+  'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
+  'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+  'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
+  'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+  'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+  'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+];
+
+$('.typeahead').typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 1
+},
+{
+  name: 'states',
+  source: substringMatcher(states)
+});
 
     </script>
 </body>
