@@ -98,15 +98,15 @@ if( isset($_POST['createSavingsTarget']) ) {
 										</thead><!--end table head-->
 										<tbody>
 											<tr>
-												<td>Spare</td>
+												<td>Pengebingen</td>
 												<td>15000,-</td>
 											</tr>
 											<tr>
-												<td>BSU</td>
+												<td>Lønnskonto</td>
 												<td>25000,-</td>
 											</tr>
 											<tr>
-												<td>Spare til meg selv</td>
+												<td>Felleskonto familie</td>
 												<td>5000,-</td>
 											</tr>
 										</tbody><!--end table body-->
@@ -159,7 +159,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 									<div class="panel-footer">
 										<div class="row">
 											<div class="col-md-10 col-md-offset-0">
-												<a href="./savings.php?#tab_sparemal" class="btn btn-bankers">Opprett nytt sparemål</a>
+												<a href="savings.php?#tab_sparemal" class="btn btn-bankers">Opprett nytt sparemål</a>
 											</div>
 										</div><!--end row-->
 									</div><!--end panel footer-->
@@ -201,7 +201,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 									<div class="panel-footer">
 										<div class="row">
 											<div class="col-md-10 col-md-offset-0">
-												<a href="savings.php#tab_spareifond" class="btn btn-bankers">Se mer om fond</a>
+												<a href="savings.php?#tab_spareifond" class="btn btn-bankers">Se mer om fond</a>
 											</div>
 										</div><!--end row-->
 									</div><!--end panel footer-->
@@ -267,7 +267,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 									<div class="panel-heading">
 										Nytt mål
 									</div><!--end panel heading-->
-									<form class="form-horizontal form-custom" method="post" action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>#tab_sparemal">
+									<form class="form-horizontal form-custom" method="post" action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>#?tab_sparemal">
 									<div class="panel-body">
 										<?php
 											if (isset($errorMessage)) {
@@ -328,17 +328,17 @@ if( isset($_POST['createSavingsTarget']) ) {
 											</thead><!--end table head-->
 											<tbody>
 												<tr>
-													<td>Spare</td>
-													<td>Kapital</td>
+													<td>Pengebingen</td>
+													<td>Kapitalkonto</td>
 													<td>15000,-</td>
 												</tr>
 												<tr>
-													<td>BSU</td>
-													<td>BSU</td>
+													<td>Lønnskonto</td>
+													<td>Brukskonto</td>
 													<td>25000,-</td>
 												</tr>
 												<tr>
-													<td>Spare til meg selv</td>
+													<td>Felleskonto familie</td>
 													<td>Sparekonto</td>
 													<td>5000,-</td>
 												</tr>
