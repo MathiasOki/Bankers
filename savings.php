@@ -246,8 +246,8 @@ if( isset($_POST['createSavingsTarget']) ) {
 										<div class="row">
 											<div class="col-md-12">
 												<div class="progress">
-													<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
-														55%
+													<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 34%;">
+														34%
 													</div>
 												</div>
 											</div>
