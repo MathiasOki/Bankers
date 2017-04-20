@@ -12,6 +12,43 @@ $logged = $satan->getUser($_SESSION['user']);
 require_once("assets/common/inc/head.php");
 //require_once("assets/common/inc/header.php");
 require_once("assets/common/inc/navbar.php");
+
+$error = false;
+
+if( isset($_POST['createSavingsTarget']) ) {
+
+	// prevent injections/ clear user invalid inputs
+	$name = trim($_POST['name']);
+	$name = rawurlencode($name);
+
+	$sum = trim($_POST['sum']);
+	$sum = strip_tags($sum);
+	$sum = htmlspecialchars($sum);
+
+	$ore = 0;
+
+	if(empty($name)){
+		$error = true;
+		$errorMessage = "Du må skrive inn navn på sparemålet.";
+	}
+
+	if(empty($sum)){
+		$error = true;
+		$errorMessage = "Du må skrive inn beløp.";
+	}
+
+	if(!$error){
+		$data = $satan->createSavingsTarget($name, $logged['customerID'], $sum, $ore);
+
+		if ($data == true) {
+			$successMessage = "Sparemålet ble opprettet! Lykke til.";
+		}
+		if ($data == false) {
+			$error = true;
+			$errorMessage = "En feil skjedde. Prøv igjen.";
+		}
+	}
+}
 ?>
 <div class="flex-container">
 
@@ -99,7 +136,7 @@ require_once("assets/common/inc/navbar.php");
 									foreach($result as $row) {
 
 										if($row['savedKroner'] == 0){
-											$savedKroner = 1;
+											$savedKroner = 0.0001;
 										} else {
 											$savedKroner = $row['savedKroner'];
 										}
@@ -234,26 +271,47 @@ require_once("assets/common/inc/navbar.php");
 									<div class="panel-heading">
 										Nytt mål
 									</div><!--end panel heading-->
+									<form class="form-horizontal form-custom" method="post" action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>#tab_sparemal">
 									<div class="panel-body">
+										<?php
+											if (isset($errorMessage)) {
+										?>
+										<div class="alert alert-danger margin-top">
+											<?=$errorMessage?>
+										</div>
+										<?php
+										   }
+										?>
+
+										<?php
+											if (isset($successMessage)) {
+										?>
+										<div class="alert alert-success margin-top">
+											<?=$successMessage?>
+										</div>
+										<?php
+										   }
+										?>
 										<div class="row">
 											<div class="form-group col-md-6">
-												<label for="tlf">Navn</label>
-												<input type="number" class="form-control" id="tlf" placeholder="Skriv eller søk..." required="">
+												<label for="name">Navn</label>
+												<input type="text" class="form-control" id="name" name="name" placeholder="Skriv inn navn på sparemål..." required="">
 											</div>
 
 											<div class="form-group col-md-6">
 												<label for="sum">Beløp</label>
-												<input type="number" class="form-control" id="sum" placeholder="Skriv eller søk...." required="">
+												<input type="number" class="form-control" id="sum" name="sum" placeholder="Skriv inn målet..." required="">
 											</div>
 										</div>
 									</div><!--end panel body-->
 									<div class="panel-footer">
 										<div class="row">
 											<div class="col-md-10 col-md-offset-0">
-												<button type="submit" class="btn btn-bankers">Start nytt mål</button>
+												<button type="submit" name="createSavingsTarget" class="btn btn-bankers">Start nytt mål</button>
 											</div>
 										</div><!--end row-->
 									</div><!--end panel body-->
+								</form>
 								</div><!--end panel-->
 							</div>
 						</div><!--end tab pane-->
