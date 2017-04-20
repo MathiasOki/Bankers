@@ -33,7 +33,6 @@
 		</ul>
 	</div>
 </nav>
-<i class="fa fa-weixin fa-3x text-green support-btn chat-up" aria-hidden="true"></i>
 <!--<div class="support-btn">
 
 	<?=$bot->reveal('img', 31)?>
