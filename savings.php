@@ -329,6 +329,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 											<tbody>
 												<tr>
 													<td>Pengebingen</td>
+													<td>Kapitalkonto</td>
 													<td>15000,-</td>
 												</tr>
 												<tr>
