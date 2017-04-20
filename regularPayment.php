@@ -156,7 +156,7 @@
 										<td>Lønnskonto</td>
 										<td>Pengebingen</td>
 										<td>Månedlig</td>
-										<td>500.00</td>
+										<td>1500.00</td>
 										<td><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-remove"></span><span class="glyphicon glyphicon-menu-down"></span></td>
 									</tr>
 								</tbody>
