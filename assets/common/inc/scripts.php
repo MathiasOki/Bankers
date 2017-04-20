@@ -11,6 +11,9 @@ $(function () {
 })
 
 $(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="popover"]').popover({
+		content: '<p class="bg-info padding-all">Kundehjelp: Kan jeg hjelpe deg med noe?</p><p><input type="text" class="form-control"></p>',
+		html: true,
+	});
 });
 </script>
