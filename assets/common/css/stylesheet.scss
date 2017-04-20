@@ -282,6 +282,13 @@ h6.border:after {
     background-color: $primary-color;
 }
 
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+	color: white;
+	background-color: #00c8ff;
+}
+
 .navbar-collapse {
     padding: 0 15px 0 0;
 }
