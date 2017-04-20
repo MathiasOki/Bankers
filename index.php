@@ -440,7 +440,7 @@
 							</div>
 						</div>
 						<div class="panel-footer text-right">
-									<button type="submit" class="btn btn-primary">Endre budsjett</button>
+									<button type="submit" class="btn btn-bankers">Endre budsjett</button>
 						</div>
 					</div>
                 </div>
@@ -483,7 +483,7 @@
 					<div class="panel-footer">
 						<div class="row">
 							<div class="col-md-10 col-md-offset-0">
-								<a href="savings.php#tab_sparemal" class="btn btn-primary">Gå til sparemål</a>
+								<a href="savings.php#tab_sparemal" class="btn btn-bankers">Gå til sparemål</a>
 							</div>
 						</div>
 					</div>
@@ -502,7 +502,7 @@
 						</p>
 					</div>
 					<div class="panel-footer text-right">
-								<button type="submit" class="btn btn-primary">Endre budsjett</button>
+								<button type="submit" class="btn btn-bankers">Endre budsjett</button>
 					</div>
 				</div>
             </div>
