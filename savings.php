@@ -115,7 +115,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 								<div class="panel-footer">
 									<div class="row">
 										<div class="col-md-10 col-md-offset-0">
-											<button type="submit" class="btn btn-bankers">Opprett ny sparekonto</button>
+											<a href="addAccountOverview.php" class="btn btn-bankers">Opprett ny sparekonto</button>
 										</div>
 									</div>
 								</div><!--end panel footer-->
@@ -650,17 +650,6 @@ if( isset($_POST['createSavingsTarget']) ) {
 	include_once("assets/common/inc/scripts.php");
 	?>
 	<script>
-	// Javascript to enable link to tab
-	var hash = document.location.hash;
-	var prefix = "tab_";
-	if (hash) {
-	    $('.nav-pills a[href="'+hash.replace(prefix,"")+'"]').tab('show');
-	}
-
-	// Change hash for page-reload
-	$('.nav-pills a').on('shown.bs.tab', function (e) {
-	    window.location.hash = e.target.hash.replace("#", "#" + prefix);
-	});
 	var ctx = document.getElementById("myLineChart");
 	var myLineChart = new Chart(ctx, {
 		type: 'line',

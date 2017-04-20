@@ -16,4 +16,16 @@ $(document).ready(function(){
 		html: true,
 	});
 });
+
+// Javascript to enable link to tab
+var hash = document.location.hash;
+var prefix = "tab_";
+if (hash) {
+	$('.nav-pills a[href="'+hash.replace(prefix,"")+'"]').tab('show');
+}
+
+// Change hash for page-reload
+$('.nav-pills a').on('shown.bs.tab', function (e) {
+	window.location.hash = e.target.hash.replace("#", "#" + prefix);
+});
 </script>
