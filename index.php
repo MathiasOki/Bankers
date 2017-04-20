@@ -561,7 +561,7 @@
 						</p>
 					</div>
 					<div class="panel-footer text-right">
-								<a href="planning.php" class="btn btn-bankers">Endre budsjett</a>
+								<a href="#" class="btn btn-bankers">Gå til BSU</a>
 					</div>
 				</div>
             </div>
