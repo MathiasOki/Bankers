@@ -86,7 +86,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 						<div class="col-md-12">
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									Dine sparekontoer
+									<h4>Dine sparekontoer</h4>
 								</div><!--end panel heading-->
 								<div class="panel-body">
 									<table class="table table-striped">
@@ -124,7 +124,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 						<div class="col-md-6">
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									Sparemål
+									<h4>Sparemål</h4>
 								</div><!--end panel heading-->
 								<div class="panel-body">
 									<?php
@@ -168,7 +168,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 							<div class="col-md-6">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										Sparing i fond
+										<h4>Sparing i fond</h4>
 									</div><!--end panel heading-->
 									<div class="panel-body">
 										<table class="table table-striped">
@@ -212,7 +212,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 							<div class="col-md-6">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										Ny Macbook Pro
+										<h4>Ny Macbook Pro</h4>
 									</div><!--end panel heading-->
 									<div class="panel-body">
 										<table class="table table-striped">
@@ -265,7 +265,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 							<div class="col-md-6">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										Nytt mål
+										<h4>Nytt mål</h4>
 									</div><!--end panel heading-->
 									<form class="form-horizontal form-custom" method="post" action="<?=htmlspecialchars($_SERVER['PHP_SELF'])?>#?tab_sparemal">
 									<div class="panel-body">
@@ -315,7 +315,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 							<div class="col-md-12">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										Dine sparekontoer
+										<h4>Dine sparekontoer</h4>
 									</div><!--end panel heading-->
 									<div class="panel-body">
 										<table class="table table-striped">
@@ -345,7 +345,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 							<div class="col-md-6">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										Sparekonto
+										<h4>Sparekonto</h4>
 									</div>
 									<div class="panel-body">
 										<div class="col-md-4">
@@ -375,7 +375,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 								</div><!--end panel-->
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										Superspar
+										<h4>Superspar</h4>
 									</div>
 									<div class="panel-body">
 										<div class="col-md-4">
@@ -407,7 +407,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 							<div class="col-md-6">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										BSU
+										<h4>BSU</h4>
 									</div>
 									<div class="panel-body">
 										<div class="col-md-4">
@@ -437,7 +437,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 								</div><!--end panel-->
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										BSU 2.0
+										<h4>BSU 2.0</h4>
 									</div>
 									<div class="panel-body">
 										<div class="col-md-4">
@@ -474,7 +474,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 							<div class="col-md-8">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										Dine fond
+										<h4>Dine fond</h4>
 									</div><!--end panel heading-->
 									<div class="panel-body">
 										<table class="table table-striped">
@@ -514,7 +514,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 							<div class="col-md-4">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										Fakta om fond
+										<h4>Fakta om fond</h4>
 									</div>
 									<div class="panel-body">
 										<p>
@@ -526,7 +526,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 							<div class="col-md-12">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										Kjøp fond
+										<h4>Kjøp fond</h4>
 									</div>
 									<div class="panel-body">
 										<table class="table table-striped">
