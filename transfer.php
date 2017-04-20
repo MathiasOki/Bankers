@@ -89,8 +89,8 @@
 				<div class="panel panel-default panel-white">
 					<div class="panel-heading">
 						<ul class="nav nav-tabs">
-							<li><a href="payment.php">Betale</a></li>
-							<li class="active"><a href="transfer.php">Overføre</a></li>
+							<li><a href="payment.php">Til andre</a></li>
+							<li class="active"><a href="transfer.php">Egne kontoer</a></li>
 							<li><a href="vipps.php">Vipps</a></li>
 						</ul>
 					</div>
