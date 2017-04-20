@@ -333,11 +333,6 @@ if( isset($_POST['createSavingsTarget']) ) {
 													<td>15000,-</td>
 												</tr>
 												<tr>
-													<td>Lønnskonto</td>
-													<td>Brukskonto</td>
-													<td>25000,-</td>
-												</tr>
-												<tr>
 													<td>Felleskonto familie</td>
 													<td>Sparekonto</td>
 													<td>5000,-</td>
