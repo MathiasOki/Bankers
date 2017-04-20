@@ -440,7 +440,7 @@
 							</div>
 						</div>
 						<div class="panel-footer text-right">
-									<button type="submit" class="btn btn-bankers">Endre budsjett</button>
+									<a href="planning.php" class="btn btn-bankers">Endre budsjett</a>
 						</div>
 					</div>
                 </div>
@@ -502,7 +502,7 @@
 						</p>
 					</div>
 					<div class="panel-footer text-right">
-								<button type="submit" class="btn btn-bankers">Endre budsjett</button>
+								<a href="planning.php" class="btn btn-bankers">Endre budsjett</a>
 					</div>
 				</div>
             </div>
