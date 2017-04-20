@@ -115,7 +115,7 @@ if( isset($_POST['createSavingsTarget']) ) {
 								<div class="panel-footer">
 									<div class="row">
 										<div class="col-md-10 col-md-offset-0">
-											<a href="addAccountOverview.php" class="btn btn-bankers">Opprett ny sparekonto</button>
+											<a href="addAccountOverview.php" class="btn btn-bankers">Opprett ny sparekonto</a>
 										</div>
 									</div>
 								</div><!--end panel footer-->
