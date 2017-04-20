@@ -840,6 +840,15 @@ a.list-group-item:focus {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
+	& li.active > a {
+		color: $primary-color;
+		background: rgba(0,0,0,0.02);
+	}
+
+	& li.active > a:hover {
+		color: $primary-color;
+	}
 }
 
 @media all and (min-width: 768px){
@@ -890,9 +899,6 @@ a.list-group-item:focus {
 
 .sidebar .nav-sidebar > li > a > i {
 	margin-top: 5px;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	transition: all .5s ease;
 }
 
 .sidebar .nav-sidebar > li.open > a > i.arrow {

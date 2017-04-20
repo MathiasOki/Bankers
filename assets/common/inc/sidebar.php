@@ -1,33 +1,33 @@
 <div class="sidebar">
 	<div class="sidebar-container">
 		<ul class="nav nav-sidebar">
-			<li>
+			<li class="<?=("index.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>">
 				<a href="index.php">
 					<i class="fa fa-home fa-fw" aria-hidden="true"></i> Hjem
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
-			<li>
+			<li class="<?=("transactions.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>">
 				<a href="transactions.php">
 					<i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> Kontobevegelser
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
-			<li>
+			<li class="<?=("payment.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>">
 				<a href="payment.php">
 					<i class="fa fa-exchange fa-fw" aria-hidden="true"></i> Flytte penger
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
 
-			<li>
+			<li class="<?=("planning.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>">
 				<a href="planning.php">
 					<i class="fa fa-bar-chart fa-fw" aria-hidden="true"></i> Planlegge
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
 
-			<li>
+			<li class="<?=("contact.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>">
 				<a href="contact.php">
 					<i class="fa fa-phone fa-fw" aria-hidden="true"></i> Kontakt
 					<i class="fa fa-angle-right pull-right"></i>
