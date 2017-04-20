@@ -21,7 +21,7 @@ $primary-color: rgba(0, 184, 255, 1);
 
 @mixin speech-bubble($size, $background){
 	background: $background;
-	display: inline-block; 
+	display: inline-block;
 	padding: $size;
 	position: relative;
 	margin-left: $size;
@@ -182,6 +182,10 @@ h6.border:after {
 	}
 }
 
+.chat-up{
+	left: 45px;
+	bottom: 90px;
+}
 
 .dropdown:hover .dropdown-menu {
     display: block;

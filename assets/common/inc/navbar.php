@@ -43,3 +43,5 @@
 </div>-->
 
 <?php require_once('global/bot.php'); ?>
+
+<a href="#" class="support-btn chat-up"data-toggle="popover" title="Chat med kundehjelp" data-content="Some content <br /> inside the popover"><i class="fa fa-weixin text-green fa-3x" aria-hidden="true"></i></a>
