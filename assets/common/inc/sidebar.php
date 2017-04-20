@@ -13,14 +13,18 @@
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
-			<li class="<?=("payment.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>">
+			<li class="<?=("payment.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>
+				<?=("transfer.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>
+				<?=("vipps.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>">
 				<a href="payment.php">
 					<i class="fa fa-exchange fa-fw" aria-hidden="true"></i> Flytte penger
 					<i class="fa fa-angle-right pull-right"></i>
 				</a>
 			</li>
 
-			<li class="<?=("planning.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>">
+			<li class="<?=("planning.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>
+				<?=("savings.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>
+				<?=("regularPayment.php" == basename($_SERVER['PHP_SELF']) ? 'active':'')?>">
 				<a href="planning.php">
 					<i class="fa fa-bar-chart fa-fw" aria-hidden="true"></i> Planlegge
 					<i class="fa fa-angle-right pull-right"></i>
