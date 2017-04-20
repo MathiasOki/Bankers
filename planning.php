@@ -121,12 +121,11 @@
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ["Husleie", "Mat", "Mobil/internett", "Sparing", "Boligsparing", "Annet"],
+                labels: ["Mat", "Mobil", "Sparing", "Boligsparing", "Klær"],
                 datasets: [{
                     label: 'Mitt budsjett',
-                    data: [3500, 2000, 1200, 1000, 1500, 800],
+                    data: [2000, 1200, 1000, 1500, 800],
                     backgroundColor: [
-						'rgba(255,99,132, 1)',
                         'rgba(54, 162, 235, 1)',
                         'rgba(255, 206, 86, 1)',
                         'rgba(75, 192, 192, 1)',
@@ -134,7 +133,6 @@
                         'rgba(255, 159, 64, 1)'
                     ],
                     borderColor: [
-                        'rgba(255,99,132,1)',
                         'rgba(54, 162, 235, 1)',
                         'rgba(255, 206, 86, 1)',
                         'rgba(75, 192, 192, 1)',
@@ -145,18 +143,16 @@
                 },
 				{
                     label: 'Brukt denne mnd',
-                    data: [2500, 3000, 1000, 1000, 1400, 700],
+                    data: [3000, 1000, 1000, 1400, 700],
                     backgroundColor: [
-						'rgba(255,99,132, 0.7)',
-                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(221, 0, 0, 1)',
                         'rgba(255, 206, 86, 0.7)',
                         'rgba(75, 192, 192, 0.7)',
                         'rgba(153, 102, 255, 0.7)',
                         'rgba(255, 159, 64, 0.7)'
                     ],
                     borderColor: [
-                        'rgba(255,99,132, 0.7)',
-                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(221, 0, 0, 1))',
                         'rgba(255, 206, 86, 0.7)',
                         'rgba(75, 192, 192, 0.7)',
                         'rgba(153, 102, 255, 0.7)',
@@ -169,7 +165,9 @@
             options: {
                 scales: {
                     yAxes: [{
-
+						ticks: {
+                    		beginAtZero:true
+                		}
                     }]
 
                 }
