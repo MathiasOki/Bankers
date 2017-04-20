@@ -100,12 +100,23 @@ require_once("assets/common/inc/navbar.php");
 
 										if($row['savedKroner'] == 0){
 											$savedKroner = 1;
+										} else {
+											$savedKroner = $row['savedKroner'];
+										}
+
+										if(progress($savedKroner,$row['goalKroner']) <= 100 && progress($savedKroner,$row['goalKroner']) > 75){
+											$color = 'success';
+										}
+										elseif(progress($savedKroner,$row['goalKroner']) <= 75 && progress($savedKroner,$row['goalKroner']) > 10){
+											$color = 'warning';
+										}
+										elseif(progress($savedKroner,$row['goalKroner']) <= 10) {
+											$color = 'danger';
 										}
 										?>
-
 										<h5><?=$row['name']?></h5>
 										<div class="progress">
-											<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="<?=progress($savedKroner,$row['goalKroner'])?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=progress($savedKroner,$row['goalKroner'])?>%;">
+											<div class="progress-bar progress-bar-<?=$color?>" role="progressbar" aria-valuenow="<?=progress($savedKroner,$row['goalKroner'])?>" aria-valuemin="0" aria-valuemax="100" style="width: <?=progress($savedKroner,$row['goalKroner'])?>%;">
 												<?=progress($savedKroner,$row['goalKroner'])?>%
 											</div>
 										</div>
@@ -223,7 +234,7 @@ require_once("assets/common/inc/navbar.php");
 									<div class="panel-heading">
 										Nytt mål
 									</div><!--end panel heading-->
-									<div class="panel-body text-center">
+									<div class="panel-body">
 										<div class="row">
 											<div class="form-group col-md-6">
 												<label for="tlf">Navn</label>
@@ -585,6 +596,17 @@ require_once("assets/common/inc/navbar.php");
 	include_once("assets/common/inc/scripts.php");
 	?>
 	<script>
+	// Javascript to enable link to tab
+	var hash = document.location.hash;
+	var prefix = "tab_";
+	if (hash) {
+	    $('.nav-pills a[href="'+hash.replace(prefix,"")+'"]').tab('show');
+	}
+
+	// Change hash for page-reload
+	$('.nav-pills a').on('shown.bs.tab', function (e) {
+	    window.location.hash = e.target.hash.replace("#", "#" + prefix);
+	});
 	var ctx = document.getElementById("myLineChart");
 	var myLineChart = new Chart(ctx, {
 		type: 'line',
