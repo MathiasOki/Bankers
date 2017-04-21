@@ -249,6 +249,31 @@
 							<li><a href="#vipps" data-toggle="tab">VIPPS</a></li>
 						</ul>
 					</div>
+
+					<?php
+						if (isset($errorMessage)) {
+					?>
+					<div class="panel-body">
+						<div class="alert alert-danger margin-top">
+							<?=$errorMessage?>
+						</div>
+					</div>
+					<?php
+					   }
+					?>
+
+					<?php
+						if (isset($successMessage)) {
+					?>
+					<div class="panel-body">
+						<div class="alert alert-success">
+							<?=$successMessage?>
+						</div>
+					</div>
+					<?php
+					   }
+					?>
+
 					<div class="tab-content">
 						<div class="tab-pane panel-form active" id="betale">
 							<div class="panel-body">
